@@ -1,0 +1,3597 @@
+automaton button1:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button2:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button3:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button4:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button5:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button6:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button7:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button8:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button9:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button10:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button11:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button12:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button13:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button14:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button15:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button16:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button17:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button18:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button19:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton button20:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton emergencystop:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton stop1:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton stop2:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton stop3:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+automaton stop4:
+  uncontrollable u_push;
+  uncontrollable u_release;
+  disc bool o = false;
+  location released:
+    initial;
+    edge u_push do o := true goto pushed;
+  location pushed:
+    edge u_release do o := false goto released;
+end
+group pad_N:
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  automaton S1:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton S2:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton S3:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton A:
+    disc bool c = false;
+    disc bool o = false;
+    location rest:
+      initial;
+      edge c_close do o := false, c := true goto closing;
+      edge c_open do o := true, c := false goto opening;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto rest;
+      edge S1.u_closed_on, S2.u_closed_on, S3.u_closed_on;
+      edge S1.u_open_off, S2.u_open_off, S3.u_open_off;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto rest;
+      edge S1.u_closed_off, S2.u_closed_off, S3.u_closed_off;
+      edge S1.u_open_on, S2.u_open_on, S3.u_open_on;
+  end
+end
+group pad_S:
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  automaton S1:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton S2:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton S3:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    disc bool c = true;
+    disc bool o = false;
+    cont ext = 10.0;
+    const int[0..0] ext_open = 0;
+    const int[10..10] ext_close = 10;
+    equation ext' = if A.closing and A.opening: 0.0 elif A.closing and ext <= ext_close: +4.5 elif A.opening and ext >= ext_open: -4.5 else 0.0 end;
+    location closed:
+      initial;
+      edge u_closed_off when ext < 10 do c := false goto between;
+    location between:
+      edge u_closed_on when ext >= 10 do c := true goto closed;
+      edge u_open_on when ext <= 0 do o := true goto open;
+    location open:
+      edge u_open_off when ext > 0 do o := false goto between;
+  end
+  automaton A:
+    disc bool c = false;
+    disc bool o = false;
+    location rest:
+      initial;
+      edge c_close do o := false, c := true goto closing;
+      edge c_open do o := true, c := false goto opening;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto rest;
+      edge S1.u_closed_on, S2.u_closed_on, S3.u_closed_on;
+      edge S1.u_open_off, S2.u_open_off, S3.u_open_off;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto rest;
+      edge S1.u_closed_off, S2.u_closed_off, S3.u_closed_off;
+      edge S1.u_open_on, S2.u_open_on, S3.u_open_on;
+  end
+end
+group culvert_N:
+  controllable c_enable;
+  controllable c_disable;
+  uncontrollable u_on;
+  uncontrollable u_off;
+  automaton A:
+    disc bool c = false;
+    location closed:
+      initial;
+      edge c_enable do c := true goto open;
+      edge u_off;
+    location open:
+      edge c_disable do c := false goto closed;
+      edge u_on;
+  end
+  automaton S:
+    disc bool o = false;
+    location noflow:
+      initial;
+      edge u_on do o := true goto flow;
+    location flow:
+      edge u_off do o := false goto noflow;
+  end
+end
+group culvert_S:
+  controllable c_enable;
+  controllable c_disable;
+  uncontrollable u_on;
+  uncontrollable u_off;
+  automaton A:
+    disc bool c = false;
+    location closed:
+      initial;
+      edge c_enable do c := true goto open;
+      edge u_off;
+    location open:
+      edge c_disable do c := false goto closed;
+      edge u_on;
+  end
+  automaton S:
+    disc bool o = false;
+    location noflow:
+      initial;
+      edge u_on do o := true goto flow;
+    location flow:
+      edge u_off do o := false goto noflow;
+  end
+end
+group gate_D_N:
+  controllable c_high_on;
+  controllable c_high_off;
+  controllable c_low_on;
+  controllable c_low_off;
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  controllable c_fc_off;
+  controllable c_fc_on;
+  controllable c_sc_on;
+  controllable c_sc_off;
+  controllable c_fo_off;
+  controllable c_fo_on;
+  controllable c_so_on;
+  controllable c_so_off;
+  uncontrollable u_s1_on;
+  uncontrollable u_s1_off;
+  uncontrollable u_s2_on;
+  uncontrollable u_s2_off;
+  uncontrollable u_s3_on;
+  uncontrollable u_s3_off;
+  uncontrollable u_s4_on;
+  uncontrollable u_s4_off;
+  uncontrollable u_s5_on;
+  uncontrollable u_s5_off;
+  uncontrollable u_s6_on;
+  uncontrollable u_s6_off;
+  automaton S:
+    disc bool c = false;
+    disc bool bc = false;
+    disc bool fc = false;
+    disc bool fo = true;
+    disc bool bo = true;
+    disc bool o = true;
+    cont degree = 45.0;
+    equation degree' = if not(Dir.opening or Dir.closing): 0.0 elif not(Pre.high or Pre.low): 0.0 elif Spe.off: 0.0 elif Dir.opening and Pre.high and not(Spe.fast_o or Spe.slow_o): 0.0 elif Dir.closing and Pre.high and not(Spe.fast_c or Spe.slow_c): 0.0 elif Spe.slow_o and Spe.fast_o: 0.0 elif Spe.slow_c and Spe.fast_c: 0.0 elif Dir.opening and Pre.high and Spe.fast_o and degree >= 0: -15.0 elif Dir.opening and Pre.low and Spe.fast_o and degree >= 0: -10.0 elif Dir.opening and Pre.low and Spe.slow_o and degree >= 0: -5.0 elif Dir.closing and Pre.high and Spe.fast_c and degree < 45: +15.0 elif Dir.closing and Pre.low and Spe.fast_c and degree < 45: +10.0 elif Dir.closing and Pre.low and Spe.slow_c and degree < 45: +5.0 else 0.0 end;
+    location closed:
+      initial;
+      edge u_s1_on when degree < 45 do c := true goto bclosed;
+    location bclosed:
+      edge u_s1_off when degree >= 45 do c := false goto closed;
+      edge u_s2_on when degree <= 40 do bc := true goto fclosed;
+    location fclosed:
+      edge u_s2_off when degree > 40 do bc := false goto bclosed;
+      edge u_s3_on when degree <= 30 do fc := true goto middle;
+    location middle:
+      edge u_s3_off when degree > 30 do fc := false goto fclosed;
+      edge u_s4_off when degree <= 15 do fo := false goto fopen;
+    location fopen:
+      edge u_s4_on when degree > 15 do fo := true goto middle;
+      edge u_s5_off when degree <= 5 do bo := false goto bopen;
+    location bopen:
+      edge u_s5_on when degree > 5 do bo := true goto fopen;
+      edge u_s6_off when degree <= 0 do o := false goto open;
+    location open:
+      edge u_s6_on when degree > 0 do o := true goto bopen;
+  end
+  automaton Dir:
+    disc bool o = false;
+    disc bool c = false;
+    location off:
+      initial;
+      edge c_open do o := true, c := false goto opening;
+      edge c_close do o := false, c := true goto closing;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto off;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto off;
+  end
+  automaton Spe:
+    disc bool fc = false;
+    disc bool sc = false;
+    disc bool fo = false;
+    disc bool so = false;
+    location off:
+      initial;
+      edge c_fc_on do fc := true goto fast_c;
+      edge c_sc_on do sc := true goto slow_c;
+      edge c_fo_on do fo := true goto fast_o;
+      edge c_so_on do so := true goto slow_o;
+    location fast_c:
+      edge c_fc_off do fc := false goto off;
+    location slow_c:
+      edge c_sc_off do sc := false goto off;
+    location fast_o:
+      edge c_fo_off do fo := false goto off;
+    location slow_o:
+      edge c_so_off do so := false goto off;
+  end
+  automaton Pre:
+    disc bool h = false;
+    disc bool l = false;
+    location off:
+      initial;
+      edge c_high_on do h := true goto high;
+      edge c_low_on do l := true goto low;
+    location high:
+      edge c_high_off do h := false goto off;
+      edge c_low_on do l := true goto highlow;
+    location low:
+      edge c_high_on do h := true goto highlow;
+      edge c_low_off do l := false goto off;
+    location highlow:
+      edge c_high_off do h := false goto low;
+      edge c_low_off do l := false goto high;
+  end
+end
+group gate_D_S:
+  controllable c_high_on;
+  controllable c_high_off;
+  controllable c_low_on;
+  controllable c_low_off;
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  controllable c_fc_off;
+  controllable c_fc_on;
+  controllable c_sc_on;
+  controllable c_sc_off;
+  controllable c_fo_off;
+  controllable c_fo_on;
+  controllable c_so_on;
+  controllable c_so_off;
+  uncontrollable u_s1_on;
+  uncontrollable u_s1_off;
+  uncontrollable u_s2_on;
+  uncontrollable u_s2_off;
+  uncontrollable u_s3_on;
+  uncontrollable u_s3_off;
+  uncontrollable u_s4_on;
+  uncontrollable u_s4_off;
+  uncontrollable u_s5_on;
+  uncontrollable u_s5_off;
+  uncontrollable u_s6_on;
+  uncontrollable u_s6_off;
+  automaton S:
+    disc bool c = false;
+    disc bool bc = false;
+    disc bool fc = false;
+    disc bool fo = true;
+    disc bool bo = true;
+    disc bool o = true;
+    cont degree = 45.0;
+    equation degree' = if not(Dir.opening or Dir.closing): 0.0 elif not(Pre.high or Pre.low): 0.0 elif Spe.off: 0.0 elif Dir.opening and Pre.high and not(Spe.fast_o or Spe.slow_o): 0.0 elif Dir.closing and Pre.high and not(Spe.fast_c or Spe.slow_c): 0.0 elif Spe.slow_o and Spe.fast_o: 0.0 elif Spe.slow_c and Spe.fast_c: 0.0 elif Dir.opening and Pre.high and Spe.fast_o and degree >= 0: -15.0 elif Dir.opening and Pre.low and Spe.fast_o and degree >= 0: -10.0 elif Dir.opening and Pre.low and Spe.slow_o and degree >= 0: -5.0 elif Dir.closing and Pre.high and Spe.fast_c and degree < 45: +15.0 elif Dir.closing and Pre.low and Spe.fast_c and degree < 45: +10.0 elif Dir.closing and Pre.low and Spe.slow_c and degree < 45: +5.0 else 0.0 end;
+    location closed:
+      initial;
+      edge u_s1_on when degree < 45 do c := true goto bclosed;
+    location bclosed:
+      edge u_s1_off when degree >= 45 do c := false goto closed;
+      edge u_s2_on when degree <= 40 do bc := true goto fclosed;
+    location fclosed:
+      edge u_s2_off when degree > 40 do bc := false goto bclosed;
+      edge u_s3_on when degree <= 30 do fc := true goto middle;
+    location middle:
+      edge u_s3_off when degree > 30 do fc := false goto fclosed;
+      edge u_s4_off when degree <= 15 do fo := false goto fopen;
+    location fopen:
+      edge u_s4_on when degree > 15 do fo := true goto middle;
+      edge u_s5_off when degree <= 5 do bo := false goto bopen;
+    location bopen:
+      edge u_s5_on when degree > 5 do bo := true goto fopen;
+      edge u_s6_off when degree <= 0 do o := false goto open;
+    location open:
+      edge u_s6_on when degree > 0 do o := true goto bopen;
+  end
+  automaton Dir:
+    disc bool o = false;
+    disc bool c = false;
+    location off:
+      initial;
+      edge c_open do o := true, c := false goto opening;
+      edge c_close do o := false, c := true goto closing;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto off;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto off;
+  end
+  automaton Spe:
+    disc bool fc = false;
+    disc bool sc = false;
+    disc bool fo = false;
+    disc bool so = false;
+    location off:
+      initial;
+      edge c_fc_on do fc := true goto fast_c;
+      edge c_sc_on do sc := true goto slow_c;
+      edge c_fo_on do fo := true goto fast_o;
+      edge c_so_on do so := true goto slow_o;
+    location fast_c:
+      edge c_fc_off do fc := false goto off;
+    location slow_c:
+      edge c_sc_off do sc := false goto off;
+    location fast_o:
+      edge c_fo_off do fo := false goto off;
+    location slow_o:
+      edge c_so_off do so := false goto off;
+  end
+  automaton Pre:
+    disc bool h = false;
+    disc bool l = false;
+    location off:
+      initial;
+      edge c_high_on do h := true goto high;
+      edge c_low_on do l := true goto low;
+    location high:
+      edge c_high_off do h := false goto off;
+      edge c_low_on do l := true goto highlow;
+    location low:
+      edge c_high_on do h := true goto highlow;
+      edge c_low_off do l := false goto off;
+    location highlow:
+      edge c_high_off do h := false goto low;
+      edge c_low_off do l := false goto high;
+  end
+end
+group gate_U_N:
+  controllable c_high_on;
+  controllable c_high_off;
+  controllable c_low_on;
+  controllable c_low_off;
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  controllable c_fc_off;
+  controllable c_fc_on;
+  controllable c_sc_on;
+  controllable c_sc_off;
+  controllable c_fo_off;
+  controllable c_fo_on;
+  controllable c_so_on;
+  controllable c_so_off;
+  uncontrollable u_s1_on;
+  uncontrollable u_s1_off;
+  uncontrollable u_s2_on;
+  uncontrollable u_s2_off;
+  uncontrollable u_s3_on;
+  uncontrollable u_s3_off;
+  uncontrollable u_s4_on;
+  uncontrollable u_s4_off;
+  uncontrollable u_s5_on;
+  uncontrollable u_s5_off;
+  uncontrollable u_s6_on;
+  uncontrollable u_s6_off;
+  automaton S:
+    disc bool c = false;
+    disc bool bc = false;
+    disc bool fc = false;
+    disc bool fo = true;
+    disc bool bo = true;
+    disc bool o = true;
+    cont degree = 45.0;
+    equation degree' = if not(Dir.opening or Dir.closing): 0.0 elif not(Pre.high or Pre.low): 0.0 elif Spe.off: 0.0 elif Dir.opening and Pre.high and not(Spe.fast_o or Spe.slow_o): 0.0 elif Dir.closing and Pre.high and not(Spe.fast_c or Spe.slow_c): 0.0 elif Spe.slow_o and Spe.fast_o: 0.0 elif Spe.slow_c and Spe.fast_c: 0.0 elif Dir.opening and Pre.high and Spe.fast_o and degree >= 0: -15.0 elif Dir.opening and Pre.low and Spe.fast_o and degree >= 0: -10.0 elif Dir.opening and Pre.low and Spe.slow_o and degree >= 0: -5.0 elif Dir.closing and Pre.high and Spe.fast_c and degree < 45: +15.0 elif Dir.closing and Pre.low and Spe.fast_c and degree < 45: +10.0 elif Dir.closing and Pre.low and Spe.slow_c and degree < 45: +5.0 else 0.0 end;
+    location closed:
+      initial;
+      edge u_s1_on when degree < 45 do c := true goto bclosed;
+    location bclosed:
+      edge u_s1_off when degree >= 45 do c := false goto closed;
+      edge u_s2_on when degree <= 40 do bc := true goto fclosed;
+    location fclosed:
+      edge u_s2_off when degree > 40 do bc := false goto bclosed;
+      edge u_s3_on when degree <= 30 do fc := true goto middle;
+    location middle:
+      edge u_s3_off when degree > 30 do fc := false goto fclosed;
+      edge u_s4_off when degree <= 15 do fo := false goto fopen;
+    location fopen:
+      edge u_s4_on when degree > 15 do fo := true goto middle;
+      edge u_s5_off when degree <= 5 do bo := false goto bopen;
+    location bopen:
+      edge u_s5_on when degree > 5 do bo := true goto fopen;
+      edge u_s6_off when degree <= 0 do o := false goto open;
+    location open:
+      edge u_s6_on when degree > 0 do o := true goto bopen;
+  end
+  automaton Dir:
+    disc bool o = false;
+    disc bool c = false;
+    location off:
+      initial;
+      edge c_open do o := true, c := false goto opening;
+      edge c_close do o := false, c := true goto closing;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto off;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto off;
+  end
+  automaton Spe:
+    disc bool fc = false;
+    disc bool sc = false;
+    disc bool fo = false;
+    disc bool so = false;
+    location off:
+      initial;
+      edge c_fc_on do fc := true goto fast_c;
+      edge c_sc_on do sc := true goto slow_c;
+      edge c_fo_on do fo := true goto fast_o;
+      edge c_so_on do so := true goto slow_o;
+    location fast_c:
+      edge c_fc_off do fc := false goto off;
+    location slow_c:
+      edge c_sc_off do sc := false goto off;
+    location fast_o:
+      edge c_fo_off do fo := false goto off;
+    location slow_o:
+      edge c_so_off do so := false goto off;
+  end
+  automaton Pre:
+    disc bool h = false;
+    disc bool l = false;
+    location off:
+      initial;
+      edge c_high_on do h := true goto high;
+      edge c_low_on do l := true goto low;
+    location high:
+      edge c_high_off do h := false goto off;
+      edge c_low_on do l := true goto highlow;
+    location low:
+      edge c_high_on do h := true goto highlow;
+      edge c_low_off do l := false goto off;
+    location highlow:
+      edge c_high_off do h := false goto low;
+      edge c_low_off do l := false goto high;
+  end
+end
+group gate_U_S:
+  controllable c_high_on;
+  controllable c_high_off;
+  controllable c_low_on;
+  controllable c_low_off;
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  controllable c_fc_off;
+  controllable c_fc_on;
+  controllable c_sc_on;
+  controllable c_sc_off;
+  controllable c_fo_off;
+  controllable c_fo_on;
+  controllable c_so_on;
+  controllable c_so_off;
+  uncontrollable u_s1_on;
+  uncontrollable u_s1_off;
+  uncontrollable u_s2_on;
+  uncontrollable u_s2_off;
+  uncontrollable u_s3_on;
+  uncontrollable u_s3_off;
+  uncontrollable u_s4_on;
+  uncontrollable u_s4_off;
+  uncontrollable u_s5_on;
+  uncontrollable u_s5_off;
+  uncontrollable u_s6_on;
+  uncontrollable u_s6_off;
+  automaton S:
+    disc bool c = false;
+    disc bool bc = false;
+    disc bool fc = false;
+    disc bool fo = true;
+    disc bool bo = true;
+    disc bool o = true;
+    cont degree = 45.0;
+    equation degree' = if not(Dir.opening or Dir.closing): 0.0 elif not(Pre.high or Pre.low): 0.0 elif Spe.off: 0.0 elif Dir.opening and Pre.high and not(Spe.fast_o or Spe.slow_o): 0.0 elif Dir.closing and Pre.high and not(Spe.fast_c or Spe.slow_c): 0.0 elif Spe.slow_o and Spe.fast_o: 0.0 elif Spe.slow_c and Spe.fast_c: 0.0 elif Dir.opening and Pre.high and Spe.fast_o and degree >= 0: -15.0 elif Dir.opening and Pre.low and Spe.fast_o and degree >= 0: -10.0 elif Dir.opening and Pre.low and Spe.slow_o and degree >= 0: -5.0 elif Dir.closing and Pre.high and Spe.fast_c and degree < 45: +15.0 elif Dir.closing and Pre.low and Spe.fast_c and degree < 45: +10.0 elif Dir.closing and Pre.low and Spe.slow_c and degree < 45: +5.0 else 0.0 end;
+    location closed:
+      initial;
+      edge u_s1_on when degree < 45 do c := true goto bclosed;
+    location bclosed:
+      edge u_s1_off when degree >= 45 do c := false goto closed;
+      edge u_s2_on when degree <= 40 do bc := true goto fclosed;
+    location fclosed:
+      edge u_s2_off when degree > 40 do bc := false goto bclosed;
+      edge u_s3_on when degree <= 30 do fc := true goto middle;
+    location middle:
+      edge u_s3_off when degree > 30 do fc := false goto fclosed;
+      edge u_s4_off when degree <= 15 do fo := false goto fopen;
+    location fopen:
+      edge u_s4_on when degree > 15 do fo := true goto middle;
+      edge u_s5_off when degree <= 5 do bo := false goto bopen;
+    location bopen:
+      edge u_s5_on when degree > 5 do bo := true goto fopen;
+      edge u_s6_off when degree <= 0 do o := false goto open;
+    location open:
+      edge u_s6_on when degree > 0 do o := true goto bopen;
+  end
+  automaton Dir:
+    disc bool o = false;
+    disc bool c = false;
+    location off:
+      initial;
+      edge c_open do o := true, c := false goto opening;
+      edge c_close do o := false, c := true goto closing;
+    location opening:
+      edge c_close do o := false, c := true goto closing;
+      edge c_stop do o := false, c := false goto off;
+    location closing:
+      edge c_open do o := true, c := false goto opening;
+      edge c_stop do o := false, c := false goto off;
+  end
+  automaton Spe:
+    disc bool fc = false;
+    disc bool sc = false;
+    disc bool fo = false;
+    disc bool so = false;
+    location off:
+      initial;
+      edge c_fc_on do fc := true goto fast_c;
+      edge c_sc_on do sc := true goto slow_c;
+      edge c_fo_on do fo := true goto fast_o;
+      edge c_so_on do so := true goto slow_o;
+    location fast_c:
+      edge c_fc_off do fc := false goto off;
+    location slow_c:
+      edge c_sc_off do sc := false goto off;
+    location fast_o:
+      edge c_fo_off do fo := false goto off;
+    location slow_o:
+      edge c_so_off do so := false goto off;
+  end
+  automaton Pre:
+    disc bool h = false;
+    disc bool l = false;
+    location off:
+      initial;
+      edge c_high_on do h := true goto high;
+      edge c_low_on do l := true goto low;
+    location high:
+      edge c_high_off do h := false goto off;
+      edge c_low_on do l := true goto highlow;
+    location low:
+      edge c_high_on do h := true goto highlow;
+      edge c_low_off do l := false goto off;
+    location highlow:
+      edge c_high_off do h := false goto low;
+      edge c_low_off do l := false goto high;
+  end
+end
+automaton s_equal_D:
+  uncontrollable u_equal_on;
+  uncontrollable u_equal_off;
+  disc bool o = initial_state;
+  alg bool equalstate = water.low;
+  alg bool initial_state = true;
+  location off:
+    initial not initial_state;
+    edge u_equal_on when equalstate do o := true goto on;
+  location on:
+    initial initial_state;
+    edge u_equal_off when not equalstate do o := false goto off;
+end
+automaton s_equal_U:
+  uncontrollable u_equal_on;
+  uncontrollable u_equal_off;
+  disc bool o = initial_state;
+  alg bool equalstate = water.high;
+  alg bool initial_state = false;
+  location off:
+    initial not initial_state;
+    edge u_equal_on when equalstate do o := true goto on;
+  location on:
+    initial initial_state;
+    edge u_equal_off when not equalstate do o := false goto off;
+end
+group out_D_N:
+  controllable c_red;
+  controllable c_green;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    location red:
+      initial;
+      edge c_green do r := false, g := true goto green;
+      edge u_r_on, u_g_off;
+    location green:
+      edge c_red do r := true, g := false goto red;
+      edge u_r_off, u_g_on;
+  end
+end
+group out_D_S:
+  controllable c_red;
+  controllable c_green;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    location red:
+      initial;
+      edge c_green do r := false, g := true goto green;
+      edge u_r_on, u_g_off;
+    location green:
+      edge c_red do r := true, g := false goto red;
+      edge u_r_off, u_g_on;
+  end
+end
+group out_U_N:
+  controllable c_red;
+  controllable c_green;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    location red:
+      initial;
+      edge c_green do r := false, g := true goto green;
+      edge u_r_on, u_g_off;
+    location green:
+      edge c_red do r := true, g := false goto red;
+      edge u_r_off, u_g_on;
+  end
+end
+group out_U_S:
+  controllable c_red;
+  controllable c_green;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    location red:
+      initial;
+      edge c_green do r := false, g := true goto green;
+      edge u_r_on, u_g_off;
+    location green:
+      edge c_red do r := true, g := false goto red;
+      edge u_r_off, u_g_on;
+  end
+end
+group in_D_N:
+  controllable c_red;
+  controllable c_green;
+  controllable c_redgreen;
+  controllable c_redred;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  uncontrollable u_s_on;
+  uncontrollable u_s_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+      edge u_s_on do s := true goto lowred;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+      edge u_s_on do s := true goto redred;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+      edge u_s_on do s := true goto greenred;
+    location lowred:
+      edge u_r_on do r := true goto redred;
+      edge u_g_on do g := true goto greenred;
+      edge u_s_off do s := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+      edge u_s_on do s := true goto redgreenred;
+    location redred:
+      edge u_r_off do r := false goto lowred;
+      edge u_g_on do g := true goto redgreenred;
+      edge u_s_off do s := false goto red;
+    location greenred:
+      edge u_r_on do r := true goto redgreenred;
+      edge u_g_off do g := false goto lowred;
+      edge u_s_off do s := false goto green;
+    location redgreenred:
+      edge u_r_off do r := false goto greenred;
+      edge u_g_off do g := false goto redred;
+      edge u_s_off do s := false goto redgreen;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location red:
+      initial;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge c_redred do r := true, g := false, s := true goto redred;
+      edge u_r_on;
+      edge u_g_off, u_s_off;
+    location green:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge u_g_on;
+      edge u_r_off, u_s_off;
+    location redgreen:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_green do r := false, g := true, s := false goto green;
+      edge u_r_on, u_g_on;
+      edge u_s_off;
+    location redred:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge u_r_on, u_s_on;
+      edge u_g_off;
+  end
+end
+group in_D_S:
+  controllable c_red;
+  controllable c_green;
+  controllable c_redgreen;
+  controllable c_redred;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  uncontrollable u_s_on;
+  uncontrollable u_s_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+      edge u_s_on do s := true goto lowred;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+      edge u_s_on do s := true goto redred;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+      edge u_s_on do s := true goto greenred;
+    location lowred:
+      edge u_r_on do r := true goto redred;
+      edge u_g_on do g := true goto greenred;
+      edge u_s_off do s := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+      edge u_s_on do s := true goto redgreenred;
+    location redred:
+      edge u_r_off do r := false goto lowred;
+      edge u_g_on do g := true goto redgreenred;
+      edge u_s_off do s := false goto red;
+    location greenred:
+      edge u_r_on do r := true goto redgreenred;
+      edge u_g_off do g := false goto lowred;
+      edge u_s_off do s := false goto green;
+    location redgreenred:
+      edge u_r_off do r := false goto greenred;
+      edge u_g_off do g := false goto redred;
+      edge u_s_off do s := false goto redgreen;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location red:
+      initial;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge c_redred do r := true, g := false, s := true goto redred;
+      edge u_r_on;
+      edge u_g_off, u_s_off;
+    location green:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge u_g_on;
+      edge u_r_off, u_s_off;
+    location redgreen:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_green do r := false, g := true, s := false goto green;
+      edge u_r_on, u_g_on;
+      edge u_s_off;
+    location redred:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge u_r_on, u_s_on;
+      edge u_g_off;
+  end
+end
+group in_U_N:
+  controllable c_red;
+  controllable c_green;
+  controllable c_redgreen;
+  controllable c_redred;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  uncontrollable u_s_on;
+  uncontrollable u_s_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+      edge u_s_on do s := true goto lowred;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+      edge u_s_on do s := true goto redred;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+      edge u_s_on do s := true goto greenred;
+    location lowred:
+      edge u_r_on do r := true goto redred;
+      edge u_g_on do g := true goto greenred;
+      edge u_s_off do s := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+      edge u_s_on do s := true goto redgreenred;
+    location redred:
+      edge u_r_off do r := false goto lowred;
+      edge u_g_on do g := true goto redgreenred;
+      edge u_s_off do s := false goto red;
+    location greenred:
+      edge u_r_on do r := true goto redgreenred;
+      edge u_g_off do g := false goto lowred;
+      edge u_s_off do s := false goto green;
+    location redgreenred:
+      edge u_r_off do r := false goto greenred;
+      edge u_g_off do g := false goto redred;
+      edge u_s_off do s := false goto redgreen;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location red:
+      initial;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge c_redred do r := true, g := false, s := true goto redred;
+      edge u_r_on;
+      edge u_g_off, u_s_off;
+    location green:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge u_g_on;
+      edge u_r_off, u_s_off;
+    location redgreen:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_green do r := false, g := true, s := false goto green;
+      edge u_r_on, u_g_on;
+      edge u_s_off;
+    location redred:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge u_r_on, u_s_on;
+      edge u_g_off;
+  end
+end
+group in_U_S:
+  controllable c_red;
+  controllable c_green;
+  controllable c_redgreen;
+  controllable c_redred;
+  uncontrollable u_r_on;
+  uncontrollable u_r_off;
+  uncontrollable u_g_on;
+  uncontrollable u_g_off;
+  uncontrollable u_s_on;
+  uncontrollable u_s_off;
+  automaton S:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location off:
+      edge u_r_on do r := true goto red;
+      edge u_g_on do g := true goto green;
+      edge u_s_on do s := true goto lowred;
+    location red:
+      initial;
+      edge u_r_off do r := false goto off;
+      edge u_g_on do g := true goto redgreen;
+      edge u_s_on do s := true goto redred;
+    location green:
+      edge u_r_on do r := true goto redgreen;
+      edge u_g_off do g := false goto off;
+      edge u_s_on do s := true goto greenred;
+    location lowred:
+      edge u_r_on do r := true goto redred;
+      edge u_g_on do g := true goto greenred;
+      edge u_s_off do s := false goto off;
+    location redgreen:
+      edge u_r_off do r := false goto green;
+      edge u_g_off do g := false goto red;
+      edge u_s_on do s := true goto redgreenred;
+    location redred:
+      edge u_r_off do r := false goto lowred;
+      edge u_g_on do g := true goto redgreenred;
+      edge u_s_off do s := false goto red;
+    location greenred:
+      edge u_r_on do r := true goto redgreenred;
+      edge u_g_off do g := false goto lowred;
+      edge u_s_off do s := false goto green;
+    location redgreenred:
+      edge u_r_off do r := false goto greenred;
+      edge u_g_off do g := false goto redred;
+      edge u_s_off do s := false goto redgreen;
+  end
+  automaton A:
+    disc bool r = true;
+    disc bool g = false;
+    disc bool s = false;
+    location red:
+      initial;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge c_redred do r := true, g := false, s := true goto redred;
+      edge u_r_on;
+      edge u_g_off, u_s_off;
+    location green:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_redgreen do r := true, g := true, s := false goto redgreen;
+      edge u_g_on;
+      edge u_r_off, u_s_off;
+    location redgreen:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge c_green do r := false, g := true, s := false goto green;
+      edge u_r_on, u_g_on;
+      edge u_s_off;
+    location redred:
+      edge c_red do r := true, g := false, s := false goto red;
+      edge u_r_on, u_s_on;
+      edge u_g_off;
+  end
+end
+group sup:
+  alg bool cmd_stop = emergencystop.pushed or stop1.pushed or stop2.pushed or stop4.pushed or stop4.pushed;
+  alg bool cmd_stop_culvert = emergencystop.pushed or stop3.pushed;
+  alg bool cmd_stop_pad = emergencystop.pushed or stop4.pushed;
+  alg bool cmd_stop_D_gate = emergencystop.pushed or stop1.pushed;
+  alg bool cmd_stop_U_gate = emergencystop.pushed or stop2.pushed;
+  alg bool cmd_D_in_g = button14.pushed and not button10.pushed and not button17.pushed;
+  alg bool cmd_D_in_rg = button17.pushed and not button10.pushed;
+  alg bool cmd_D_in_r = button10.pushed;
+  alg bool cmd_D_in_rr = button18.pushed and not button10.pushed;
+  alg bool cmd_D_out_g = button13.pushed and not button9.pushed;
+  alg bool cmd_D_out_r = button9.pushed;
+  alg bool cmd_pad_o = button1.pushed and not button2.pushed;
+  alg bool cmd_pad_c = button2.pushed;
+  alg bool cmd_D_gate_o = button5.pushed and not button6.pushed;
+  alg bool cmd_D_gate_c = button6.pushed;
+  alg bool cmd_U_in_g = button16.pushed and not button12.pushed and not button19.pushed;
+  alg bool cmd_U_in_rg = button19.pushed and not button12.pushed;
+  alg bool cmd_U_in_r = button12.pushed;
+  alg bool cmd_U_in_rr = button20.pushed and not button12.pushed;
+  alg bool cmd_U_out_g = button15.pushed and not button11.pushed;
+  alg bool cmd_U_out_r = button11.pushed;
+  alg bool cmd_culvert_o = button3.pushed and not button4.pushed;
+  alg bool cmd_culvert_c = button4.pushed;
+  alg bool cmd_U_gate_o = button7.pushed and not button8.pushed;
+  alg bool cmd_U_gate_c = button8.pushed;
+  plant automaton button1:
+    location released:
+      initial;
+      marked;
+      edge .button1.u_push goto pushed;
+    location pushed:
+      edge .button1.u_release goto released;
+  end
+  plant automaton button2:
+    location released:
+      initial;
+      marked;
+      edge .button2.u_push goto pushed;
+    location pushed:
+      edge .button2.u_release goto released;
+  end
+  plant automaton button3:
+    location released:
+      initial;
+      marked;
+      edge .button3.u_push goto pushed;
+    location pushed:
+      edge .button3.u_release goto released;
+  end
+  plant automaton button4:
+    location released:
+      initial;
+      marked;
+      edge .button4.u_push goto pushed;
+    location pushed:
+      edge .button4.u_release goto released;
+  end
+  plant automaton button5:
+    location released:
+      initial;
+      marked;
+      edge .button5.u_push goto pushed;
+    location pushed:
+      edge .button5.u_release goto released;
+  end
+  plant automaton button6:
+    location released:
+      initial;
+      marked;
+      edge .button6.u_push goto pushed;
+    location pushed:
+      edge .button6.u_release goto released;
+  end
+  plant automaton button7:
+    location released:
+      initial;
+      marked;
+      edge .button7.u_push goto pushed;
+    location pushed:
+      edge .button7.u_release goto released;
+  end
+  plant automaton button8:
+    location released:
+      initial;
+      marked;
+      edge .button8.u_push goto pushed;
+    location pushed:
+      edge .button8.u_release goto released;
+  end
+  plant automaton button9:
+    location released:
+      initial;
+      marked;
+      edge .button9.u_push goto pushed;
+    location pushed:
+      edge .button9.u_release goto released;
+  end
+  plant automaton button10:
+    location released:
+      initial;
+      marked;
+      edge .button10.u_push goto pushed;
+    location pushed:
+      edge .button10.u_release goto released;
+  end
+  plant automaton button11:
+    location released:
+      initial;
+      marked;
+      edge .button11.u_push goto pushed;
+    location pushed:
+      edge .button11.u_release goto released;
+  end
+  plant automaton button12:
+    location released:
+      initial;
+      marked;
+      edge .button12.u_push goto pushed;
+    location pushed:
+      edge .button12.u_release goto released;
+  end
+  plant automaton button13:
+    location released:
+      initial;
+      marked;
+      edge .button13.u_push goto pushed;
+    location pushed:
+      edge .button13.u_release goto released;
+  end
+  plant automaton button14:
+    location released:
+      initial;
+      marked;
+      edge .button14.u_push goto pushed;
+    location pushed:
+      edge .button14.u_release goto released;
+  end
+  plant automaton button15:
+    location released:
+      initial;
+      marked;
+      edge .button15.u_push goto pushed;
+    location pushed:
+      edge .button15.u_release goto released;
+  end
+  plant automaton button16:
+    location released:
+      initial;
+      marked;
+      edge .button16.u_push goto pushed;
+    location pushed:
+      edge .button16.u_release goto released;
+  end
+  plant automaton button17:
+    location released:
+      initial;
+      marked;
+      edge .button17.u_push goto pushed;
+    location pushed:
+      edge .button17.u_release goto released;
+  end
+  plant automaton button18:
+    location released:
+      initial;
+      marked;
+      edge .button18.u_push goto pushed;
+    location pushed:
+      edge .button18.u_release goto released;
+  end
+  plant automaton button19:
+    location released:
+      initial;
+      marked;
+      edge .button19.u_push goto pushed;
+    location pushed:
+      edge .button19.u_release goto released;
+  end
+  plant automaton button20:
+    location released:
+      initial;
+      marked;
+      edge .button20.u_push goto pushed;
+    location pushed:
+      edge .button20.u_release goto released;
+  end
+  plant automaton emergencystop:
+    location released:
+      initial;
+      marked;
+      edge .emergencystop.u_push goto pushed;
+    location pushed:
+      edge .emergencystop.u_release goto released;
+  end
+  plant automaton stop1:
+    location released:
+      initial;
+      marked;
+      edge .stop1.u_push goto pushed;
+    location pushed:
+      edge .stop1.u_release goto released;
+  end
+  plant automaton stop2:
+    location released:
+      initial;
+      marked;
+      edge .stop2.u_push goto pushed;
+    location pushed:
+      edge .stop2.u_release goto released;
+  end
+  plant automaton stop3:
+    location released:
+      initial;
+      marked;
+      edge .stop3.u_push goto pushed;
+    location pushed:
+      edge .stop3.u_release goto released;
+  end
+  plant automaton stop4:
+    location released:
+      initial;
+      marked;
+      edge .stop4.u_push goto pushed;
+    location pushed:
+      edge .stop4.u_release goto released;
+  end
+  group pad_N:
+    plant automaton A:
+      location rest:
+        initial;
+        marked;
+        edge .pad_N.c_open goto opening;
+        edge .pad_N.c_close goto closing;
+      location opening:
+        edge .pad_N.c_close goto closing;
+        edge .pad_N.c_stop goto rest;
+        edge .pad_N.S1.u_closed_off, .pad_N.S1.u_open_on;
+        edge .pad_N.S2.u_closed_off, .pad_N.S2.u_open_on;
+        edge .pad_N.S3.u_closed_off, .pad_N.S3.u_open_on;
+      location closing:
+        edge .pad_N.c_open goto opening;
+        edge .pad_N.c_stop goto rest;
+        edge .pad_N.S1.u_closed_on, .pad_N.S1.u_open_off;
+        edge .pad_N.S2.u_closed_on, .pad_N.S2.u_open_off;
+        edge .pad_N.S3.u_closed_on, .pad_N.S3.u_open_off;
+    end
+    plant automaton S1:
+      location closed:
+        initial;
+        marked;
+        edge .pad_N.S1.u_closed_off goto between;
+      location between:
+        edge .pad_N.S1.u_closed_on goto closed;
+        edge .pad_N.S1.u_open_on goto open;
+      location open:
+        edge .pad_N.S1.u_open_off goto between;
+    end
+    plant automaton S2:
+      location closed:
+        initial;
+        marked;
+        edge .pad_N.S2.u_closed_off goto between;
+      location between:
+        edge .pad_N.S2.u_closed_on goto closed;
+        edge .pad_N.S2.u_open_on goto open;
+      location open:
+        edge .pad_N.S2.u_open_off goto between;
+    end
+    plant automaton S3:
+      location closed:
+        initial;
+        marked;
+        edge .pad_N.S3.u_closed_off goto between;
+      location between:
+        edge .pad_N.S3.u_closed_on goto closed;
+        edge .pad_N.S3.u_open_on goto open;
+      location open:
+        edge .pad_N.S3.u_open_off goto between;
+    end
+    requirement invariant .pad_N.c_open needs cmd_pad_o;
+    requirement invariant .pad_N.c_open needs not S1.open or not S2.open or not S3.open;
+    requirement invariant .pad_N.c_close needs cmd_pad_c;
+    requirement invariant .pad_N.c_close needs not S1.closed or not S2.closed or not S3.closed;
+    requirement invariant .pad_N.c_stop needs cmd_stop_pad or S1.closed and S2.closed and S3.closed and A.closing or S1.open and S2.open and S3.open and A.opening;
+    requirement invariant cmd_stop_pad disables .pad_N.c_open;
+    requirement invariant cmd_stop_pad disables .pad_N.c_close;
+  end
+  group pad_S:
+    plant automaton A:
+      location rest:
+        initial;
+        marked;
+        edge .pad_S.c_open goto opening;
+        edge .pad_S.c_close goto closing;
+      location opening:
+        edge .pad_S.c_close goto closing;
+        edge .pad_S.c_stop goto rest;
+        edge .pad_S.S1.u_closed_off, .pad_S.S1.u_open_on;
+        edge .pad_S.S2.u_closed_off, .pad_S.S2.u_open_on;
+        edge .pad_S.S3.u_closed_off, .pad_S.S3.u_open_on;
+      location closing:
+        edge .pad_S.c_open goto opening;
+        edge .pad_S.c_stop goto rest;
+        edge .pad_S.S1.u_closed_on, .pad_S.S1.u_open_off;
+        edge .pad_S.S2.u_closed_on, .pad_S.S2.u_open_off;
+        edge .pad_S.S3.u_closed_on, .pad_S.S3.u_open_off;
+    end
+    plant automaton S1:
+      location closed:
+        initial;
+        marked;
+        edge .pad_S.S1.u_closed_off goto between;
+      location between:
+        edge .pad_S.S1.u_closed_on goto closed;
+        edge .pad_S.S1.u_open_on goto open;
+      location open:
+        edge .pad_S.S1.u_open_off goto between;
+    end
+    plant automaton S2:
+      location closed:
+        initial;
+        marked;
+        edge .pad_S.S2.u_closed_off goto between;
+      location between:
+        edge .pad_S.S2.u_closed_on goto closed;
+        edge .pad_S.S2.u_open_on goto open;
+      location open:
+        edge .pad_S.S2.u_open_off goto between;
+    end
+    plant automaton S3:
+      location closed:
+        initial;
+        marked;
+        edge .pad_S.S3.u_closed_off goto between;
+      location between:
+        edge .pad_S.S3.u_closed_on goto closed;
+        edge .pad_S.S3.u_open_on goto open;
+      location open:
+        edge .pad_S.S3.u_open_off goto between;
+    end
+    requirement invariant .pad_S.c_open needs cmd_pad_o;
+    requirement invariant .pad_S.c_open needs not S1.open or not S2.open or not S3.open;
+    requirement invariant .pad_S.c_close needs cmd_pad_c;
+    requirement invariant .pad_S.c_close needs not S1.closed or not S2.closed or not S3.closed;
+    requirement invariant .pad_S.c_stop needs cmd_stop_pad or S1.closed and S2.closed and S3.closed and A.closing or S1.open and S2.open and S3.open and A.opening;
+    requirement invariant cmd_stop_pad disables .pad_S.c_open;
+    requirement invariant cmd_stop_pad disables .pad_S.c_close;
+  end
+  group culvert_N:
+    plant automaton A:
+      location closed:
+        initial;
+        marked;
+        edge .culvert_N.c_enable goto open;
+        edge .culvert_N.u_off;
+      location open:
+        edge .culvert_N.c_disable goto closed;
+        edge .culvert_N.u_on;
+    end
+    plant automaton S:
+      location noflow:
+        initial;
+        marked;
+        edge .culvert_N.u_on goto flow;
+      location flow:
+        edge .culvert_N.u_off goto noflow;
+    end
+    requirement invariant .culvert_N.c_enable needs cmd_culvert_o;
+    requirement invariant .culvert_N.c_disable needs cmd_culvert_c or cmd_stop_culvert;
+    requirement invariant cmd_stop_culvert disables .culvert_N.c_enable;
+  end
+  group culvert_S:
+    plant automaton A:
+      location closed:
+        initial;
+        marked;
+        edge .culvert_S.c_enable goto open;
+        edge .culvert_S.u_off;
+      location open:
+        edge .culvert_S.c_disable goto closed;
+        edge .culvert_S.u_on;
+    end
+    plant automaton S:
+      location noflow:
+        initial;
+        marked;
+        edge .culvert_S.u_on goto flow;
+      location flow:
+        edge .culvert_S.u_off goto noflow;
+    end
+    requirement invariant .culvert_S.c_enable needs cmd_culvert_o;
+    requirement invariant .culvert_S.c_disable needs cmd_culvert_c or cmd_stop_culvert;
+    requirement invariant cmd_stop_culvert disables .culvert_S.c_enable;
+  end
+  group gate_D_N:
+    alg bool cmd_gate_o = cmd_D_gate_o;
+    alg bool cmd_gate_c = cmd_D_gate_c;
+    alg bool cmd_stop_gate = cmd_stop_D_gate;
+    plant automaton S:
+      location closed:
+        initial;
+        marked;
+        edge .gate_D_N.u_s1_on goto bclosed;
+      location bclosed:
+        edge .gate_D_N.u_s1_off goto closed;
+        edge .gate_D_N.u_s2_on goto fclosed;
+      location fclosed:
+        edge .gate_D_N.u_s2_off goto bclosed;
+        edge .gate_D_N.u_s3_on goto middle;
+      location middle:
+        edge .gate_D_N.u_s3_off goto fclosed;
+        edge .gate_D_N.u_s4_off goto fopen;
+      location fopen:
+        edge .gate_D_N.u_s4_on goto middle;
+        edge .gate_D_N.u_s5_off goto bopen;
+      location bopen:
+        edge .gate_D_N.u_s5_on goto fopen;
+        edge .gate_D_N.u_s6_off goto open;
+      location open:
+        edge .gate_D_N.u_s6_on goto bopen;
+    end
+    plant automaton Dir:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_N.c_open goto opening;
+        edge .gate_D_N.c_close goto closing;
+      location opening:
+        edge .gate_D_N.c_close goto closing;
+        edge .gate_D_N.c_stop goto off;
+        edge .gate_D_N.u_s1_on, .gate_D_N.u_s2_on, .gate_D_N.u_s3_on, .gate_D_N.u_s4_off, .gate_D_N.u_s5_off, .gate_D_N.u_s6_off;
+      location closing:
+        edge .gate_D_N.c_open goto opening;
+        edge .gate_D_N.c_stop goto off;
+        edge .gate_D_N.u_s6_on, .gate_D_N.u_s5_on, .gate_D_N.u_s4_on, .gate_D_N.u_s3_off, .gate_D_N.u_s2_off, .gate_D_N.u_s1_off;
+    end
+    plant automaton Spe:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_N.c_fc_on goto fast_c;
+        edge .gate_D_N.c_sc_on goto slow_c;
+        edge .gate_D_N.c_fo_on goto fast_o;
+        edge .gate_D_N.c_so_on goto slow_o;
+      location fast_c:
+        edge .gate_D_N.c_fc_off goto off;
+      location slow_c:
+        edge .gate_D_N.c_sc_off goto off;
+      location fast_o:
+        edge .gate_D_N.c_fo_off goto off;
+      location slow_o:
+        edge .gate_D_N.c_so_off goto off;
+    end
+    plant automaton Pre:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_N.c_high_on goto high;
+        edge .gate_D_N.c_low_on goto low;
+      location high:
+        edge .gate_D_N.c_high_off goto off;
+      location low:
+        edge .gate_D_N.c_low_off goto off;
+    end
+    requirement invariant .gate_D_N.c_open needs cmd_gate_o and not S.open;
+    requirement invariant .gate_D_N.c_close needs cmd_gate_c and not S.closed;
+    requirement invariant .gate_D_N.c_stop needs cmd_stop_gate or S.closed and Dir.closing or S.open and Dir.opening;
+    requirement invariant cmd_stop_gate disables .gate_D_N.c_open;
+    requirement invariant cmd_stop_gate disables .gate_D_N.c_close;
+  end
+  group gate_D_S:
+    alg bool cmd_gate_o = cmd_D_gate_o;
+    alg bool cmd_gate_c = cmd_D_gate_c;
+    alg bool cmd_stop_gate = cmd_stop_D_gate;
+    plant automaton S:
+      location closed:
+        initial;
+        marked;
+        edge .gate_D_S.u_s1_on goto bclosed;
+      location bclosed:
+        edge .gate_D_S.u_s1_off goto closed;
+        edge .gate_D_S.u_s2_on goto fclosed;
+      location fclosed:
+        edge .gate_D_S.u_s2_off goto bclosed;
+        edge .gate_D_S.u_s3_on goto middle;
+      location middle:
+        edge .gate_D_S.u_s3_off goto fclosed;
+        edge .gate_D_S.u_s4_off goto fopen;
+      location fopen:
+        edge .gate_D_S.u_s4_on goto middle;
+        edge .gate_D_S.u_s5_off goto bopen;
+      location bopen:
+        edge .gate_D_S.u_s5_on goto fopen;
+        edge .gate_D_S.u_s6_off goto open;
+      location open:
+        edge .gate_D_S.u_s6_on goto bopen;
+    end
+    plant automaton Dir:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_S.c_open goto opening;
+        edge .gate_D_S.c_close goto closing;
+      location opening:
+        edge .gate_D_S.c_close goto closing;
+        edge .gate_D_S.c_stop goto off;
+        edge .gate_D_S.u_s1_on, .gate_D_S.u_s2_on, .gate_D_S.u_s3_on, .gate_D_S.u_s4_off, .gate_D_S.u_s5_off, .gate_D_S.u_s6_off;
+      location closing:
+        edge .gate_D_S.c_open goto opening;
+        edge .gate_D_S.c_stop goto off;
+        edge .gate_D_S.u_s6_on, .gate_D_S.u_s5_on, .gate_D_S.u_s4_on, .gate_D_S.u_s3_off, .gate_D_S.u_s2_off, .gate_D_S.u_s1_off;
+    end
+    plant automaton Spe:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_S.c_fc_on goto fast_c;
+        edge .gate_D_S.c_sc_on goto slow_c;
+        edge .gate_D_S.c_fo_on goto fast_o;
+        edge .gate_D_S.c_so_on goto slow_o;
+      location fast_c:
+        edge .gate_D_S.c_fc_off goto off;
+      location slow_c:
+        edge .gate_D_S.c_sc_off goto off;
+      location fast_o:
+        edge .gate_D_S.c_fo_off goto off;
+      location slow_o:
+        edge .gate_D_S.c_so_off goto off;
+    end
+    plant automaton Pre:
+      location off:
+        initial;
+        marked;
+        edge .gate_D_S.c_high_on goto high;
+        edge .gate_D_S.c_low_on goto low;
+      location high:
+        edge .gate_D_S.c_high_off goto off;
+      location low:
+        edge .gate_D_S.c_low_off goto off;
+    end
+    requirement invariant .gate_D_S.c_open needs cmd_gate_o and not S.open;
+    requirement invariant .gate_D_S.c_close needs cmd_gate_c and not S.closed;
+    requirement invariant .gate_D_S.c_stop needs cmd_stop_gate or S.closed and Dir.closing or S.open and Dir.opening;
+    requirement invariant cmd_stop_gate disables .gate_D_S.c_open;
+    requirement invariant cmd_stop_gate disables .gate_D_S.c_close;
+  end
+  group gate_U_N:
+    alg bool cmd_gate_o = cmd_U_gate_o;
+    alg bool cmd_gate_c = cmd_U_gate_c;
+    alg bool cmd_stop_gate = cmd_stop_U_gate;
+    plant automaton S:
+      location closed:
+        initial;
+        marked;
+        edge .gate_U_N.u_s1_on goto bclosed;
+      location bclosed:
+        edge .gate_U_N.u_s1_off goto closed;
+        edge .gate_U_N.u_s2_on goto fclosed;
+      location fclosed:
+        edge .gate_U_N.u_s2_off goto bclosed;
+        edge .gate_U_N.u_s3_on goto middle;
+      location middle:
+        edge .gate_U_N.u_s3_off goto fclosed;
+        edge .gate_U_N.u_s4_off goto fopen;
+      location fopen:
+        edge .gate_U_N.u_s4_on goto middle;
+        edge .gate_U_N.u_s5_off goto bopen;
+      location bopen:
+        edge .gate_U_N.u_s5_on goto fopen;
+        edge .gate_U_N.u_s6_off goto open;
+      location open:
+        edge .gate_U_N.u_s6_on goto bopen;
+    end
+    plant automaton Dir:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_N.c_open goto opening;
+        edge .gate_U_N.c_close goto closing;
+      location opening:
+        edge .gate_U_N.c_close goto closing;
+        edge .gate_U_N.c_stop goto off;
+        edge .gate_U_N.u_s1_on, .gate_U_N.u_s2_on, .gate_U_N.u_s3_on, .gate_U_N.u_s4_off, .gate_U_N.u_s5_off, .gate_U_N.u_s6_off;
+      location closing:
+        edge .gate_U_N.c_open goto opening;
+        edge .gate_U_N.c_stop goto off;
+        edge .gate_U_N.u_s6_on, .gate_U_N.u_s5_on, .gate_U_N.u_s4_on, .gate_U_N.u_s3_off, .gate_U_N.u_s2_off, .gate_U_N.u_s1_off;
+    end
+    plant automaton Spe:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_N.c_fc_on goto fast_c;
+        edge .gate_U_N.c_sc_on goto slow_c;
+        edge .gate_U_N.c_fo_on goto fast_o;
+        edge .gate_U_N.c_so_on goto slow_o;
+      location fast_c:
+        edge .gate_U_N.c_fc_off goto off;
+      location slow_c:
+        edge .gate_U_N.c_sc_off goto off;
+      location fast_o:
+        edge .gate_U_N.c_fo_off goto off;
+      location slow_o:
+        edge .gate_U_N.c_so_off goto off;
+    end
+    plant automaton Pre:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_N.c_high_on goto high;
+        edge .gate_U_N.c_low_on goto low;
+      location high:
+        edge .gate_U_N.c_high_off goto off;
+      location low:
+        edge .gate_U_N.c_low_off goto off;
+    end
+    requirement invariant .gate_U_N.c_open needs cmd_gate_o and not S.open;
+    requirement invariant .gate_U_N.c_close needs cmd_gate_c and not S.closed;
+    requirement invariant .gate_U_N.c_stop needs cmd_stop_gate or S.closed and Dir.closing or S.open and Dir.opening;
+    requirement invariant cmd_stop_gate disables .gate_U_N.c_open;
+    requirement invariant cmd_stop_gate disables .gate_U_N.c_close;
+  end
+  group gate_U_S:
+    alg bool cmd_gate_o = cmd_U_gate_o;
+    alg bool cmd_gate_c = cmd_U_gate_c;
+    alg bool cmd_stop_gate = cmd_stop_U_gate;
+    plant automaton S:
+      location closed:
+        initial;
+        marked;
+        edge .gate_U_S.u_s1_on goto bclosed;
+      location bclosed:
+        edge .gate_U_S.u_s1_off goto closed;
+        edge .gate_U_S.u_s2_on goto fclosed;
+      location fclosed:
+        edge .gate_U_S.u_s2_off goto bclosed;
+        edge .gate_U_S.u_s3_on goto middle;
+      location middle:
+        edge .gate_U_S.u_s3_off goto fclosed;
+        edge .gate_U_S.u_s4_off goto fopen;
+      location fopen:
+        edge .gate_U_S.u_s4_on goto middle;
+        edge .gate_U_S.u_s5_off goto bopen;
+      location bopen:
+        edge .gate_U_S.u_s5_on goto fopen;
+        edge .gate_U_S.u_s6_off goto open;
+      location open:
+        edge .gate_U_S.u_s6_on goto bopen;
+    end
+    plant automaton Dir:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_S.c_open goto opening;
+        edge .gate_U_S.c_close goto closing;
+      location opening:
+        edge .gate_U_S.c_close goto closing;
+        edge .gate_U_S.c_stop goto off;
+        edge .gate_U_S.u_s1_on, .gate_U_S.u_s2_on, .gate_U_S.u_s3_on, .gate_U_S.u_s4_off, .gate_U_S.u_s5_off, .gate_U_S.u_s6_off;
+      location closing:
+        edge .gate_U_S.c_open goto opening;
+        edge .gate_U_S.c_stop goto off;
+        edge .gate_U_S.u_s6_on, .gate_U_S.u_s5_on, .gate_U_S.u_s4_on, .gate_U_S.u_s3_off, .gate_U_S.u_s2_off, .gate_U_S.u_s1_off;
+    end
+    plant automaton Spe:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_S.c_fc_on goto fast_c;
+        edge .gate_U_S.c_sc_on goto slow_c;
+        edge .gate_U_S.c_fo_on goto fast_o;
+        edge .gate_U_S.c_so_on goto slow_o;
+      location fast_c:
+        edge .gate_U_S.c_fc_off goto off;
+      location slow_c:
+        edge .gate_U_S.c_sc_off goto off;
+      location fast_o:
+        edge .gate_U_S.c_fo_off goto off;
+      location slow_o:
+        edge .gate_U_S.c_so_off goto off;
+    end
+    plant automaton Pre:
+      location off:
+        initial;
+        marked;
+        edge .gate_U_S.c_high_on goto high;
+        edge .gate_U_S.c_low_on goto low;
+      location high:
+        edge .gate_U_S.c_high_off goto off;
+      location low:
+        edge .gate_U_S.c_low_off goto off;
+    end
+    requirement invariant .gate_U_S.c_open needs cmd_gate_o and not S.open;
+    requirement invariant .gate_U_S.c_close needs cmd_gate_c and not S.closed;
+    requirement invariant .gate_U_S.c_stop needs cmd_stop_gate or S.closed and Dir.closing or S.open and Dir.opening;
+    requirement invariant cmd_stop_gate disables .gate_U_S.c_open;
+    requirement invariant cmd_stop_gate disables .gate_U_S.c_close;
+  end
+  plant automaton s_equal_D:
+    location off:
+      marked;
+      edge .s_equal_D.u_equal_on goto on;
+    location on:
+      initial;
+      marked;
+      edge .s_equal_D.u_equal_off goto off;
+  end
+  plant automaton s_equal_U:
+    location off:
+      initial;
+      marked;
+      edge .s_equal_U.u_equal_on goto on;
+    location on:
+      marked;
+      edge .s_equal_U.u_equal_off goto off;
+  end
+  group out_D_N:
+    alg bool cmd_out_r = cmd_D_out_r;
+    alg bool cmd_out_g = cmd_D_out_g;
+    plant automaton S:
+      location off:
+        edge .out_D_N.u_r_on goto red;
+        edge .out_D_N.u_g_on goto green;
+      location red:
+        initial;
+        marked;
+        edge .out_D_N.u_r_off goto off;
+        edge .out_D_N.u_g_on goto redgreen;
+      location green:
+        edge .out_D_N.u_r_on goto redgreen;
+        edge .out_D_N.u_g_off goto off;
+      location redgreen:
+        edge .out_D_N.u_r_off goto green;
+        edge .out_D_N.u_g_off goto red;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .out_D_N.c_green goto green;
+        edge .out_D_N.u_r_on, .out_D_N.u_g_off;
+      location green:
+        edge .out_D_N.c_red goto red;
+        edge .out_D_N.u_g_on, .out_D_N.u_r_off;
+    end
+    requirement invariant .out_D_N.c_red needs cmd_out_r or cmd_stop;
+    requirement invariant .out_D_N.c_green needs cmd_out_g;
+    requirement invariant cmd_stop disables .out_D_N.c_green;
+  end
+  group out_D_S:
+    alg bool cmd_out_r = cmd_D_out_r;
+    alg bool cmd_out_g = cmd_D_out_g;
+    plant automaton S:
+      location off:
+        edge .out_D_S.u_r_on goto red;
+        edge .out_D_S.u_g_on goto green;
+      location red:
+        initial;
+        marked;
+        edge .out_D_S.u_r_off goto off;
+        edge .out_D_S.u_g_on goto redgreen;
+      location green:
+        edge .out_D_S.u_r_on goto redgreen;
+        edge .out_D_S.u_g_off goto off;
+      location redgreen:
+        edge .out_D_S.u_r_off goto green;
+        edge .out_D_S.u_g_off goto red;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .out_D_S.c_green goto green;
+        edge .out_D_S.u_r_on, .out_D_S.u_g_off;
+      location green:
+        edge .out_D_S.c_red goto red;
+        edge .out_D_S.u_g_on, .out_D_S.u_r_off;
+    end
+    requirement invariant .out_D_S.c_red needs cmd_out_r or cmd_stop;
+    requirement invariant .out_D_S.c_green needs cmd_out_g;
+    requirement invariant cmd_stop disables .out_D_S.c_green;
+  end
+  group out_U_N:
+    alg bool cmd_out_r = cmd_U_out_r;
+    alg bool cmd_out_g = cmd_U_out_g;
+    plant automaton S:
+      location off:
+        edge .out_U_N.u_r_on goto red;
+        edge .out_U_N.u_g_on goto green;
+      location red:
+        initial;
+        marked;
+        edge .out_U_N.u_r_off goto off;
+        edge .out_U_N.u_g_on goto redgreen;
+      location green:
+        edge .out_U_N.u_r_on goto redgreen;
+        edge .out_U_N.u_g_off goto off;
+      location redgreen:
+        edge .out_U_N.u_r_off goto green;
+        edge .out_U_N.u_g_off goto red;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .out_U_N.c_green goto green;
+        edge .out_U_N.u_r_on, .out_U_N.u_g_off;
+      location green:
+        edge .out_U_N.c_red goto red;
+        edge .out_U_N.u_g_on, .out_U_N.u_r_off;
+    end
+    requirement invariant .out_U_N.c_red needs cmd_out_r or cmd_stop;
+    requirement invariant .out_U_N.c_green needs cmd_out_g;
+    requirement invariant cmd_stop disables .out_U_N.c_green;
+  end
+  group out_U_S:
+    alg bool cmd_out_r = cmd_U_out_r;
+    alg bool cmd_out_g = cmd_U_out_g;
+    plant automaton S:
+      location off:
+        edge .out_U_S.u_r_on goto red;
+        edge .out_U_S.u_g_on goto green;
+      location red:
+        initial;
+        marked;
+        edge .out_U_S.u_r_off goto off;
+        edge .out_U_S.u_g_on goto redgreen;
+      location green:
+        edge .out_U_S.u_r_on goto redgreen;
+        edge .out_U_S.u_g_off goto off;
+      location redgreen:
+        edge .out_U_S.u_r_off goto green;
+        edge .out_U_S.u_g_off goto red;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .out_U_S.c_green goto green;
+        edge .out_U_S.u_r_on, .out_U_S.u_g_off;
+      location green:
+        edge .out_U_S.c_red goto red;
+        edge .out_U_S.u_g_on, .out_U_S.u_r_off;
+    end
+    requirement invariant .out_U_S.c_red needs cmd_out_r or cmd_stop;
+    requirement invariant .out_U_S.c_green needs cmd_out_g;
+    requirement invariant cmd_stop disables .out_U_S.c_green;
+  end
+  group in_D_N:
+    alg bool cmd_in_red = cmd_D_in_r;
+    alg bool cmd_in_green = cmd_D_in_g;
+    alg bool cmd_in_rg = cmd_D_in_rg;
+    alg bool cmd_in_redred = cmd_D_in_rr;
+    plant automaton S:
+      location off:
+        edge .in_D_N.u_r_on goto red;
+        edge .in_D_N.u_g_on goto green;
+        edge .in_D_N.u_s_on goto lowred;
+      location red:
+        initial;
+        marked;
+        edge .in_D_N.u_r_off goto off;
+        edge .in_D_N.u_g_on goto redgreen;
+        edge .in_D_N.u_s_on goto redred;
+      location green:
+        edge .in_D_N.u_r_on goto redgreen;
+        edge .in_D_N.u_g_off goto off;
+        edge .in_D_N.u_s_on goto greenred;
+      location lowred:
+        edge .in_D_N.u_r_on goto redred;
+        edge .in_D_N.u_g_on goto greenred;
+        edge .in_D_N.u_s_off goto off;
+      location redgreen:
+        edge .in_D_N.u_r_off goto green;
+        edge .in_D_N.u_g_off goto red;
+        edge .in_D_N.u_s_on goto redgreenred;
+      location redred:
+        edge .in_D_N.u_r_off goto lowred;
+        edge .in_D_N.u_g_on goto redgreenred;
+        edge .in_D_N.u_s_off goto red;
+      location greenred:
+        edge .in_D_N.u_r_on goto redgreenred;
+        edge .in_D_N.u_g_off goto lowred;
+        edge .in_D_N.u_s_off goto green;
+      location redgreenred:
+        edge .in_D_N.u_r_off goto greenred;
+        edge .in_D_N.u_g_off goto redred;
+        edge .in_D_N.u_s_off goto redgreen;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .in_D_N.c_redgreen goto redgreen;
+        edge .in_D_N.c_redred goto redred;
+        edge .in_D_N.u_r_on, .in_D_N.u_g_off, .in_D_N.u_s_off;
+      location green:
+        edge .in_D_N.c_red goto red;
+        edge .in_D_N.c_redgreen goto redgreen;
+        edge .in_D_N.u_r_off, .in_D_N.u_g_on, .in_D_N.u_s_off;
+      location redred:
+        edge .in_D_N.c_red goto red;
+        edge .in_D_N.u_r_on, .in_D_N.u_g_off, .in_D_N.u_s_on;
+      location redgreen:
+        edge .in_D_N.c_green goto green;
+        edge .in_D_N.c_red goto red;
+        edge .in_D_N.u_r_on, .in_D_N.u_g_on, .in_D_N.u_s_off;
+    end
+    requirement invariant .in_D_N.c_red needs cmd_in_red or cmd_stop;
+    requirement invariant .in_D_N.c_green needs cmd_in_green;
+    requirement invariant .in_D_N.c_redgreen needs cmd_in_rg;
+    requirement invariant .in_D_N.c_redred needs cmd_in_redred;
+    requirement invariant cmd_stop disables .in_D_N.c_green;
+    requirement invariant cmd_stop disables .in_D_N.c_redgreen;
+    requirement invariant cmd_stop disables .in_D_N.c_redred;
+  end
+  group in_D_S:
+    alg bool cmd_in_red = cmd_D_in_r;
+    alg bool cmd_in_green = cmd_D_in_g;
+    alg bool cmd_in_rg = cmd_D_in_rg;
+    alg bool cmd_in_redred = cmd_D_in_rr;
+    plant automaton S:
+      location off:
+        edge .in_D_S.u_r_on goto red;
+        edge .in_D_S.u_g_on goto green;
+        edge .in_D_S.u_s_on goto lowred;
+      location red:
+        initial;
+        marked;
+        edge .in_D_S.u_r_off goto off;
+        edge .in_D_S.u_g_on goto redgreen;
+        edge .in_D_S.u_s_on goto redred;
+      location green:
+        edge .in_D_S.u_r_on goto redgreen;
+        edge .in_D_S.u_g_off goto off;
+        edge .in_D_S.u_s_on goto greenred;
+      location lowred:
+        edge .in_D_S.u_r_on goto redred;
+        edge .in_D_S.u_g_on goto greenred;
+        edge .in_D_S.u_s_off goto off;
+      location redgreen:
+        edge .in_D_S.u_r_off goto green;
+        edge .in_D_S.u_g_off goto red;
+        edge .in_D_S.u_s_on goto redgreenred;
+      location redred:
+        edge .in_D_S.u_r_off goto lowred;
+        edge .in_D_S.u_g_on goto redgreenred;
+        edge .in_D_S.u_s_off goto red;
+      location greenred:
+        edge .in_D_S.u_r_on goto redgreenred;
+        edge .in_D_S.u_g_off goto lowred;
+        edge .in_D_S.u_s_off goto green;
+      location redgreenred:
+        edge .in_D_S.u_r_off goto greenred;
+        edge .in_D_S.u_g_off goto redred;
+        edge .in_D_S.u_s_off goto redgreen;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .in_D_S.c_redgreen goto redgreen;
+        edge .in_D_S.c_redred goto redred;
+        edge .in_D_S.u_r_on, .in_D_S.u_g_off, .in_D_S.u_s_off;
+      location green:
+        edge .in_D_S.c_red goto red;
+        edge .in_D_S.c_redgreen goto redgreen;
+        edge .in_D_S.u_r_off, .in_D_S.u_g_on, .in_D_S.u_s_off;
+      location redred:
+        edge .in_D_S.c_red goto red;
+        edge .in_D_S.u_r_on, .in_D_S.u_g_off, .in_D_S.u_s_on;
+      location redgreen:
+        edge .in_D_S.c_green goto green;
+        edge .in_D_S.c_red goto red;
+        edge .in_D_S.u_r_on, .in_D_S.u_g_on, .in_D_S.u_s_off;
+    end
+    requirement invariant .in_D_S.c_red needs cmd_in_red or cmd_stop;
+    requirement invariant .in_D_S.c_green needs cmd_in_green;
+    requirement invariant .in_D_S.c_redgreen needs cmd_in_rg;
+    requirement invariant .in_D_S.c_redred needs cmd_in_redred;
+    requirement invariant cmd_stop disables .in_D_S.c_green;
+    requirement invariant cmd_stop disables .in_D_S.c_redgreen;
+    requirement invariant cmd_stop disables .in_D_S.c_redred;
+  end
+  group in_U_N:
+    alg bool cmd_in_red = cmd_U_in_r;
+    alg bool cmd_in_green = cmd_U_in_g;
+    alg bool cmd_in_rg = cmd_U_in_rg;
+    alg bool cmd_in_redred = cmd_U_in_rr;
+    plant automaton S:
+      location off:
+        edge .in_U_N.u_r_on goto red;
+        edge .in_U_N.u_g_on goto green;
+        edge .in_U_N.u_s_on goto lowred;
+      location red:
+        initial;
+        marked;
+        edge .in_U_N.u_r_off goto off;
+        edge .in_U_N.u_g_on goto redgreen;
+        edge .in_U_N.u_s_on goto redred;
+      location green:
+        edge .in_U_N.u_r_on goto redgreen;
+        edge .in_U_N.u_g_off goto off;
+        edge .in_U_N.u_s_on goto greenred;
+      location lowred:
+        edge .in_U_N.u_r_on goto redred;
+        edge .in_U_N.u_g_on goto greenred;
+        edge .in_U_N.u_s_off goto off;
+      location redgreen:
+        edge .in_U_N.u_r_off goto green;
+        edge .in_U_N.u_g_off goto red;
+        edge .in_U_N.u_s_on goto redgreenred;
+      location redred:
+        edge .in_U_N.u_r_off goto lowred;
+        edge .in_U_N.u_g_on goto redgreenred;
+        edge .in_U_N.u_s_off goto red;
+      location greenred:
+        edge .in_U_N.u_r_on goto redgreenred;
+        edge .in_U_N.u_g_off goto lowred;
+        edge .in_U_N.u_s_off goto green;
+      location redgreenred:
+        edge .in_U_N.u_r_off goto greenred;
+        edge .in_U_N.u_g_off goto redred;
+        edge .in_U_N.u_s_off goto redgreen;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .in_U_N.c_redgreen goto redgreen;
+        edge .in_U_N.c_redred goto redred;
+        edge .in_U_N.u_r_on, .in_U_N.u_g_off, .in_U_N.u_s_off;
+      location green:
+        edge .in_U_N.c_red goto red;
+        edge .in_U_N.c_redgreen goto redgreen;
+        edge .in_U_N.u_r_off, .in_U_N.u_g_on, .in_U_N.u_s_off;
+      location redred:
+        edge .in_U_N.c_red goto red;
+        edge .in_U_N.u_r_on, .in_U_N.u_g_off, .in_U_N.u_s_on;
+      location redgreen:
+        edge .in_U_N.c_green goto green;
+        edge .in_U_N.c_red goto red;
+        edge .in_U_N.u_r_on, .in_U_N.u_g_on, .in_U_N.u_s_off;
+    end
+    requirement invariant .in_U_N.c_red needs cmd_in_red or cmd_stop;
+    requirement invariant .in_U_N.c_green needs cmd_in_green;
+    requirement invariant .in_U_N.c_redgreen needs cmd_in_rg;
+    requirement invariant .in_U_N.c_redred needs cmd_in_redred;
+    requirement invariant cmd_stop disables .in_U_N.c_green;
+    requirement invariant cmd_stop disables .in_U_N.c_redgreen;
+    requirement invariant cmd_stop disables .in_U_N.c_redred;
+  end
+  group in_U_S:
+    alg bool cmd_in_red = cmd_U_in_r;
+    alg bool cmd_in_green = cmd_U_in_g;
+    alg bool cmd_in_rg = cmd_U_in_rg;
+    alg bool cmd_in_redred = cmd_U_in_rr;
+    plant automaton S:
+      location off:
+        edge .in_U_S.u_r_on goto red;
+        edge .in_U_S.u_g_on goto green;
+        edge .in_U_S.u_s_on goto lowred;
+      location red:
+        initial;
+        marked;
+        edge .in_U_S.u_r_off goto off;
+        edge .in_U_S.u_g_on goto redgreen;
+        edge .in_U_S.u_s_on goto redred;
+      location green:
+        edge .in_U_S.u_r_on goto redgreen;
+        edge .in_U_S.u_g_off goto off;
+        edge .in_U_S.u_s_on goto greenred;
+      location lowred:
+        edge .in_U_S.u_r_on goto redred;
+        edge .in_U_S.u_g_on goto greenred;
+        edge .in_U_S.u_s_off goto off;
+      location redgreen:
+        edge .in_U_S.u_r_off goto green;
+        edge .in_U_S.u_g_off goto red;
+        edge .in_U_S.u_s_on goto redgreenred;
+      location redred:
+        edge .in_U_S.u_r_off goto lowred;
+        edge .in_U_S.u_g_on goto redgreenred;
+        edge .in_U_S.u_s_off goto red;
+      location greenred:
+        edge .in_U_S.u_r_on goto redgreenred;
+        edge .in_U_S.u_g_off goto lowred;
+        edge .in_U_S.u_s_off goto green;
+      location redgreenred:
+        edge .in_U_S.u_r_off goto greenred;
+        edge .in_U_S.u_g_off goto redred;
+        edge .in_U_S.u_s_off goto redgreen;
+    end
+    plant automaton A:
+      location red:
+        initial;
+        marked;
+        edge .in_U_S.c_redgreen goto redgreen;
+        edge .in_U_S.c_redred goto redred;
+        edge .in_U_S.u_r_on, .in_U_S.u_g_off, .in_U_S.u_s_off;
+      location green:
+        edge .in_U_S.c_red goto red;
+        edge .in_U_S.c_redgreen goto redgreen;
+        edge .in_U_S.u_r_off, .in_U_S.u_g_on, .in_U_S.u_s_off;
+      location redred:
+        edge .in_U_S.c_red goto red;
+        edge .in_U_S.u_r_on, .in_U_S.u_g_off, .in_U_S.u_s_on;
+      location redgreen:
+        edge .in_U_S.c_green goto green;
+        edge .in_U_S.c_red goto red;
+        edge .in_U_S.u_r_on, .in_U_S.u_g_on, .in_U_S.u_s_off;
+    end
+    requirement invariant .in_U_S.c_red needs cmd_in_red or cmd_stop;
+    requirement invariant .in_U_S.c_green needs cmd_in_green;
+    requirement invariant .in_U_S.c_redgreen needs cmd_in_rg;
+    requirement invariant .in_U_S.c_redred needs cmd_in_redred;
+    requirement invariant cmd_stop disables .in_U_S.c_green;
+    requirement invariant cmd_stop disables .in_U_S.c_redgreen;
+    requirement invariant cmd_stop disables .in_U_S.c_redred;
+  end
+  group req_door_D_S:
+    alg bool s_closed = gate_D_S.S.closed;
+    alg bool s_bclosed = gate_D_S.S.bclosed;
+    alg bool s_frclosed = gate_D_S.S.fclosed;
+    alg bool s_middle = gate_D_S.S.middle;
+    alg bool s_fropen = gate_D_S.S.fopen;
+    alg bool s_bopen = gate_D_S.S.bopen;
+    alg bool s_open = gate_D_S.S.open;
+    alg bool closing = gate_D_S.Dir.closing;
+    alg bool opening = gate_D_S.Dir.opening;
+    requirement invariant .gate_D_S.c_fc_on needs not(s_bclosed or s_closed) and closing;
+    requirement invariant .gate_D_S.c_fc_off needs s_bclosed or s_closed;
+    requirement invariant .gate_D_S.c_sc_on needs s_bclosed and closing;
+    requirement invariant .gate_D_S.c_sc_off needs not s_bclosed;
+    requirement invariant .gate_D_S.c_fo_on needs not(s_bopen or s_open) and opening;
+    requirement invariant .gate_D_S.c_fo_off needs s_bopen or s_open;
+    requirement invariant .gate_D_S.c_so_on needs s_bopen and opening;
+    requirement invariant .gate_D_S.c_so_off needs not s_bopen;
+    requirement invariant .gate_D_S.c_high_on needs (s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening;
+    requirement invariant .gate_D_S.c_high_off needs not((s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening);
+    requirement invariant .gate_D_S.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
+    requirement invariant .gate_D_S.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
+  end
+  group req_door_D_N:
+    alg bool s_closed = gate_D_N.S.closed;
+    alg bool s_bclosed = gate_D_N.S.bclosed;
+    alg bool s_frclosed = gate_D_N.S.fclosed;
+    alg bool s_middle = gate_D_N.S.middle;
+    alg bool s_fropen = gate_D_N.S.fopen;
+    alg bool s_bopen = gate_D_N.S.bopen;
+    alg bool s_open = gate_D_N.S.open;
+    alg bool closing = gate_D_N.Dir.closing;
+    alg bool opening = gate_D_N.Dir.opening;
+    requirement invariant .gate_D_N.c_fc_on needs not(s_bclosed or s_closed) and closing;
+    requirement invariant .gate_D_N.c_fc_off needs s_bclosed or s_closed;
+    requirement invariant .gate_D_N.c_sc_on needs s_bclosed and closing;
+    requirement invariant .gate_D_N.c_sc_off needs not s_bclosed;
+    requirement invariant .gate_D_N.c_fo_on needs not(s_bopen or s_open) and opening;
+    requirement invariant .gate_D_N.c_fo_off needs s_bopen or s_open;
+    requirement invariant .gate_D_N.c_so_on needs s_bopen and opening;
+    requirement invariant .gate_D_N.c_so_off needs not s_bopen;
+    requirement invariant .gate_D_N.c_high_on needs (s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening;
+    requirement invariant .gate_D_N.c_high_off needs not((s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening);
+    requirement invariant .gate_D_N.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
+    requirement invariant .gate_D_N.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
+  end
+  group req_door_U_S:
+    alg bool s_closed = gate_U_S.S.closed;
+    alg bool s_bclosed = gate_U_S.S.bclosed;
+    alg bool s_frclosed = gate_U_S.S.fclosed;
+    alg bool s_middle = gate_U_S.S.middle;
+    alg bool s_fropen = gate_U_S.S.fopen;
+    alg bool s_bopen = gate_U_S.S.bopen;
+    alg bool s_open = gate_U_S.S.open;
+    alg bool closing = gate_U_S.Dir.closing;
+    alg bool opening = gate_U_S.Dir.opening;
+    requirement invariant .gate_U_S.c_fc_on needs not(s_bclosed or s_closed) and closing;
+    requirement invariant .gate_U_S.c_fc_off needs s_bclosed or s_closed;
+    requirement invariant .gate_U_S.c_sc_on needs s_bclosed and closing;
+    requirement invariant .gate_U_S.c_sc_off needs not s_bclosed;
+    requirement invariant .gate_U_S.c_fo_on needs not(s_bopen or s_open) and opening;
+    requirement invariant .gate_U_S.c_fo_off needs s_bopen or s_open;
+    requirement invariant .gate_U_S.c_so_on needs s_bopen and opening;
+    requirement invariant .gate_U_S.c_so_off needs not s_bopen;
+    requirement invariant .gate_U_S.c_high_on needs (s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening;
+    requirement invariant .gate_U_S.c_high_off needs not((s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening);
+    requirement invariant .gate_U_S.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
+    requirement invariant .gate_U_S.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
+  end
+  group req_door_U_N:
+    alg bool s_closed = gate_U_N.S.closed;
+    alg bool s_bclosed = gate_U_N.S.bclosed;
+    alg bool s_frclosed = gate_U_N.S.fclosed;
+    alg bool s_middle = gate_U_N.S.middle;
+    alg bool s_fropen = gate_U_N.S.fopen;
+    alg bool s_bopen = gate_U_N.S.bopen;
+    alg bool s_open = gate_U_N.S.open;
+    alg bool closing = gate_U_N.Dir.closing;
+    alg bool opening = gate_U_N.Dir.opening;
+    requirement invariant .gate_U_N.c_fc_on needs not(s_bclosed or s_closed) and closing;
+    requirement invariant .gate_U_N.c_fc_off needs s_bclosed or s_closed;
+    requirement invariant .gate_U_N.c_sc_on needs s_bclosed and closing;
+    requirement invariant .gate_U_N.c_sc_off needs not s_bclosed;
+    requirement invariant .gate_U_N.c_fo_on needs not(s_bopen or s_open) and opening;
+    requirement invariant .gate_U_N.c_fo_off needs s_bopen or s_open;
+    requirement invariant .gate_U_N.c_so_on needs s_bopen and opening;
+    requirement invariant .gate_U_N.c_so_off needs not s_bopen;
+    requirement invariant .gate_U_N.c_high_on needs (s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening;
+    requirement invariant .gate_U_N.c_high_off needs not((s_open or s_bopen or s_fropen or s_middle) and closing or (s_closed or s_bclosed or s_frclosed or s_middle) and opening);
+    requirement invariant .gate_U_N.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
+    requirement invariant .gate_U_N.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
+  end
+  supervisor automaton sup:
+    alphabet .pad_N.c_open, .pad_N.c_close, .pad_N.c_stop, .pad_S.c_open, .pad_S.c_close, .pad_S.c_stop, .culvert_N.c_enable, .culvert_N.c_disable, .culvert_S.c_enable, .culvert_S.c_disable, .gate_D_N.c_open, .gate_D_N.c_close, .gate_D_N.c_stop, .gate_D_N.c_fc_on, .gate_D_N.c_sc_on, .gate_D_N.c_fo_on, .gate_D_N.c_so_on, .gate_D_N.c_fc_off, .gate_D_N.c_sc_off, .gate_D_N.c_fo_off, .gate_D_N.c_so_off, .gate_D_N.c_high_on, .gate_D_N.c_low_on, .gate_D_N.c_high_off, .gate_D_N.c_low_off, .gate_D_S.c_open, .gate_D_S.c_close, .gate_D_S.c_stop, .gate_D_S.c_fc_on, .gate_D_S.c_sc_on, .gate_D_S.c_fo_on, .gate_D_S.c_so_on, .gate_D_S.c_fc_off, .gate_D_S.c_sc_off, .gate_D_S.c_fo_off, .gate_D_S.c_so_off, .gate_D_S.c_high_on, .gate_D_S.c_low_on, .gate_D_S.c_high_off, .gate_D_S.c_low_off, .gate_U_N.c_open, .gate_U_N.c_close, .gate_U_N.c_stop, .gate_U_N.c_fc_on, .gate_U_N.c_sc_on, .gate_U_N.c_fo_on, .gate_U_N.c_so_on, .gate_U_N.c_fc_off, .gate_U_N.c_sc_off, .gate_U_N.c_fo_off, .gate_U_N.c_so_off, .gate_U_N.c_high_on, .gate_U_N.c_low_on, .gate_U_N.c_high_off, .gate_U_N.c_low_off, .gate_U_S.c_open, .gate_U_S.c_close, .gate_U_S.c_stop, .gate_U_S.c_fc_on, .gate_U_S.c_sc_on, .gate_U_S.c_fo_on, .gate_U_S.c_so_on, .gate_U_S.c_fc_off, .gate_U_S.c_sc_off, .gate_U_S.c_fo_off, .gate_U_S.c_so_off, .gate_U_S.c_high_on, .gate_U_S.c_low_on, .gate_U_S.c_high_off, .gate_U_S.c_low_off, .out_D_N.c_green, .out_D_N.c_red, .out_D_S.c_green, .out_D_S.c_red, .out_U_N.c_green, .out_U_N.c_red, .out_U_S.c_green, .out_U_S.c_red, .in_D_N.c_redgreen, .in_D_N.c_redred, .in_D_N.c_red, .in_D_N.c_green, .in_D_S.c_redgreen, .in_D_S.c_redred, .in_D_S.c_red, .in_D_S.c_green, .in_U_N.c_redgreen, .in_U_N.c_redred, .in_U_N.c_red, .in_U_N.c_green, .in_U_S.c_redgreen, .in_U_S.c_redred, .in_U_S.c_red, .in_U_S.c_green;
+    location:
+      initial;
+      marked;
+      edge .culvert_N.c_disable when true;
+      edge .culvert_N.c_enable when true;
+      edge .culvert_S.c_disable when true;
+      edge .culvert_S.c_enable when true;
+      edge .gate_D_N.c_close when true;
+      edge .gate_D_N.c_fc_off when true;
+      edge .gate_D_N.c_fc_on when true;
+      edge .gate_D_N.c_fo_off when true;
+      edge .gate_D_N.c_fo_on when true;
+      edge .gate_D_N.c_high_off when true;
+      edge .gate_D_N.c_high_on when true;
+      edge .gate_D_N.c_low_off when true;
+      edge .gate_D_N.c_low_on when true;
+      edge .gate_D_N.c_open when true;
+      edge .gate_D_N.c_sc_off when true;
+      edge .gate_D_N.c_sc_on when true;
+      edge .gate_D_N.c_so_off when true;
+      edge .gate_D_N.c_so_on when true;
+      edge .gate_D_N.c_stop when true;
+      edge .gate_D_S.c_close when true;
+      edge .gate_D_S.c_fc_off when true;
+      edge .gate_D_S.c_fc_on when true;
+      edge .gate_D_S.c_fo_off when true;
+      edge .gate_D_S.c_fo_on when true;
+      edge .gate_D_S.c_high_off when true;
+      edge .gate_D_S.c_high_on when true;
+      edge .gate_D_S.c_low_off when true;
+      edge .gate_D_S.c_low_on when true;
+      edge .gate_D_S.c_open when true;
+      edge .gate_D_S.c_sc_off when true;
+      edge .gate_D_S.c_sc_on when true;
+      edge .gate_D_S.c_so_off when true;
+      edge .gate_D_S.c_so_on when true;
+      edge .gate_D_S.c_stop when true;
+      edge .gate_U_N.c_close when true;
+      edge .gate_U_N.c_fc_off when true;
+      edge .gate_U_N.c_fc_on when true;
+      edge .gate_U_N.c_fo_off when true;
+      edge .gate_U_N.c_fo_on when true;
+      edge .gate_U_N.c_high_off when true;
+      edge .gate_U_N.c_high_on when true;
+      edge .gate_U_N.c_low_off when true;
+      edge .gate_U_N.c_low_on when true;
+      edge .gate_U_N.c_open when true;
+      edge .gate_U_N.c_sc_off when true;
+      edge .gate_U_N.c_sc_on when true;
+      edge .gate_U_N.c_so_off when true;
+      edge .gate_U_N.c_so_on when true;
+      edge .gate_U_N.c_stop when true;
+      edge .gate_U_S.c_close when true;
+      edge .gate_U_S.c_fc_off when true;
+      edge .gate_U_S.c_fc_on when true;
+      edge .gate_U_S.c_fo_off when true;
+      edge .gate_U_S.c_fo_on when true;
+      edge .gate_U_S.c_high_off when true;
+      edge .gate_U_S.c_high_on when true;
+      edge .gate_U_S.c_low_off when true;
+      edge .gate_U_S.c_low_on when true;
+      edge .gate_U_S.c_open when true;
+      edge .gate_U_S.c_sc_off when true;
+      edge .gate_U_S.c_sc_on when true;
+      edge .gate_U_S.c_so_off when true;
+      edge .gate_U_S.c_so_on when true;
+      edge .gate_U_S.c_stop when true;
+      edge .in_D_N.c_green when true;
+      edge .in_D_N.c_red when true;
+      edge .in_D_N.c_redgreen when true;
+      edge .in_D_N.c_redred when true;
+      edge .in_D_S.c_green when true;
+      edge .in_D_S.c_red when true;
+      edge .in_D_S.c_redgreen when true;
+      edge .in_D_S.c_redred when true;
+      edge .in_U_N.c_green when true;
+      edge .in_U_N.c_red when true;
+      edge .in_U_N.c_redgreen when true;
+      edge .in_U_N.c_redred when true;
+      edge .in_U_S.c_green when true;
+      edge .in_U_S.c_red when true;
+      edge .in_U_S.c_redgreen when true;
+      edge .in_U_S.c_redred when true;
+      edge .out_D_N.c_green when true;
+      edge .out_D_N.c_red when true;
+      edge .out_D_S.c_green when true;
+      edge .out_D_S.c_red when true;
+      edge .out_U_N.c_green when true;
+      edge .out_U_N.c_red when true;
+      edge .out_U_S.c_green when true;
+      edge .out_U_S.c_red when true;
+      edge .pad_N.c_close when true;
+      edge .pad_N.c_open when true;
+      edge .pad_N.c_stop when true;
+      edge .pad_S.c_close when true;
+      edge .pad_S.c_open when true;
+      edge .pad_S.c_stop when true;
+  end
+  requirement invariant emergencystop.pushed disables .in_D_N.c_green;
+  requirement invariant emergencystop.pushed disables .in_D_S.c_green;
+  requirement invariant emergencystop.pushed disables .in_U_N.c_green;
+  requirement invariant emergencystop.pushed disables .in_U_S.c_green;
+  requirement invariant emergencystop.pushed disables .in_D_N.c_redgreen;
+  requirement invariant emergencystop.pushed disables .in_D_S.c_redgreen;
+  requirement invariant emergencystop.pushed disables .in_U_N.c_redgreen;
+  requirement invariant emergencystop.pushed disables .in_U_S.c_redgreen;
+  requirement invariant emergencystop.pushed disables .out_D_N.c_green;
+  requirement invariant emergencystop.pushed disables .out_D_S.c_green;
+  requirement invariant emergencystop.pushed disables .out_U_N.c_green;
+  requirement invariant emergencystop.pushed disables .out_U_S.c_green;
+  requirement invariant emergencystop.pushed disables .pad_N.c_open;
+  requirement invariant emergencystop.pushed disables .pad_S.c_open;
+  requirement invariant emergencystop.pushed disables .pad_N.c_close;
+  requirement invariant emergencystop.pushed disables .pad_S.c_close;
+  requirement invariant emergencystop.pushed disables .culvert_N.c_enable;
+  requirement invariant emergencystop.pushed disables .culvert_S.c_enable;
+  requirement invariant emergencystop.pushed disables .gate_D_N.c_open;
+  requirement invariant emergencystop.pushed disables .gate_D_S.c_open;
+  requirement invariant emergencystop.pushed disables .gate_U_N.c_open;
+  requirement invariant emergencystop.pushed disables .gate_U_S.c_open;
+  requirement invariant emergencystop.pushed disables .gate_D_N.c_close;
+  requirement invariant emergencystop.pushed disables .gate_D_S.c_close;
+  requirement invariant emergencystop.pushed disables .gate_U_N.c_close;
+  requirement invariant emergencystop.pushed disables .gate_U_S.c_close;
+  requirement invariant culvert_N.S.flow or culvert_N.A.open or culvert_S.S.flow or culvert_S.A.open disables .pad_N.c_open;
+  requirement invariant culvert_N.S.flow or culvert_N.A.open or culvert_S.S.flow or culvert_S.A.open disables .pad_S.c_open;
+  requirement invariant not pad_N.S1.closed or not pad_N.S2.closed or not pad_N.S3.closed or pad_N.A.opening or not pad_S.S1.closed or not pad_S.S2.closed or not pad_S.S3.closed or pad_S.A.opening disables .culvert_N.c_enable;
+  requirement invariant not pad_N.S1.closed or not pad_N.S2.closed or not pad_N.S3.closed or pad_N.A.opening or not pad_S.S1.closed or not pad_S.S2.closed or not pad_S.S3.closed or pad_S.A.opening disables .culvert_S.c_enable;
+  requirement invariant not gate_U_N.S.closed or gate_U_N.Dir.opening or not gate_U_S.S.closed or gate_U_S.Dir.opening disables .pad_N.c_open;
+  requirement invariant not gate_U_N.S.closed or gate_U_N.Dir.opening or not gate_U_S.S.closed or gate_U_S.Dir.opening disables .pad_S.c_open;
+  requirement invariant not gate_D_N.S.closed or gate_D_N.Dir.opening or not gate_D_S.S.closed or gate_D_S.Dir.opening disables .culvert_N.c_enable;
+  requirement invariant not gate_D_N.S.closed or gate_D_N.Dir.opening or not gate_D_S.S.closed or gate_D_S.Dir.opening disables .culvert_S.c_enable;
+  requirement invariant s_equal_D.off disables .gate_D_N.c_open;
+  requirement invariant s_equal_D.off disables .gate_D_S.c_open;
+  requirement invariant s_equal_U.off disables .gate_U_N.c_open;
+  requirement invariant s_equal_U.off disables .gate_U_S.c_open;
+  requirement invariant culvert_N.S.flow or culvert_N.A.open or culvert_S.S.flow or culvert_S.A.open disables .gate_D_N.c_open;
+  requirement invariant culvert_N.S.flow or culvert_N.A.open or culvert_S.S.flow or culvert_S.A.open disables .gate_D_S.c_open;
+  requirement invariant not pad_N.S1.closed or not pad_N.S2.closed or not pad_N.S3.closed or pad_N.A.opening or not pad_S.S1.closed or not pad_S.S2.closed or not pad_S.S3.closed or pad_S.A.opening disables .gate_U_N.c_open;
+  requirement invariant not pad_N.S1.closed or not pad_N.S2.closed or not pad_N.S3.closed or pad_N.A.opening or not pad_S.S1.closed or not pad_S.S2.closed or not pad_S.S3.closed or pad_S.A.opening disables .gate_U_S.c_open;
+  requirement invariant not gate_U_N.S.closed or gate_U_N.Dir.opening or not gate_U_S.S.closed or gate_U_S.Dir.opening disables .gate_D_N.c_open;
+  requirement invariant not gate_U_N.S.closed or gate_U_N.Dir.opening or not gate_U_S.S.closed or gate_U_S.Dir.opening disables .gate_D_S.c_open;
+  requirement invariant not gate_D_N.S.closed or gate_D_N.Dir.opening or not gate_D_S.S.closed or gate_D_S.Dir.opening disables .gate_U_N.c_open;
+  requirement invariant not gate_D_N.S.closed or gate_D_N.Dir.opening or not gate_D_S.S.closed or gate_D_S.Dir.opening disables .gate_U_S.c_open;
+  requirement invariant out_D_N.S.green or out_D_N.A.green or out_D_S.S.green or out_D_S.A.green disables .in_D_N.c_green;
+  requirement invariant out_D_N.S.green or out_D_N.A.green or out_D_S.S.green or out_D_S.A.green disables .in_D_S.c_green;
+  requirement invariant out_U_N.S.green or out_U_N.A.green or out_U_S.S.green or out_U_S.A.green disables .in_U_N.c_green;
+  requirement invariant out_U_N.S.green or out_U_N.A.green or out_U_S.S.green or out_U_S.A.green disables .in_U_S.c_green;
+  requirement invariant in_D_N.S.green or in_D_N.A.green or in_D_S.S.green or in_D_S.A.green disables .out_D_N.c_green;
+  requirement invariant in_D_N.S.green or in_D_N.A.green or in_D_S.S.green or in_D_S.A.green disables .out_D_S.c_green;
+  requirement invariant in_U_N.S.green or in_U_N.A.green or in_U_S.S.green or in_U_S.A.green disables .out_U_N.c_green;
+  requirement invariant in_U_N.S.green or in_U_N.A.green or in_U_S.S.green or in_U_S.A.green disables .out_U_S.c_green;
+  requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .in_D_N.c_green;
+  requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .in_D_S.c_green;
+  requirement invariant not gate_U_N.S.open or gate_U_N.Dir.closing or not gate_U_S.S.open or gate_U_S.Dir.closing disables .in_U_N.c_green;
+  requirement invariant not gate_U_N.S.open or gate_U_N.Dir.closing or not gate_U_S.S.open or gate_U_S.Dir.closing disables .in_U_S.c_green;
+  requirement invariant not(in_D_N.S.red or in_D_N.S.redred) or not(in_D_N.A.red or in_D_N.A.redred) or not(in_D_S.S.red or in_D_S.S.redred) or not(in_D_S.A.red or in_D_S.A.redred) disables .gate_D_N.c_close;
+  requirement invariant not(in_D_N.S.red or in_D_N.S.redred) or not(in_D_N.A.red or in_D_N.A.redred) or not(in_D_S.S.red or in_D_S.S.redred) or not(in_D_S.A.red or in_D_S.A.redred) disables .gate_D_S.c_close;
+  requirement invariant not(in_U_N.S.red or in_U_N.S.redred) or not(in_U_N.A.red or in_U_N.A.redred) or not(in_U_S.S.red or in_U_S.S.redred) or not(in_U_S.A.red or in_U_S.A.redred) disables .gate_U_N.c_close;
+  requirement invariant not(in_U_N.S.red or in_U_N.S.redred) or not(in_U_N.A.red or in_U_N.A.redred) or not(in_U_S.S.red or in_U_S.S.redred) or not(in_U_S.A.red or in_U_S.A.redred) disables .gate_U_S.c_close;
+  requirement invariant not out_D_N.S.red or not out_D_N.A.red or not out_D_S.S.red or not out_D_S.A.red disables .gate_D_N.c_close;
+  requirement invariant not out_D_N.S.red or not out_D_N.A.red or not out_D_S.S.red or not out_D_S.A.red disables .gate_D_S.c_close;
+  requirement invariant not out_U_N.S.red or not out_U_N.A.red or not out_U_S.S.red or not out_U_S.A.red disables .gate_U_N.c_close;
+  requirement invariant not out_U_N.S.red or not out_U_N.A.red or not out_U_S.S.red or not out_U_S.A.red disables .gate_U_N.c_close;
+  requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .out_D_N.c_green;
+  requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .out_D_S.c_green;
+  requirement invariant not gate_U_N.S.open or gate_U_N.Dir.closing or not gate_U_S.S.open or gate_U_S.Dir.closing disables .out_U_N.c_green;
+  requirement invariant not gate_U_N.S.open or gate_U_N.Dir.closing or not gate_U_S.S.open or gate_U_S.Dir.closing disables .out_U_S.c_green;
+end
+group timing:
+  cont tt = 0.0 der 1.0;
+  svgout id "time" text value fmt("Time: (%.2f )", tt) file "../4_Lock.svg";
+end
+automaton water:
+  cont h = 60.0;
+  const int[120..120] h_U = 120;
+  const int[60..60] h_D = 60;
+  equation h' = if not pad_N.S1.closed and culvert_N.S.flow: 0.0 elif not(pad_N.S1.closed or pad_N.S2.closed or pad_N.S3.closed or pad_S.S1.closed or pad_S.S2.closed or pad_S.S3.closed) and h > h_D: -15.0 elif (culvert_N.S.flow or culvert_S.S.flow) and h < h_U: +15.0 else 0.0 end;
+  svgout id "wheight" text value fmt("Water height: (%.2f m)", h / 10) file "../4_Lock.svg";
+  svgout id "water" attr "height" value h file "../4_Lock.svg";
+  svgout id "water" attr "transform" value fmt("translate(0,%s)", h_U - h) file "../4_Lock.svg";
+  location high:
+    edge when h < h_U goto middle;
+  location middle:
+    edge when h >= h_U goto high;
+    edge when h <= h_D goto low;
+  location low:
+    initial;
+    edge when h > h_D goto middle;
+end
+group svgdeur:
+  svgout id "deurBNH" attr "fill" value if gate_D_N.S.closed: "black" elif gate_D_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
+end
+group svgdeur2:
+  svgout id "deurBVH" attr "fill" value if gate_U_N.S.closed: "black" elif gate_U_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
+end
+group knop1:
+  alg string a = "button1";
+  alg bool on = button1.o;
+  svgin id a event if on: button1.u_release else button1.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop2:
+  alg string a = "button2";
+  alg bool on = button2.o;
+  svgin id a event if on: button2.u_release else button2.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop3:
+  alg string a = "button3";
+  alg bool on = button3.o;
+  svgin id a event if on: button3.u_release else button3.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop4:
+  alg string a = "button4";
+  alg bool on = button4.o;
+  svgin id a event if on: button4.u_release else button4.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop5:
+  alg string a = "button5";
+  alg bool on = button5.o;
+  svgin id a event if on: button5.u_release else button5.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop6:
+  alg string a = "button6";
+  alg bool on = button6.o;
+  svgin id a event if on: button6.u_release else button6.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop7:
+  alg string a = "button7";
+  alg bool on = button7.o;
+  svgin id a event if on: button7.u_release else button7.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop8:
+  alg string a = "button8";
+  alg bool on = button8.o;
+  svgin id a event if on: button8.u_release else button8.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop9:
+  alg string a = "button9";
+  alg bool on = button9.o;
+  svgin id a event if on: button9.u_release else button9.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop10:
+  alg string a = "button10";
+  alg bool on = button10.o;
+  svgin id a event if on: button10.u_release else button10.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop11:
+  alg string a = "button11";
+  alg bool on = button11.o;
+  svgin id a event if on: button11.u_release else button11.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop12:
+  alg string a = "button12";
+  alg bool on = button12.o;
+  svgin id a event if on: button12.u_release else button12.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop13:
+  alg string a = "button13";
+  alg bool on = button13.o;
+  svgin id a event if on: button13.u_release else button13.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop14:
+  alg string a = "button14";
+  alg bool on = button14.o;
+  svgin id a event if on: button14.u_release else button14.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop15:
+  alg string a = "button15";
+  alg bool on = button15.o;
+  svgin id a event if on: button15.u_release else button15.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop16:
+  alg string a = "button16";
+  alg bool on = button16.o;
+  svgin id a event if on: button16.u_release else button16.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop17:
+  alg string a = "button17";
+  alg bool on = button17.o;
+  svgin id a event if on: button17.u_release else button17.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop18:
+  alg string a = "button18";
+  alg bool on = button18.o;
+  svgin id a event if on: button18.u_release else button18.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop19:
+  alg string a = "button19";
+  alg bool on = button19.o;
+  svgin id a event if on: button19.u_release else button19.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop20:
+  alg string a = "button20";
+  alg bool on = button20.o;
+  svgin id a event if on: button20.u_release else button20.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop25:
+  alg string a = "noodstop";
+  alg bool on = emergencystop.o;
+  svgin id a event if on: emergencystop.u_release else emergencystop.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop26:
+  alg string a = "stop1";
+  alg bool on = stop1.o;
+  svgin id a event if on: stop1.u_release else stop1.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop27:
+  alg string a = "stop2";
+  alg bool on = stop2.o;
+  svgin id a event if on: stop2.u_release else stop2.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop28:
+  alg string a = "stop3";
+  alg bool on = stop3.o;
+  svgin id a event if on: stop3.u_release else stop3.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group knop29:
+  alg string a = "stop4";
+  alg bool on = stop4.o;
+  svgin id a event if on: stop4.u_release else stop4.u_push end file "../4_Lock.svg";
+  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+end
+group svout234:
+  alg string a = "nivBNH";
+  alg bool b = pad_N.S1.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group svout235:
+  alg string a = "nivBVH";
+  alg bool b = culvert_N.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit1:
+  alg string a = "a_uit_BNHN_r";
+  alg bool b = out_D_N.A.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit2:
+  alg string a = "a_uit_BNHN_g";
+  alg bool b = out_D_N.A.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit3:
+  alg string a = "a_uit_BNHZ_r";
+  alg bool b = out_D_S.A.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit4:
+  alg string a = "a_uit_BNHZ_g";
+  alg bool b = out_D_S.A.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit5:
+  alg string a = "a_uit_BVHN_r";
+  alg bool b = out_U_N.A.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit6:
+  alg string a = "a_uit_BVHN_g";
+  alg bool b = out_U_N.A.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit7:
+  alg string a = "a_uit_BVHZ_r";
+  alg bool b = out_U_S.A.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit8:
+  alg string a = "a_uit_BVHZ_g";
+  alg bool b = out_U_S.A.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group uit9:
+  alg string a = "s_uit_BNHN_r";
+  alg bool b = out_D_N.S.r;
+  alg string c = "svg_uit_BNHN_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit10:
+  alg string a = "s_uit_BNHN_g";
+  alg bool b = out_D_N.S.g;
+  alg string c = "svg_uit_BNHN_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit11:
+  alg string a = "s_uit_BNHZ_r";
+  alg bool b = out_D_S.S.r;
+  alg string c = "svg_uit_BNHZ_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit12:
+  alg string a = "s_uit_BNHZ_g";
+  alg bool b = out_D_S.S.g;
+  alg string c = "svg_uit_BNHZ_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit13:
+  alg string a = "s_uit_BVHN_r";
+  alg bool b = out_U_N.S.r;
+  alg string c = "svg_uit_BVHN_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit14:
+  alg string a = "s_uit_BVHN_g";
+  alg bool b = out_U_N.S.g;
+  alg string c = "svg_uit_BVHN_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit15:
+  alg string a = "s_uit_BVHZ_r";
+  alg bool b = out_U_S.S.r;
+  alg string c = "svg_uit_BVHZ_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group uit16:
+  alg string a = "s_uit_BVHZ_g";
+  alg bool b = out_U_S.S.g;
+  alg string c = "svg_uit_BVHZ_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in1:
+  alg string a = "a_in_BNHN_r";
+  alg bool b = in_D_N.S.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in2:
+  alg string a = "a_in_BNHN_g";
+  alg bool b = in_D_N.S.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in3:
+  alg string a = "a_in_BNHN_s";
+  alg bool b = in_D_N.S.s;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in4:
+  alg string a = "a_in_BNHZ_r";
+  alg bool b = in_D_S.S.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in5:
+  alg string a = "a_in_BNHZ_g";
+  alg bool b = in_D_S.S.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in6:
+  alg string a = "a_in_BNHZ_s";
+  alg bool b = in_D_S.S.s;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in7:
+  alg string a = "a_in_BVHN_r";
+  alg bool b = in_U_N.S.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in8:
+  alg string a = "a_in_BVHN_g";
+  alg bool b = in_U_N.S.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in9:
+  alg string a = "a_in_BVHN_s";
+  alg bool b = in_U_N.S.s;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in10:
+  alg string a = "a_in_BVHZ_r";
+  alg bool b = in_U_S.S.r;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in11:
+  alg string a = "a_in_BVHZ_g";
+  alg bool b = in_U_S.S.g;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in12:
+  alg string a = "a_in_BVHZ_s";
+  alg bool b = in_U_S.S.s;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group in13:
+  alg string a = "s_in_BNHN_r";
+  alg bool b = in_D_N.A.r;
+  alg string c = "svg_in_BNHN_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in14:
+  alg string a = "s_in_BNHN_g";
+  alg bool b = in_D_N.A.g;
+  alg string c = "svg_in_BNHN_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in15:
+  alg string a = "s_in_BNHN_s";
+  alg bool b = in_D_N.A.s;
+  alg string c = "svg_in_BNHN_s";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in16:
+  alg string a = "s_in_BNHZ_r";
+  alg bool b = in_D_S.A.r;
+  alg string c = "svg_in_BNHZ_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in17:
+  alg string a = "s_in_BNHZ_g";
+  alg bool b = in_D_S.A.g;
+  alg string c = "svg_in_BNHZ_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in18:
+  alg string a = "s_in_BNHZ_s";
+  alg bool b = in_D_S.A.s;
+  alg string c = "svg_in_BNHZ_s";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in19:
+  alg string a = "s_in_BVHN_r";
+  alg bool b = in_U_N.A.r;
+  alg string c = "svg_in_BVHN_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in20:
+  alg string a = "s_in_BVHN_g";
+  alg bool b = in_U_N.A.g;
+  alg string c = "svg_in_BVHN_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in21:
+  alg string a = "s_in_BVHN_s";
+  alg bool b = in_U_N.A.s;
+  alg string c = "svg_in_BVHN_s";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in22:
+  alg string a = "s_in_BVHZ_r";
+  alg bool b = in_U_S.A.r;
+  alg string c = "svg_in_BVHZ_r";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in23:
+  alg string a = "s_in_BVHZ_g";
+  alg bool b = in_U_S.A.g;
+  alg string c = "svg_in_BVHZ_g";
+  alg string color = "green";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group in24:
+  alg string a = "s_in_BVHZ_s";
+  alg bool b = in_U_S.A.s;
+  alg string c = "svg_in_BVHZ_s";
+  alg string color = "red";
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+end
+group niv1:
+  alg string a = "s_niv_1_BNHN_o";
+  alg bool b = pad_N.S1.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv2:
+  alg string a = "s_niv_1_BNHN_d";
+  alg bool b = pad_N.S1.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv3:
+  alg string a = "s_niv_2_BNHN_o";
+  alg bool b = pad_N.S2.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv4:
+  alg string a = "s_niv_2_BNHN_d";
+  alg bool b = pad_N.S2.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv5:
+  alg string a = "s_niv_3_BNHN_o";
+  alg bool b = pad_N.S3.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv6:
+  alg string a = "s_niv_3_BNHN_d";
+  alg bool b = pad_N.S3.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv7:
+  alg string a = "s_niv_1_BNHZ_o";
+  alg bool b = pad_S.S1.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv8:
+  alg string a = "s_niv_1_BNHZ_d";
+  alg bool b = pad_S.S1.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv9:
+  alg string a = "s_niv_2_BNHZ_o";
+  alg bool b = pad_S.S2.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv10:
+  alg string a = "s_niv_2_BNHZ_d";
+  alg bool b = pad_S.S2.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv11:
+  alg string a = "s_niv_3_BNHZ_o";
+  alg bool b = pad_S.S3.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv12:
+  alg string a = "s_niv_3_BNHZ_d";
+  alg bool b = pad_S.S3.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv13:
+  alg string a = "a_niv_BNHN_o";
+  alg bool b = pad_N.A.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv14:
+  alg string a = "a_niv_BNHN_d";
+  alg bool b = pad_N.A.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv15:
+  alg string a = "a_niv_BNHZ_o";
+  alg bool b = pad_S.A.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group niv16:
+  alg string a = "a_niv_BNHZ_d";
+  alg bool b = pad_S.A.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group riool1:
+  alg string a = "rioolN";
+  alg bool b = culvert_N.A.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group riool2:
+  alg string a = "rioolZ";
+  alg bool b = culvert_S.A.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group weg1:
+  alg string a = "wegmeetN";
+  alg bool b = culvert_N.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group weg2:
+  alg string a = "wegmeetZ";
+  alg bool b = culvert_S.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group VOBOf:
+  alg string a = "gw_BNH";
+  alg bool b = s_equal_D.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group VOBOk:
+  alg string a = "gw_BVH";
+  alg bool b = s_equal_U.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds10:
+  alg string a = "s_BNHN1";
+  alg bool b = gate_D_N.S.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds20:
+  alg string a = "s_BNHN2";
+  alg bool b = gate_D_N.S.bc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds30:
+  alg string a = "s_BNHN3";
+  alg bool b = gate_D_N.S.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds40:
+  alg string a = "s_BNHN4";
+  alg bool b = gate_D_N.S.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds50:
+  alg string a = "s_BNHN5";
+  alg bool b = gate_D_N.S.bo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds60:
+  alg string a = "s_BNHN6";
+  alg bool b = gate_D_N.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds11:
+  alg string a = "s_BNHZ1";
+  alg bool b = gate_D_S.S.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds21:
+  alg string a = "s_BNHZ2";
+  alg bool b = gate_D_S.S.bc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds31:
+  alg string a = "s_BNHZ3";
+  alg bool b = gate_D_S.S.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds41:
+  alg string a = "s_BNHZ4";
+  alg bool b = gate_D_S.S.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds51:
+  alg string a = "s_BNHZ5";
+  alg bool b = gate_D_S.S.bo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds61:
+  alg string a = "s_BNHZ6";
+  alg bool b = gate_D_S.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds12:
+  alg string a = "s_BVHN1";
+  alg bool b = gate_U_N.S.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds22:
+  alg string a = "s_BVHN2";
+  alg bool b = gate_U_N.S.bc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds32:
+  alg string a = "s_BVHN3";
+  alg bool b = gate_U_N.S.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds42:
+  alg string a = "s_BVHN4";
+  alg bool b = gate_U_N.S.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds52:
+  alg string a = "s_BVHN5";
+  alg bool b = gate_U_N.S.bo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds62:
+  alg string a = "s_BVHN6";
+  alg bool b = gate_U_N.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds13:
+  alg string a = "s_BVHZ1";
+  alg bool b = gate_U_S.S.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds23:
+  alg string a = "s_BVHZ2";
+  alg bool b = gate_U_S.S.bc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds33:
+  alg string a = "s_BVHZ3";
+  alg bool b = gate_U_S.S.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds43:
+  alg string a = "s_BVHZ4";
+  alg bool b = gate_U_S.S.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds53:
+  alg string a = "s_BVHZ5";
+  alg bool b = gate_U_S.S.bo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group ds63:
+  alg string a = "s_BVHZ6";
+  alg bool b = gate_U_S.S.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da10:
+  alg string a = "BNHN_op";
+  alg bool b = gate_D_N.Dir.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da11:
+  alg string a = "BNHN_sl";
+  alg bool b = gate_D_N.Dir.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da12:
+  alg string a = "BNHN_on";
+  alg bool b = gate_D_N.Spe.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da13:
+  alg string a = "BNHN_ok";
+  alg bool b = gate_D_N.Spe.so;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da14:
+  alg string a = "BNHN_sn";
+  alg bool b = gate_D_N.Spe.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da15:
+  alg string a = "BNHN_sk";
+  alg bool b = gate_D_N.Spe.sc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da16:
+  alg string a = "BNHN_hd";
+  alg bool b = gate_D_N.Pre.h;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da17:
+  alg string a = "BNHN_ld";
+  alg bool b = gate_D_N.Pre.l;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da20:
+  alg string a = "BNHZ_op";
+  alg bool b = gate_D_S.Dir.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da21:
+  alg string a = "BNHZ_sl";
+  alg bool b = gate_D_S.Dir.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da22:
+  alg string a = "BNHZ_on";
+  alg bool b = gate_D_S.Spe.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da23:
+  alg string a = "BNHZ_ok";
+  alg bool b = gate_D_S.Spe.so;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da24:
+  alg string a = "BNHZ_sn";
+  alg bool b = gate_D_S.Spe.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da25:
+  alg string a = "BNHZ_sk";
+  alg bool b = gate_D_S.Spe.sc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da26:
+  alg string a = "BNHZ_hd";
+  alg bool b = gate_D_S.Pre.h;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da27:
+  alg string a = "BNHZ_ld";
+  alg bool b = gate_D_S.Pre.l;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da30:
+  alg string a = "BVHN_op";
+  alg bool b = gate_U_N.Dir.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da31:
+  alg string a = "BVHN_sl";
+  alg bool b = gate_U_N.Dir.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da32:
+  alg string a = "BVHN_on";
+  alg bool b = gate_U_N.Spe.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da33:
+  alg string a = "BVHN_ok";
+  alg bool b = gate_U_N.Spe.so;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da34:
+  alg string a = "BVHN_sn";
+  alg bool b = gate_U_N.Spe.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da35:
+  alg string a = "BVHN_sk";
+  alg bool b = gate_U_N.Spe.sc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da36:
+  alg string a = "BVHN_hd";
+  alg bool b = gate_U_N.Pre.h;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da37:
+  alg string a = "BVHN_ld";
+  alg bool b = gate_U_N.Pre.l;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da40:
+  alg string a = "BVHZ_op";
+  alg bool b = gate_U_S.Dir.o;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da41:
+  alg string a = "BVHZ_sl";
+  alg bool b = gate_U_S.Dir.c;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da42:
+  alg string a = "BVHZ_on";
+  alg bool b = gate_U_S.Spe.fo;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da43:
+  alg string a = "BVHZ_ok";
+  alg bool b = gate_U_S.Spe.so;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da44:
+  alg string a = "BVHZ_sn";
+  alg bool b = gate_U_S.Spe.fc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da45:
+  alg string a = "BVHZ_sk";
+  alg bool b = gate_U_S.Spe.sc;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da46:
+  alg string a = "BVHZ_hd";
+  alg bool b = gate_U_S.Pre.h;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+group da47:
+  alg string a = "BVHZ_ld";
+  alg bool b = gate_U_S.Pre.l;
+  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+end
+svgout id "timer" + <string>3 + "_inner" attr "width" value scale(gate_D_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
+svgout id "timer" + <string>2 + "_inner" attr "width" value scale(gate_U_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
+svgout id "timer" + <string>1 + "_inner" attr "width" value scale(pad_S.S3.ext, 0, 10, 0.01, 100) file "../4_Lock.svg";

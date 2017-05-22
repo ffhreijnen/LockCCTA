@@ -1,0 +1,347 @@
+import "3_Visualisation.cif";
+
+group timing:
+    cont tt = 0 der 1;
+    svgout id "time" text value fmt("Time: (%.2f )", tt);
+end
+
+//Button automaton for the GUI.
+//bool o represents the state used for visualization
+automaton def button():
+    uncontrollable u_push, u_release;
+    disc bool o = false;
+    location released:
+        initial;
+        edge u_push do o := true  goto pushed;
+    location pushed:
+        edge u_release do o := false goto released;
+end
+
+//Initialize 20 push buttons, 4 stop buttons and the emergency stop.
+button1 : button(); button2 : button(); button3 : button(); button4 : button(); button5 : button(); button6 : button();
+button7 : button(); button8 : button(); button9 : button(); button10: button(); button11: button(); button12: button();
+button13: button(); button14: button(); button15: button(); button16: button(); button17: button(); button18: button();
+button19: button(); button20: button();
+emergencystop: button(); stop1:    button(); stop2:    button(); stop3:    button(); stop4:    button();
+
+
+//c to represent close sensor, o to represent open sensor
+//Continuous variable extension used for time behaviour, 0 is open, 10 is closed
+//Continuous behaviour is modelled in automaton def bladesCont
+group def paddle():
+    controllable c_close, c_open, c_stop;
+    automaton A:
+        disc bool c = false, o = false;
+        location rest:
+            initial;
+            edge c_close   do o := false, c := true  goto closing;
+            edge c_open    do o := true,  c := false goto opening;
+        location closing:
+            edge c_open    do o := true,  c := false goto opening;
+            edge c_stop    do o := false, c := false goto rest;
+            edge S1.u_closed_on, S2.u_closed_on, S3.u_closed_on;
+            edge S1.u_open_off,  S2.u_open_off,  S3.u_open_off;
+        location opening:
+            edge c_close   do o := false, c := true  goto closing;
+            edge c_stop    do o := false, c := false goto rest;
+            edge S1.u_closed_off, S2.u_closed_off, S3.u_closed_off;
+            edge S1.u_open_on,    S2.u_open_on,    S3.u_open_on;
+    end
+    automaton def S():
+        uncontrollable u_closed_on, u_closed_off, u_open_on, u_open_off;
+        disc bool c = true, o = false;
+        cont ext = 10;
+        const int ext_open = 0, ext_close = 10;
+        equation ext' = if A.closing and A.opening      : 0
+                  elif A.closing and ext <= ext_close : +4.5
+                  elif A.opening and ext >= ext_open  : -4.5
+                  else  0 end;
+        location closed:
+            initial;
+            edge u_closed_off when ext <  10 do c := false goto between;
+        location between:
+            edge u_closed_on  when ext >= 10 do c := true  goto closed;
+            edge u_open_on    when ext <= 0  do o := true  goto open;
+        location open:
+            edge u_open_off   when ext >  0  do o := false goto between;
+    end
+    S1 : S();
+    S2 : S();
+    S3 : S();
+end
+
+//Initiate two sets of leveling blades.
+pad_N : paddle(); pad_S : paddle();
+
+//Analog sensor for measuring water through circulation sewer.
+group def culvert():
+    controllable c_enable, c_disable;
+    uncontrollable u_on, u_off;
+    automaton A:
+        disc bool c = false;
+        location closed:
+            initial;
+            edge c_enable  do c := true  goto open;
+            edge u_off;
+        location open:
+            edge c_disable do c := false goto closed;
+            edge u_on;
+    end
+    automaton S:
+        disc bool o = false;
+        location noflow:
+            initial;
+            edge u_on  do o := true  goto flow;
+        location flow:
+            edge u_off do o := false goto noflow;
+    end
+end
+
+culvert_N : culvert(); culvert_S : culvert();
+
+group def gate():
+    controllable c_high_on, c_high_off, c_low_on, c_low_off, c_open, c_close, c_stop,
+                 c_fc_off, c_fc_on, c_sc_on, c_sc_off,
+                 c_fo_off, c_fo_on, c_so_on, c_so_off;
+   uncontrollable u_s1_on, u_s1_off, u_s2_on, u_s2_off, u_s3_on, u_s3_off,
+                  u_s4_on, u_s4_off, u_s5_on, u_s5_off, u_s6_on, u_s6_off;
+    automaton S:
+        disc bool c = false, bc = false, fc = false, fo = true, bo = true, o = true;
+        cont degree = 45;
+        equation degree' =
+                      if not (Dir.opening or Dir.closing)                            : 0 //no direction
+                    elif not (Pre.high  or Pre.low)                                  : 0 //no pressure
+                    elif Spe.off                                                     : 0
+                    elif Dir.opening and Pre.high and not (Spe.fast_o or Spe.slow_o) : 0 //no speed
+                    elif Dir.closing and Pre.high and not (Spe.fast_c or Spe.slow_c) : 0 //no speed
+                    elif Spe.slow_o  and Spe.fast_o                                  : 0 //physi not possible
+                    elif Spe.slow_c  and Spe.fast_c                                  : 0 //physi not possible
+                    elif Dir.opening and Pre.high and Spe.fast_o and degree >= 0     : -15
+                    elif Dir.opening and Pre.low  and Spe.fast_o and degree >= 0     : -10
+                    elif Dir.opening and Pre.low  and Spe.slow_o and degree >= 0     : -5
+                    elif Dir.closing and Pre.high and Spe.fast_c and degree < 45     : +15
+                    elif Dir.closing and Pre.low  and Spe.fast_c and degree < 45     : +10
+                    elif Dir.closing and Pre.low  and Spe.slow_c and degree < 45     : +5
+                    else 0 end;
+        location closed:
+            initial;
+            edge u_s1_on  when degree <  45 do c  := true  goto bclosed;
+        location bclosed:
+            edge u_s1_off when degree >= 45 do c  := false goto closed;
+            edge u_s2_on  when degree <= 40 do bc := true  goto fclosed;
+        location fclosed:
+            edge u_s2_off when degree >  40 do bc := false goto bclosed;
+            edge u_s3_on  when degree <= 30 do fc := true  goto middle;
+        location middle:
+            edge u_s3_off when degree >  30 do fc := false goto fclosed;
+            edge u_s4_off when degree <= 15 do fo := false goto fopen;
+        location fopen:
+            edge u_s4_on  when degree >  15 do fo := true  goto middle;
+            edge u_s5_off when degree <= 5  do bo := false goto bopen;
+        location bopen:
+            edge u_s5_on  when degree >  5  do bo := true  goto fopen;
+            edge u_s6_off when degree <= 0  do o  := false goto open;
+        location open:
+            edge u_s6_on  when degree >  0  do o  := true  goto bopen;
+    end
+    automaton Dir:
+        disc bool o = false, c = false;
+        location off:
+            initial;
+            edge c_open   do o := true,  c := false goto opening;
+            edge c_close  do o := false, c := true  goto closing;
+        location opening:
+            edge c_close  do o := false, c := true  goto closing;
+            edge c_stop   do o := false, c := false goto off;
+        location closing:
+            edge c_open   do o := true,  c := false goto opening;
+            edge c_stop   do o := false, c := false goto off;
+    end
+    automaton Spe:
+        disc bool fc = false, sc = false, fo = false, so = false;
+        location off:
+            initial;
+            edge c_fc_on  do fc := true  goto fast_c;
+            edge c_sc_on  do sc := true  goto slow_c;
+            edge c_fo_on  do fo := true  goto fast_o;
+            edge c_so_on  do so := true  goto slow_o;
+        location fast_c:
+            edge c_fc_off do fc := false goto off;
+        location slow_c:
+            edge c_sc_off do sc := false goto off;
+        location fast_o:
+            edge c_fo_off do fo := false goto off;
+        location slow_o:
+            edge c_so_off do so := false goto off;
+    end
+    automaton Pre:
+        disc bool h = false, l = false;
+        location off:
+            initial;
+            edge c_high_on  do h := true  goto high;
+            edge c_low_on   do l := true  goto low;
+        location high:
+            edge c_high_off do h := false goto off;
+            edge c_low_on   do l := true  goto highlow;
+        location low:
+            edge c_high_on  do h := true  goto highlow;
+            edge c_low_off  do l := false goto off;
+        location highlow:
+            edge c_high_off do h := false goto low;
+            edge c_low_off  do l := false goto high;
+    end
+end
+
+gate_D_N : gate(); gate_D_S : gate();
+gate_U_N : gate(); gate_U_S : gate();
+
+//Sensor for equal water over the doors. Initial state is variable,
+//as the sensor is initially on for the D and initially off for the U
+automaton def equalwater_sensor(alg bool equalstate, initial_state):
+    uncontrollable u_equal_on, u_equal_off;
+    disc bool o = initial_state;
+    location off:
+        initial not initial_state;
+        edge u_equal_on  when     equalstate do o := true  goto on;
+    location on:
+        initial     initial_state;
+        edge u_equal_off when not equalstate do o := false goto off;
+end
+
+//Initiate 2 equal water sensors
+s_equal_D : equalwater_sensor(water.low,  true ); //Initially on/true
+s_equal_U : equalwater_sensor(water.high, false); //Initially off/false
+
+//Sensors for the leaving sign
+//r to represent red, g to represent g
+group def outgoing():
+    controllable c_red, c_green;
+    uncontrollable u_r_on, u_r_off, u_g_on, u_g_off;
+    automaton S:
+        disc bool r = true, g = false;
+        location off:
+            edge u_r_on  do r := true  goto red;
+            edge u_g_on  do g := true  goto green;
+        location red:
+            initial;
+            edge u_r_off do r := false goto off;
+            edge u_g_on  do g := true  goto redgreen;
+        location green:
+            edge u_r_on  do r := true  goto redgreen;
+            edge u_g_off do g := false goto off;
+        location redgreen:
+            edge u_r_off do r := false goto green;
+            edge u_g_off do g := false goto red;
+    end
+    automaton A:
+        disc bool r = true, g = false;
+        location red:
+            initial;
+            edge c_green do r := false, g := true  goto green;
+            edge u_r_on, u_g_off;
+        location green:
+            edge c_red   do r := true,  g := false goto red;
+            edge u_r_off, u_g_on;
+    end
+end
+
+out_D_N : outgoing(); out_D_S : outgoing();
+out_U_N : outgoing(); out_U_S : outgoing();
+
+group def incoming():
+    controllable c_red, c_green, c_redgreen, c_redred;
+    uncontrollable u_r_on, u_r_off, u_g_on, u_g_off, u_s_on, u_s_off;
+    automaton S:
+        disc bool r = true, g = false, s = false;
+        location off:
+            edge u_r_on  do r := true  goto red;
+            edge u_g_on  do g := true  goto green;
+            edge u_s_on  do s := true  goto lowred;
+        location red:
+            initial;
+            edge u_r_off do r := false goto off;
+            edge u_g_on  do g := true  goto redgreen;
+            edge u_s_on  do s := true  goto redred;
+        location green:
+            edge u_r_on  do r := true  goto redgreen;
+            edge u_g_off do g := false goto off;
+            edge u_s_on  do s := true  goto greenred;
+        location lowred:
+            edge u_r_on  do r := true  goto redred;
+            edge u_g_on  do g := true  goto greenred;
+            edge u_s_off do s := false goto off;
+        location redgreen:
+            edge u_r_off do r := false goto green;
+            edge u_g_off do g := false goto red;
+            edge u_s_on  do s := true  goto redgreenred;
+        location redred:
+            edge u_r_off do r := false goto lowred;
+            edge u_g_on  do g := true  goto redgreenred;
+            edge u_s_off do s := false goto red;
+        location greenred:
+            edge u_r_on  do r := true  goto redgreenred;
+            edge u_g_off do g := false goto lowred;
+            edge u_s_off do s := false goto green;
+        location redgreenred:
+            edge u_r_off do r := false goto greenred;
+            edge u_g_off do g := false goto redred;
+            edge u_s_off do s := false goto redgreen;
+    end
+    automaton A:
+        disc bool r = true, g = false, s = false;
+        location red:
+            initial;
+            edge c_redgreen  do r := true,  g := true,  s := false goto redgreen;
+            edge c_redred    do r := true,  g := false, s := true  goto redred;
+            edge u_r_on;
+            edge u_g_off, u_s_off;
+        location green:
+            edge c_red      do r := true,  g := false, s := false goto red;
+            edge c_redgreen do r := true,  g := true,  s := false goto redgreen;
+            edge u_g_on;
+            edge u_r_off, u_s_off;
+        location redgreen:
+            edge c_red      do r := true,  g := false, s := false goto red;
+            edge c_green    do r := false, g := true,  s := false goto green;
+            edge u_r_on, u_g_on;
+            edge u_s_off;
+        location redred:
+            edge c_red      do r := true,  g := false, s := false goto red;
+            edge u_r_on, u_s_on;
+            edge u_g_off;
+    end
+end
+
+in_D_N : incoming(); in_D_S : incoming();
+in_U_N : incoming(); in_U_S : incoming();
+
+//Hybrid automaton for the water height.
+//Derivative of height is zero when schuif and riool are opened
+//Derivative of height is negative when at least one nivelleerschuif is opened
+//Derivative of height is positive when at least one rioolschuif is opened
+//Derivative of height is zero in other cases
+automaton water:
+    cont h = 60;
+    const int h_U = 120, h_D = 60;
+    equation h' = if not  pad_N.S1.closed and culvert_N.S.flow                       :  0
+                elif not (pad_N.S1.closed or pad_N.S2.closed or pad_N.S3.closed
+                       or pad_S.S1.closed or pad_S.S2.closed or pad_S.S3.closed)
+                      and h > h_D                                                         :  -15
+                elif (culvert_N.S.flow or culvert_S.S.flow) and h < h_U               :  +15
+                else 0 end;
+
+    location high:
+        edge when h < h_U goto middle;
+
+    location middle:
+        edge when h >= h_U goto high;
+        edge when h <= h_D goto low;
+
+    location low:
+        initial;
+        edge when h > h_D goto middle;
+
+    svgout id "wheight" text value fmt("Water height: (%.2f m)", h/10);
+    svgout id "water" attr "height" value h;
+    svgout id "water" attr "transform" value fmt("translate(0,%s)", h_U-h);
+end

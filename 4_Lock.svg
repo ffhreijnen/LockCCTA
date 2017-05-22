@@ -1,0 +1,2806 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1400"
+   height="850"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="SVG_sluis.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="413.93798"
+     inkscape:cy="447.94714"
+     inkscape:document-units="px"
+     inkscape:current-layer="all"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-202.36217)">
+    <g
+       id="all">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="245"
+         x="55.157391"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3035"
+           y="245"
+           x="55.157391"
+           sodipodi:role="line">Paddle actuator BNH N open</tspan><tspan
+           y="260"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4080">Paddle actuator BNH N closed</tspan><tspan
+           y="275"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4082">Paddle actuator BNH Z open</tspan><tspan
+           y="290"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4084">Paddle actuator BNH Z closed</tspan><tspan
+           y="305"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4086"></tspan><tspan
+           y="320"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4088">Paddle sensor 1 BNH N open</tspan><tspan
+           y="335"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4090">Paddle sensor 1 BNH N closed</tspan><tspan
+           y="350"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4092">Paddle sensor 2 BNH N open</tspan><tspan
+           y="365"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4094">Paddle sensor 2 BNH N closed</tspan><tspan
+           y="380"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4096">Paddle sensor 3 BNH N open</tspan><tspan
+           y="395"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4098">Paddle sensor 3 BNH N closed</tspan><tspan
+           y="410"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4100">Paddle sensor 1 BNH Z open</tspan><tspan
+           y="425"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4102">Paddle sensor 1 BNH Z closed</tspan><tspan
+           y="440"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4104">Paddle sensor 2 BNH Z open</tspan><tspan
+           y="455"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4106">Paddle sensor 2 BNH Z closed</tspan><tspan
+           y="470"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4108">Paddle sensor 3 BNH Z open</tspan><tspan
+           y="485"
+           x="55.157391"
+           sodipodi:role="line"
+           id="tspan4110">Paddle sensor 3 BNH Z closed</tspan><tspan
+           id="tspan3051"
+           y="500"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3053"
+           y="515"
+           x="55.157391"
+           sodipodi:role="line">Culvert BVH N Enable</tspan><tspan
+           id="tspan3057"
+           y="530"
+           x="55.157391"
+           sodipodi:role="line">Culvert BVH Z Enable</tspan><tspan
+           id="tspan3059"
+           y="545"
+           x="55.157391"
+           sodipodi:role="line">Wegmeetsysteem omloopcylinder BVH N</tspan><tspan
+           id="tspan3061"
+           y="560"
+           x="55.157391"
+           sodipodi:role="line">Wegmeetsysteem omloopcylinder BVH Z</tspan><tspan
+           id="tspan3157"
+           y="575"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3159"
+           y="590"
+           x="55.157391"
+           sodipodi:role="line">Equal water BNH</tspan><tspan
+           id="tspan3161"
+           y="605"
+           x="55.157391"
+           sodipodi:role="line">Equal water BVH</tspan><tspan
+           id="tspan3179"
+           y="620"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3063"
+           y="635"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3065"
+           y="650"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3055"
+           y="665"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3037"
+           y="680"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3039"
+           y="695"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3017"
+           y="710"
+           x="55.157391"
+           sodipodi:role="line" /><tspan
+           id="tspan3019"
+           y="725"
+           x="55.157391"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3067"
+         y="245"
+         x="352.14478"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="245"
+           x="352.14478"
+           id="tspan3069"
+           sodipodi:role="line">Outgoing actuator BNH N red</tspan><tspan
+           id="tspan3071"
+           y="260"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BNH N green</tspan><tspan
+           id="tspan3075"
+           y="275"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BNH Z red</tspan><tspan
+           id="tspan3077"
+           y="290"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BNH Z green</tspan><tspan
+           id="tspan3079"
+           y="305"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BVH N red</tspan><tspan
+           id="tspan3081"
+           y="320"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BVH N green</tspan><tspan
+           id="tspan3083"
+           y="335"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BVH Z rood</tspan><tspan
+           id="tspan3085"
+           y="350"
+           x="352.14478"
+           sodipodi:role="line">Outgoing actuator BVH Z groen</tspan><tspan
+           id="tspan3087"
+           y="365"
+           x="352.14478"
+           sodipodi:role="line" /><tspan
+           id="tspan3089"
+           y="380"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BNH N red</tspan><tspan
+           id="tspan3091"
+           y="395"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BNH N green</tspan><tspan
+           id="tspan3093"
+           y="410"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BNH Z red</tspan><tspan
+           id="tspan3095"
+           y="425"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BNH Z green</tspan><tspan
+           id="tspan3097"
+           y="440"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BVH N red</tspan><tspan
+           id="tspan3099"
+           y="455"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BVH N green</tspan><tspan
+           id="tspan3101"
+           y="470"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BVH Z red</tspan><tspan
+           id="tspan3103"
+           y="485"
+           x="352.14478"
+           sodipodi:role="line">Outgoing sensor BVH Z green</tspan><tspan
+           id="tspan3105"
+           y="500"
+           x="352.14478"
+           sodipodi:role="line" /><tspan
+           id="tspan3107"
+           y="515"
+           x="352.14478"
+           sodipodi:role="line" /><tspan
+           y="530"
+           x="352.14478"
+           sodipodi:role="line"
+           id="tspan3890">Entering actuator BNH N red</tspan><tspan
+           id="tspan3109"
+           y="545"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BNH N green</tspan><tspan
+           id="tspan3111"
+           y="560"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BNH N block</tspan><tspan
+           id="tspan3113"
+           y="575"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BNH Z red</tspan><tspan
+           id="tspan3115"
+           y="590"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BNH Z green</tspan><tspan
+           id="tspan3117"
+           y="605"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BNH Z block</tspan><tspan
+           id="tspan3119"
+           y="620"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH N red</tspan><tspan
+           id="tspan3121"
+           y="635"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH N green</tspan><tspan
+           id="tspan3123"
+           y="650"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH N block</tspan><tspan
+           id="tspan3125"
+           y="665"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH Z red</tspan><tspan
+           id="tspan3127"
+           y="680"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH Z green</tspan><tspan
+           id="tspan3129"
+           y="695"
+           x="352.14478"
+           sodipodi:role="line">Entering actuator BVH Z block</tspan><tspan
+           id="tspan3131"
+           y="710"
+           x="352.14478"
+           sodipodi:role="line" /><tspan
+           id="tspan3133"
+           y="725"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH N red</tspan><tspan
+           id="tspan3135"
+           y="740"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH N green</tspan><tspan
+           id="tspan3137"
+           y="755"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH N block</tspan><tspan
+           id="tspan3139"
+           y="770"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH Z red</tspan><tspan
+           id="tspan3141"
+           y="785"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH Z green</tspan><tspan
+           id="tspan3143"
+           y="800"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BNH Z block</tspan><tspan
+           id="tspan3145"
+           y="815"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH N red</tspan><tspan
+           id="tspan3147"
+           y="830"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH N green</tspan><tspan
+           id="tspan3149"
+           y="845"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH N block</tspan><tspan
+           id="tspan3151"
+           y="860"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH Z red</tspan><tspan
+           id="tspan3153"
+           y="875"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH Z green</tspan><tspan
+           id="tspan3155"
+           y="890"
+           x="352.14478"
+           sodipodi:role="line">Entering sensors BVH Z block</tspan><tspan
+           id="tspan3073"
+           y="905"
+           x="352.14478"
+           sodipodi:role="line" /></text>
+      <rect
+         y="236"
+         x="18"
+         height="14"
+         width="30"
+         id="a_niv_BNHN_o" />
+      <rect
+         y="250"
+         x="18"
+         height="14"
+         width="30"
+         id="a_niv_BNHN_d" />
+      <rect
+         y="264"
+         x="18"
+         height="14"
+         width="30"
+         id="a_niv_BNHZ_o" />
+      <rect
+         y="278"
+         x="18"
+         height="14"
+         width="30"
+         id="a_niv_BNHZ_d" />
+      <rect
+         y="310"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_1_BNHN_o" />
+      <rect
+         y="324"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_1_BNHN_d" />
+      <rect
+         y="338"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_2_BNHN_o" />
+      <rect
+         y="352"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_2_BNHN_d" />
+      <rect
+         y="366"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_3_BNHN_o" />
+      <rect
+         y="380"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_3_BNHN_d" />
+      <rect
+         y="400"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_1_BNHZ_o" />
+      <rect
+         y="414"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_1_BNHZ_d" />
+      <rect
+         y="428"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_2_BNHZ_o" />
+      <rect
+         y="442"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_2_BNHZ_d" />
+      <rect
+         y="456"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_3_BNHZ_o" />
+      <rect
+         y="470"
+         x="18"
+         height="14"
+         width="30"
+         id="s_niv_3_BNHZ_d" />
+      <rect
+         y="504.78754"
+         x="18"
+         height="14"
+         width="30"
+         id="rioolN" />
+      <rect
+         y="518.78754"
+         x="18"
+         height="14"
+         width="30"
+         id="rioolZ" />
+      <rect
+         y="532.78754"
+         x="18"
+         height="14"
+         width="30"
+         id="wegmeetN" />
+      <rect
+         y="546.78754"
+         x="18"
+         height="14"
+         width="30"
+         id="wegmeetZ" />
+      <rect
+         y="580.50183"
+         x="18"
+         height="14"
+         width="30"
+         id="gw_BNH" />
+      <rect
+         y="594.50183"
+         x="18"
+         height="14"
+         width="30"
+         id="gw_BVH" />
+      <rect
+         y="236"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BNHN_r" />
+      <rect
+         y="250"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BNHN_g" />
+      <rect
+         y="264"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BNHZ_r" />
+      <rect
+         y="278"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BNHZ_g" />
+      <rect
+         y="296"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BVHN_r" />
+      <rect
+         y="310"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BVHN_g" />
+      <rect
+         y="370"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BNHN_r" />
+      <rect
+         y="384"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BNHN_g" />
+      <rect
+         y="398"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BNHZ_r" />
+      <rect
+         y="412"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BNHZ_g" />
+      <rect
+         y="430"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BVHN_r" />
+      <rect
+         y="444"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BVHN_g" />
+      <rect
+         y="519"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHN_r" />
+      <rect
+         y="533"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHN_g" />
+      <rect
+         y="547"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHN_s" />
+      <rect
+         y="564"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHZ_r" />
+      <rect
+         y="578"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHZ_g" />
+      <rect
+         y="592"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BNHZ_s" />
+      <rect
+         y="607.80627"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHN_r" />
+      <rect
+         y="622"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHN_g" />
+      <rect
+         y="636"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHN_s" />
+      <rect
+         y="652"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHZ_r" />
+      <rect
+         y="666"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHZ_g" />
+      <rect
+         y="680"
+         x="315"
+         height="14"
+         width="30"
+         id="a_in_BVHZ_s" />
+      <rect
+         y="713"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHN_r" />
+      <rect
+         y="727"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHN_g" />
+      <rect
+         y="741"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHN_s" />
+      <rect
+         y="758"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHZ_r" />
+      <rect
+         y="772"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHZ_g" />
+      <rect
+         y="786"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BNHZ_s" />
+      <rect
+         y="802"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHN_r" />
+      <rect
+         y="816"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHN_g" />
+      <rect
+         y="830"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHN_s" />
+      <rect
+         y="848"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHZ_r" />
+      <rect
+         y="862"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHZ_g" />
+      <rect
+         y="876"
+         x="315"
+         height="14"
+         width="30"
+         id="s_in_BVHZ_s" />
+      <rect
+         y="458"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BVHZ_r" />
+      <rect
+         y="472"
+         x="315"
+         height="14"
+         width="30"
+         id="s_uit_BVHZ_g" />
+      <rect
+         y="324"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BVHZ_r" />
+      <rect
+         y="338"
+         x="315"
+         height="14"
+         width="30"
+         id="a_uit_BVHZ_g" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3067-1"
+         y="245"
+         x="624.3811"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4301"
+           y="245"
+           x="624.3811"
+           sodipodi:role="line">Gate BNH N sensor 1</tspan><tspan
+           y="260"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3904">Gate BNH N sensor 2</tspan><tspan
+           y="275"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3906">Gate BNH N sensor 3</tspan><tspan
+           y="290"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3908">Gate BNH N sensor 4</tspan><tspan
+           y="305"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3910">Gate BNH N sensor 5</tspan><tspan
+           y="320"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3912">Gate BNH N sensor 6</tspan><tspan
+           y="335"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3914">Gate BNH Z sensor 1</tspan><tspan
+           y="350"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3916">Gate BNH Z sensor 2</tspan><tspan
+           y="365"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3918">Gate BNH Z sensor 3</tspan><tspan
+           y="380"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3920">Gate BNH Z sensor 4</tspan><tspan
+           y="395"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3922">Gate BNH Z sensor 5</tspan><tspan
+           y="410"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3924">Gate BNH Z sensor 6</tspan><tspan
+           y="425"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3934" /><tspan
+           y="440"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan3936" /><tspan
+           id="tspan4325"
+           y="455"
+           x="624.3811"
+           sodipodi:role="line">Gate BVH N sensor 1</tspan><tspan
+           y="470"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4189">Gate BVH N sensor 2</tspan><tspan
+           y="485"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4191">Gate BVH N sensor 3</tspan><tspan
+           y="500"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4193">Gate BVH N sensor 4</tspan><tspan
+           y="515"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4195">Gate BVH N sensor 5</tspan><tspan
+           y="530"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4197">Gate BVH N sensor 6</tspan><tspan
+           y="545"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4199">Gate BVH Z sensor 1</tspan><tspan
+           y="560"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4201">Gate BVH Z sensor 2</tspan><tspan
+           y="575"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4203">Gate BVH Z sensor 3</tspan><tspan
+           y="590"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4205">Gate BVH Z sensor 4</tspan><tspan
+           y="605"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4207">Gate BVH Z sensor 5</tspan><tspan
+           y="620"
+           x="624.3811"
+           sodipodi:role="line"
+           id="tspan4209">Gate BVH Z sensor 6</tspan><tspan
+           id="tspan4289"
+           y="635"
+           x="624.3811"
+           sodipodi:role="line" /></text>
+      <rect
+         y="236"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN1" />
+      <rect
+         y="250"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN2" />
+      <rect
+         y="264"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN3" />
+      <rect
+         y="278"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN4" />
+      <rect
+         y="292"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN5" />
+      <rect
+         y="306"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHN6" />
+      <rect
+         y="326"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ1" />
+      <rect
+         y="340"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ2" />
+      <rect
+         y="354"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ3" />
+      <rect
+         y="368"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ4" />
+      <rect
+         y="382"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ5" />
+      <rect
+         y="396"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BNHZ6" />
+      <rect
+         y="445"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN1" />
+      <rect
+         y="459"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN2" />
+      <rect
+         y="473"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN3" />
+      <rect
+         y="487"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN4" />
+      <rect
+         y="501"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN5" />
+      <rect
+         y="515"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHN6" />
+      <rect
+         y="536"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ1" />
+      <rect
+         y="550"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ2" />
+      <rect
+         y="564"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ3" />
+      <rect
+         y="578"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ4" />
+      <rect
+         y="592"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ5" />
+      <rect
+         y="606"
+         x="588"
+         height="14"
+         width="30"
+         id="s_BVHZ6" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3067-1-16"
+         y="245"
+         x="818.53802"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4289-27"
+           y="245"
+           x="818.53802"
+           sodipodi:role="line">BNH N open </tspan><tspan
+           id="tspan4023"
+           y="260"
+           x="818.53802"
+           sodipodi:role="line">BNH N close</tspan><tspan
+           id="tspan4025"
+           y="275"
+           x="818.53802"
+           sodipodi:role="line">BNH N open fast</tspan><tspan
+           id="tspan4027"
+           y="290"
+           x="818.53802"
+           sodipodi:role="line">BNH N open slow</tspan><tspan
+           id="tspan4029"
+           y="305"
+           x="818.53802"
+           sodipodi:role="line">BNH N close fast</tspan><tspan
+           id="tspan4031"
+           y="320"
+           x="818.53802"
+           sodipodi:role="line">BNH N close slow</tspan><tspan
+           id="tspan4033"
+           y="335"
+           x="818.53802"
+           sodipodi:role="line">BNH N high pressure</tspan><tspan
+           id="tspan4035"
+           y="350"
+           x="818.53802"
+           sodipodi:role="line">BNH N low pressure</tspan><tspan
+           id="tspan4067"
+           y="365"
+           x="818.53802"
+           sodipodi:role="line">BNH Z open </tspan><tspan
+           id="tspan3458"
+           y="380"
+           x="818.53802"
+           sodipodi:role="line">BNH Z close</tspan><tspan
+           id="tspan3460"
+           y="395"
+           x="818.53802"
+           sodipodi:role="line">BNH Z open fast</tspan><tspan
+           id="tspan3462"
+           y="410"
+           x="818.53802"
+           sodipodi:role="line">BNH Z open slow</tspan><tspan
+           id="tspan3464"
+           y="425"
+           x="818.53802"
+           sodipodi:role="line">BNH Z close fast</tspan><tspan
+           id="tspan3466"
+           y="440"
+           x="818.53802"
+           sodipodi:role="line">BNH Z close slow</tspan><tspan
+           id="tspan3468"
+           y="455"
+           x="818.53802"
+           sodipodi:role="line">BNH Z high pressure</tspan><tspan
+           id="tspan3470"
+           y="470"
+           x="818.53802"
+           sodipodi:role="line">BNH Z low pressure</tspan><tspan
+           y="485"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan3980" /><tspan
+           y="500"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan3982" /><tspan
+           id="tspan3498"
+           y="515"
+           x="818.53802"
+           sodipodi:role="line">BVH N open </tspan><tspan
+           y="530"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4347">BVH N close</tspan><tspan
+           y="545"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4349">BVH N open fast</tspan><tspan
+           y="560"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4351">BVH N open slow</tspan><tspan
+           y="575"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4353">BVH N close fast</tspan><tspan
+           y="590"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4355">BVH N close slow</tspan><tspan
+           y="605"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4357">BVH N high pressure</tspan><tspan
+           y="620"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4359">BVH N low pressure</tspan><tspan
+           y="635"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4361">BVH Z open </tspan><tspan
+           y="650"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4363">BVH Z close</tspan><tspan
+           y="665"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4365">BVH Z open fast</tspan><tspan
+           y="680"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4367">BVH Z open slow</tspan><tspan
+           y="695"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4369">BVH Z close fast</tspan><tspan
+           y="710"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4371">BVH Z close slow</tspan><tspan
+           y="725"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4373">BVH Z high pressure</tspan><tspan
+           y="740"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4375">BVH Z low pressure</tspan><tspan
+           y="755"
+           x="818.53802"
+           sodipodi:role="line"
+           id="tspan4377" /></text>
+      <rect
+         y="236"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_op" />
+      <rect
+         y="250"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_sl" />
+      <rect
+         y="267"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_on" />
+      <rect
+         y="281"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_ok" />
+      <rect
+         y="295"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_sn" />
+      <rect
+         y="309"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_sk" />
+      <rect
+         y="323"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_hd" />
+      <rect
+         y="337"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHN_ld" />
+      <rect
+         y="356"
+         x="778"
+         height="14"
+         width="30"
+         id="BNHZ_op" />
+      <rect
+         y="370"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_sl" />
+      <rect
+         y="387"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_on" />
+      <rect
+         y="401"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_ok" />
+      <rect
+         y="415"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_sn" />
+      <rect
+         y="429"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_sk" />
+      <rect
+         y="443"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_hd" />
+      <rect
+         y="457"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BNHZ_ld" />
+      <rect
+         y="506"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_op" />
+      <rect
+         y="520"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_sl" />
+      <rect
+         y="537"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_on" />
+      <rect
+         y="551"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_ok" />
+      <rect
+         y="565"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_sn" />
+      <rect
+         y="579"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_sk" />
+      <rect
+         y="593"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_hd" />
+      <rect
+         y="607"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHN_ld" />
+      <rect
+         y="213.13661"
+         x="964.45282"
+         height="80"
+         width="208.91635"
+         id="rect4191"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:1.08365142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="265.73764"
+         cx="989.48242"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button1" />
+      <circle
+         r="14.5"
+         cy="265.73764"
+         cx="1041.9586"
+         id="button2"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="265.73764"
+         cx="1094.4347"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button3" />
+      <circle
+         r="14.5"
+         cy="265.73764"
+         cx="1146.9109"
+         id="button4"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4227"
+         y="222.48146"
+         x="991.03796"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="222.48146"
+           x="992.79578"
+           id="tspan4229"
+           sodipodi:role="line">open </tspan><tspan
+           id="tspan4381"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="234.98146"
+           x="991.03796"
+           sodipodi:role="line">paddle</tspan><tspan
+           id="tspan4655"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="247.48146"
+           x="991.03796"
+           sodipodi:role="line">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1042.6777"
+         y="224.47365"
+         id="text4231"><tspan
+           sodipodi:role="line"
+           id="tspan4233"
+           x="1044.4355"
+           y="224.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">close </tspan><tspan
+           id="tspan4379"
+           sodipodi:role="line"
+           x="1042.6777"
+           y="236.97365"
+           style="font-size:10px;text-align:center;text-anchor:middle">paddle</tspan><tspan
+           id="tspan4657"
+           sodipodi:role="line"
+           x="1042.6777"
+           y="249.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1094.5105"
+         y="224.47365"
+         id="text4231-5"><tspan
+           sodipodi:role="line"
+           id="tspan4233-2"
+           x="1094.5105"
+           y="224.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">enable</tspan><tspan
+           id="tspan4383"
+           sodipodi:role="line"
+           x="1094.5105"
+           y="236.97365"
+           style="font-size:10px;text-align:center;text-anchor:middle">culver</tspan><tspan
+           id="tspan4659"
+           sodipodi:role="line"
+           x="1094.5105"
+           y="249.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1146.1454"
+         y="224.47365"
+         id="text4231-2"><tspan
+           id="tspan4068"
+           sodipodi:role="line"
+           x="1146.1454"
+           y="224.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">disable</tspan><tspan
+           id="tspan4387"
+           sodipodi:role="line"
+           x="1146.1454"
+           y="236.97365"
+           style="font-size:10px;text-align:center;text-anchor:middle">culvert</tspan><tspan
+           id="tspan4389"
+           sodipodi:role="line"
+           x="1146.1454"
+           y="249.47365"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <rect
+         y="641.59351"
+         x="631.31659"
+         height="85"
+         width="87.554543"
+         id="rect4070"
+         style="fill:#ff0000;stroke:#000000;stroke-width:0.73974043" />
+      <rect
+         y="293.4805"
+         x="964.41095"
+         height="80"
+         width="209"
+         id="rect4191-9"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:0.99999982;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="348.9805"
+         cx="989.48242"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button5" />
+      <circle
+         r="14.5"
+         cy="348.9805"
+         cx="1041.9586"
+         id="button6"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="348.9805"
+         cx="1094.4347"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button7" />
+      <circle
+         r="14.5"
+         cy="348.9805"
+         cx="1146.9109"
+         id="button8"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4227-6"
+         y="305.87503"
+         x="991.0379"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4472"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="305.87503"
+           x="991.0379"
+           sodipodi:role="line">open</tspan><tspan
+           id="tspan4476"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="318.37503"
+           x="991.0379"
+           sodipodi:role="line">gate</tspan><tspan
+           id="tspan4661"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="330.87503"
+           x="991.0379"
+           sodipodi:role="line">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1042.8549"
+         y="307.86722"
+         id="text4231-6"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15"
+           x="1042.8549"
+           y="307.86722"
+           style="font-size:10px;text-align:center;text-anchor:middle">close</tspan><tspan
+           id="tspan4478"
+           sodipodi:role="line"
+           x="1042.8549"
+           y="320.36722"
+           style="font-size:10px;text-align:center;text-anchor:middle">gate</tspan><tspan
+           id="tspan4663"
+           sodipodi:role="line"
+           x="1042.8549"
+           y="332.86722"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1095.0428"
+         y="305.87503"
+         id="text4231-5-4"><tspan
+           sodipodi:role="line"
+           id="tspan4233-2-2"
+           x="1095.0428"
+           y="305.87503"
+           style="font-size:10px;text-align:center;text-anchor:middle">open</tspan><tspan
+           id="tspan4480"
+           sodipodi:role="line"
+           x="1095.0428"
+           y="318.37503"
+           style="font-size:10px;text-align:center;text-anchor:middle">gate</tspan><tspan
+           id="tspan4665"
+           sodipodi:role="line"
+           x="1095.0428"
+           y="330.87503"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1146.8597"
+         y="307.86722"
+         id="text4231-2-0"><tspan
+           sodipodi:role="line"
+           id="tspan4233-1-9"
+           x="1146.8597"
+           y="307.86722"
+           style="font-size:10px;text-align:center;text-anchor:middle">close</tspan><tspan
+           id="tspan4482"
+           sodipodi:role="line"
+           x="1146.8597"
+           y="320.36722"
+           style="font-size:10px;text-align:center;text-anchor:middle">gate</tspan><tspan
+           id="tspan4667"
+           sodipodi:role="line"
+           x="1146.8597"
+           y="332.86722"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <rect
+         y="813.1203"
+         x="789.93927"
+         height="120"
+         width="188.89853"
+         id="water"
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         y="794.63116"
+         x="770.7464"
+         height="139.40105"
+         width="20.203051"
+         id="deurBNH"
+         style="fill:#000000" />
+      <rect
+         y="794.24573"
+         x="978.53302"
+         height="139.40105"
+         width="20.203051"
+         id="deurBVH"
+         style="fill:#000000" />
+      <rect
+         y="812.74536"
+         x="998.47095"
+         height="120"
+         width="188.89853"
+         id="rect3269-7"
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         y="874.0755"
+         x="581.68518"
+         height="60"
+         width="188.89853"
+         id="rect3269-4"
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:0.68797314px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3316"
+         y="1005.2797"
+         x="1093.869"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1005.2797"
+           x="1093.869"
+           id="tspan3318"
+           sodipodi:role="line">BVH</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3320"
+         y="1005.0271"
+         x="599.02051"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1005.0271"
+           x="599.02051"
+           id="tspan3322"
+           sodipodi:role="line">BNH</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="wheight"
+         y="1037.1667"
+         x="798.09015"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1037.1667"
+           x="798.09015"
+           id="tspan3326"
+           sodipodi:role="line">whight</tspan></text>
+      <g
+         id="g4884">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3002"
+           width="20"
+           height="60"
+           x="1005.2033"
+           y="935.85199"
+           rx="5"
+           ry="5" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHN_r"
+           cx="1015.2033"
+           cy="945.85199"
+           r="10" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHN_g"
+           cx="1015.2033"
+           cy="965.85199"
+           r="10" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHN_s"
+           cx="1015.2033"
+           cy="985.85199"
+           r="10" />
+      </g>
+      <g
+         transform="translate(347.11188,850.85199)"
+         id="SVS_OUT_2">
+        <rect
+           ry="5"
+           rx="5"
+           y="85"
+           x="450"
+           height="40"
+           width="20"
+           id="rect3002-4-1"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="95"
+           cx="460"
+           id="svg_uit_BNHN_r"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="115"
+           cx="460"
+           id="svg_uit_BNHN_g"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         transform="translate(376.4063,850.85199)"
+         id="g3440">
+        <rect
+           ry="5"
+           rx="5"
+           y="85"
+           x="450"
+           height="40"
+           width="20"
+           id="rect3002-4-1-1"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="95"
+           cx="460"
+           id="svg_uit_BNHZ_r"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="115"
+           cx="460"
+           id="svg_uit_BNHZ_g"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         transform="translate(502.67537,850.85199)"
+         id="SVS_OUT_2-3">
+        <rect
+           ry="5"
+           rx="5"
+           y="85"
+           x="450"
+           height="40"
+           width="20"
+           id="rect3002-4-1-2"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="95"
+           cx="460"
+           id="svg_uit_BVHZ_r"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="115"
+           cx="460"
+           id="svg_uit_BVHZ_g"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         transform="translate(475.90633,850.85199)"
+         id="SVS_OUT_2-68">
+        <rect
+           ry="5"
+           rx="5"
+           y="85"
+           x="450"
+           height="40"
+           width="20"
+           id="rect3002-4-1-5"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="95"
+           cx="460"
+           id="svg_uit_BVHN_r"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           r="10"
+           cy="115"
+           cx="460"
+           id="svg_uit_BVHN_g"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         transform="translate(296.60426,850.34692)"
+         id="SVS_IN_1-0">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3002-9"
+           width="20"
+           height="60"
+           x="745.97467"
+           y="85.505074"
+           rx="5"
+           ry="5" />
+        <circle
+           transform="translate(295.97469,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHZ_r"
+           cx="460"
+           cy="95"
+           r="10" />
+        <circle
+           transform="translate(295.97469,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHZ_g"
+           cx="460"
+           cy="115"
+           r="10" />
+        <circle
+           transform="translate(295.97469,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BVHZ_s"
+           cx="460"
+           cy="135"
+           r="10" />
+      </g>
+      <g
+         transform="translate(264.78445,850.85199)"
+         id="SVS_IN_1-2">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3002-4"
+           width="20"
+           height="60"
+           x="450"
+           y="85"
+           rx="5"
+           ry="5" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHN_r"
+           cx="460"
+           cy="95"
+           r="10" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHN_g"
+           cx="460"
+           cy="115"
+           r="10" />
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHN_s"
+           cx="460"
+           cy="135"
+           r="10" />
+      </g>
+      <g
+         transform="translate(210.23621,850.34692)"
+         id="SVS_IN_1-7">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3002-1"
+           width="20"
+           height="60"
+           x="536.87311"
+           y="85.505074"
+           rx="5"
+           ry="5" />
+        <circle
+           transform="translate(86.873118,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHZ_r"
+           cx="460"
+           cy="95"
+           r="10" />
+        <circle
+           transform="translate(86.873118,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHZ_g"
+           cx="460"
+           cy="115"
+           r="10" />
+        <circle
+           transform="translate(86.873118,0.50507627)"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="svg_in_BNHZ_s"
+           cx="460"
+           cy="135"
+           r="10" />
+      </g>
+      <rect
+         y="373.36108"
+         x="964.41095"
+         height="80"
+         width="209"
+         id="rect4191-9-7"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:0.99999982;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="431.7182"
+         cx="989.48242"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button9" />
+      <circle
+         r="14.5"
+         cy="431.7182"
+         cx="1041.9586"
+         id="button10"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="431.7182"
+         cx="1094.4347"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button11" />
+      <circle
+         r="14.5"
+         cy="431.7182"
+         cx="1146.9109"
+         id="button12"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4227-6-8"
+         y="387.7478"
+         x="991.0379"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="387.7478"
+           x="991.0379"
+           id="tspan4229-3-8"
+           sodipodi:role="line">out</tspan><tspan
+           id="tspan4484"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="400.2478"
+           x="991.0379"
+           sodipodi:role="line">red</tspan><tspan
+           id="tspan4669"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="412.7478"
+           x="991.0379"
+           sodipodi:role="line">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1042.7946"
+         y="387.7478"
+         id="text4231-6-2"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15-4"
+           x="1042.7946"
+           y="387.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           id="tspan4486"
+           sodipodi:role="line"
+           x="1042.7946"
+           y="400.2478"
+           style="font-size:10px;text-align:center;text-anchor:middle">red</tspan><tspan
+           id="tspan4671"
+           sodipodi:role="line"
+           x="1042.7946"
+           y="412.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1095.103"
+         y="387.7478"
+         id="text4231-5-4-5"><tspan
+           sodipodi:role="line"
+           id="tspan4233-2-2-5"
+           x="1095.103"
+           y="387.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">out</tspan><tspan
+           id="tspan4488"
+           sodipodi:role="line"
+           x="1095.103"
+           y="400.2478"
+           style="font-size:10px;text-align:center;text-anchor:middle">red</tspan><tspan
+           id="tspan4673"
+           sodipodi:role="line"
+           x="1095.103"
+           y="412.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1146.8597"
+         y="387.7478"
+         id="text4231-2-0-1"><tspan
+           sodipodi:role="line"
+           id="tspan4233-1-9-7"
+           x="1146.8597"
+           y="387.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           id="tspan4490"
+           sodipodi:role="line"
+           x="1146.8597"
+           y="400.2478"
+           style="font-size:10px;text-align:center;text-anchor:middle">red</tspan><tspan
+           id="tspan4675"
+           sodipodi:role="line"
+           x="1146.8597"
+           y="412.7478"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <rect
+         y="627"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_op" />
+      <rect
+         y="641"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_sl" />
+      <rect
+         y="658"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_on" />
+      <rect
+         y="672"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_ok" />
+      <rect
+         y="686"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_sn" />
+      <rect
+         y="700"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_sk" />
+      <rect
+         y="714"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_hd" />
+      <rect
+         y="728"
+         x="778.03046"
+         height="14"
+         width="30"
+         id="BVHZ_ld" />
+      <rect
+         y="453.74683"
+         x="964.41095"
+         height="80"
+         width="209"
+         id="rect4191-9-7-7"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:0.99999982;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="508.53253"
+         cx="989.48242"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button13" />
+      <circle
+         r="14.5"
+         cy="508.53253"
+         cx="1041.9586"
+         id="button14"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="14.5"
+         cy="508.53253"
+         cx="1094.4347"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button15" />
+      <circle
+         r="14.5"
+         cy="508.53253"
+         cx="1146.9109"
+         id="button16"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4227-6-8-8"
+         y="468.13354"
+         x="991.0379"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="468.13354"
+           x="991.0379"
+           id="tspan4229-3-8-8"
+           sodipodi:role="line">out</tspan><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="480.63354"
+           x="991.0379"
+           sodipodi:role="line"
+           id="tspan4532">green</tspan><tspan
+           id="tspan4677"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="493.13354"
+           x="991.0379"
+           sodipodi:role="line">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1042.9785"
+         y="468.13354"
+         id="text4231-6-2-2"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15-4-4"
+           x="1042.9785"
+           y="468.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="1042.9785"
+           y="480.63354"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4534">green</tspan><tspan
+           id="tspan4679"
+           sodipodi:role="line"
+           x="1042.9785"
+           y="493.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1094.9192"
+         y="468.13354"
+         id="text4231-5-4-5-5"><tspan
+           sodipodi:role="line"
+           id="tspan4233-2-2-5-5"
+           x="1094.9192"
+           y="468.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">out</tspan><tspan
+           sodipodi:role="line"
+           x="1094.9192"
+           y="480.63354"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4536">green</tspan><tspan
+           id="tspan4681"
+           sodipodi:role="line"
+           x="1094.9192"
+           y="493.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1146.8597"
+         y="468.13354"
+         id="text4231-2-0-1-1"><tspan
+           sodipodi:role="line"
+           id="tspan4233-1-9-7-7"
+           x="1146.8597"
+           y="468.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="1146.8597"
+           y="480.63354"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4538">green</tspan><tspan
+           id="tspan4683"
+           sodipodi:role="line"
+           x="1146.8597"
+           y="493.13354"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <rect
+         y="230"
+         x="10.160455"
+         height="260.74002"
+         width="286.45428"
+         id="rect3395"
+         style="fill:none;stroke:#0000ff;stroke-width:0.97427946px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         y="230"
+         x="303.74475"
+         height="259.03619"
+         width="266.42856"
+         id="rect3397"
+         style="fill:none;stroke:#0000ff;stroke-width:0.98602933" />
+      <rect
+         y="516.22437"
+         x="306.6019"
+         height="392.85715"
+         width="262.85715"
+         id="rect3399"
+         style="fill:none;stroke:#0000ff" />
+      <rect
+         y="230.02"
+         x="582.33618"
+         height="181.35017"
+         width="172.81715"
+         id="rect3401"
+         style="fill:none;stroke:#0000ff;stroke-width:1.37260306" />
+      <rect
+         y="440.19519"
+         x="581.98132"
+         height="185.4184"
+         width="174.59828"
+         id="rect3407"
+         style="fill:none;stroke:#0000ff;stroke-width:1.44180739" />
+      <rect
+         y="230.01788"
+         x="771.61975"
+         height="249.51347"
+         width="175.3214"
+         id="rect3409"
+         style="fill:none;stroke:#0000ff;stroke-width:1.45478654" />
+      <rect
+         y="503.0372"
+         x="773.03418"
+         height="244.96407"
+         width="173.78807"
+         id="rect3413"
+         style="fill:none;stroke:#0000ff;stroke-width:1.45309663" />
+      <rect
+         style="fill:#000000;stroke:#0000ff"
+         id="nivBNH"
+         width="86.368042"
+         height="13.637059"
+         x="738.92664"
+         y="902.71747" />
+      <rect
+         style="fill:#000000;stroke:#0000ff"
+         id="nivBVH"
+         width="86.368042"
+         height="13.637059"
+         x="946.26038"
+         y="902.4649" />
+      <text
+         id="text4227-6-8-8-82"
+         y="593.6828"
+         x="992.00476"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="593.6828"
+           x="992.00476"
+           id="tspan4229-3-8-8-4"
+           sodipodi:role="line" /><tspan
+           id="tspan4677-5"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="606.1828"
+           x="992.00476"
+           sodipodi:role="line" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         x="1095.9266"
+         y="593.6828"
+         id="text4231-5-4-5-5-1"><tspan
+           sodipodi:role="line"
+           id="tspan4233-2-2-5-5-1"
+           x="1095.9266"
+           y="593.6828"
+           style="font-size:10px;text-align:center;text-anchor:middle" /><tspan
+           id="tspan4681-5"
+           sodipodi:role="line"
+           x="1095.9266"
+           y="606.1828"
+           style="font-size:10px;text-align:center;text-anchor:middle" /></text>
+      <rect
+         y="533.88"
+         x="964.41095"
+         height="80"
+         width="209"
+         id="rect4191-9-7-7-4"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:0.99999982;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button17"
+         cx="989.48242"
+         cy="592.23712"
+         r="14.5" />
+      <circle
+         id="button18"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         cx="1041.9586"
+         cy="592.23712"
+         r="14.5" />
+      <circle
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="button19"
+         cx="1094.4347"
+         cy="592.23712"
+         r="14.5" />
+      <circle
+         id="button20"
+         style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         cx="1146.9109"
+         cy="592.23712"
+         r="14.5" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1042.9891"
+         y="548.26672"
+         id="text4231-6-2-2-5"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15-4-4-1"
+           x="1042.9891"
+           y="548.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="1042.9891"
+           y="560.76672"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4542">blocked</tspan><tspan
+           id="tspan4679-7"
+           sodipodi:role="line"
+           x="1042.9891"
+           y="573.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1146.8596"
+         y="548.26672"
+         id="text4231-2-0-1-1-2"><tspan
+           sodipodi:role="line"
+           id="tspan4233-1-9-7-7-7"
+           x="1146.8596"
+           y="548.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="1146.8596"
+           y="560.76672"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4546">blocked</tspan><tspan
+           id="tspan4683-6"
+           sodipodi:role="line"
+           x="1146.8596"
+           y="573.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="990.78046"
+         y="548.26672"
+         id="text4231-6-2-2-5-1"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15-4-4-1-2"
+           x="990.78046"
+           y="548.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="990.78046"
+           y="560.76672"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4540">rg</tspan><tspan
+           id="tspan4679-7-3"
+           sodipodi:role="line"
+           x="990.78046"
+           y="573.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+         x="1094.6509"
+         y="548.26672"
+         id="text4231-6-2-2-5-1-3"><tspan
+           sodipodi:role="line"
+           id="tspan4233-15-4-4-1-2-4"
+           x="1094.6509"
+           y="548.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">enter</tspan><tspan
+           sodipodi:role="line"
+           x="1094.6509"
+           y="560.76672"
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           id="tspan4544">rg</tspan><tspan
+           id="tspan4679-7-3-1"
+           sodipodi:role="line"
+           x="1094.6509"
+           y="573.26672"
+           style="font-size:10px;text-align:center;text-anchor:middle">BVH</tspan></text>
+      <circle
+         id="noodstop"
+         style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         cx="675.09393"
+         cy="698.73639"
+         r="14.5" />
+      <g
+         id="g3529"
+         transform="translate(-106.57109,-293.60921)">
+        <circle
+           transform="matrix(0.97648081,0,0,0.9764808,978.95238,-60.16917)"
+           id="buttonSign"
+           style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.02408576;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           cx="255.26555"
+           cy="519.38983"
+           r="14.849242" />
+        <g
+           transform="translate(15,87.142857)"
+           id="g3457">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+             x="1275.7142"
+             y="355.93359"
+             id="text3423"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan3425"
+               x="1275.7142"
+               y="355.93359">Automatic</tspan><tspan
+               sodipodi:role="line"
+               x="1275.7142"
+               y="370.93359"
+               id="tspan3427">Manual</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+             x="1236.7244"
+             y="340.27008"
+             id="text3429"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan3431"
+               x="1236.7244"
+               y="340.27008">Sign Light setting</tspan></text>
+          <rect
+             id="signsettings"
+             width="138.47174"
+             height="53.476673"
+             x="1193.1617"
+             y="75.529358"
+             transform="translate(0,252.36217)"
+             style="fill:none;stroke:#000000" />
+        </g>
+        <rect
+           id="signauto"
+           width="30"
+           height="14"
+           x="1257"
+           y="432.50504" />
+        <rect
+           id="signman"
+           width="30"
+           height="14"
+           x="1257"
+           y="446.46951" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="timer1_outer"
+         width="101"
+         height="19"
+         x="735.65118"
+         y="999.57031" />
+      <rect
+         y="1000.0703"
+         x="736.15118"
+         height="18"
+         width="53.125"
+         id="timer1_inner"
+         style="fill:#9acd32;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         x="786.6297"
+         y="1012.7983"
+         id="timer1_txt"><tspan
+           sodipodi:role="line"
+           id="tspan3774"
+           x="786.6297"
+           y="1012.7983"
+           style="font-size:10px;text-align:center;text-anchor:middle">Paddle BNH</tspan></text>
+      <rect
+         y="766.12097"
+         x="949.29846"
+         height="19"
+         width="101"
+         id="timer2_outer"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="fill:#9acd32;fill-opacity:1;stroke:none"
+         id="timer2_inner"
+         width="53.125"
+         height="18"
+         x="949.79846"
+         y="766.62097" />
+      <text
+         id="timer2_txt"
+         y="780.91626"
+         x="1000.277"
+         style="font-style:normal;font-weight:normal;font-size:16px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:center;text-anchor:middle"
+           y="780.91626"
+           x="1000.277"
+           id="tspan3792"
+           sodipodi:role="line">Gate BVH</tspan></text>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="timer3_outer"
+         width="101"
+         height="19"
+         x="729.24634"
+         y="766.12097" />
+      <rect
+         y="766.62097"
+         x="729.74634"
+         height="18"
+         width="53.125"
+         id="timer3_inner"
+         style="fill:#9acd32;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         x="779.81116"
+         y="779.349"
+         id="timer3_txt"><tspan
+           sodipodi:role="line"
+           id="tspan3802"
+           x="779.81116"
+           y="779.349"
+           style="font-size:10px;text-align:center;text-anchor:middle">Gate BNH</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3597"
+         y="780.03662"
+         x="697.00525"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="780.03662"
+           x="697.00525"
+           id="tspan3599"
+           sodipodi:role="line">Open</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="913.82867"
+         y="780.03662"
+         id="text3597-7"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3599-6"
+           x="913.82867"
+           y="780.03662">Open</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="701.6405"
+         y="1011.692"
+         id="text3597-7-4"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3599-6-1"
+           x="701.6405"
+           y="1011.692">Open</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="326.52283"
+         y="221.96954"
+         id="text3865"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867"
+           x="326.52283"
+           y="221.96954">Outgoing traffic light actuators</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="324.74149"
+         y="368.29086"
+         id="text3865-8"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-7"
+           x="324.74149"
+           y="368.29086">Outgoing traffic light sensors</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="314.401"
+         y="508.38461"
+         id="text3865-8-4"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-7-2"
+           x="314.401"
+           y="508.38461">Incoming traffic light actuators</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="327.02789"
+         y="708.11749"
+         id="text3865-8-4-7"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-7-2-7"
+           x="327.02789"
+           y="708.11749">Incoming traffic light sensors</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="600"
+         y="225"
+         id="text3865-9"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-3"
+           x="600"
+           y="225">Gate sensors BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="600"
+         y="432.30179"
+         id="text3865-9-1"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-3-9"
+           x="600"
+           y="432.30179">Gate sensors BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="787"
+         y="225"
+         id="text3865-9-8"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-3-6"
+           x="787"
+           y="225">Gate actuators BNH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="787"
+         y="495.84766"
+         id="text3865-9-8-5"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-3-6-0"
+           x="787"
+           y="495.84766">Gate actuators BVH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="69"
+         y="225"
+         id="text3865-2"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-8"
+           x="69"
+           y="225">Paddle actuators</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
+         x="69"
+         y="305.85211"
+         id="text3865-2-6"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3867-8-0"
+           x="69"
+           y="305.85211">Paddle sensors</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="674.55096"
+         y="656.95062"
+         id="text4126"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4128"
+           x="674.55096"
+           y="656.95062"
+           style="text-align:center;text-anchor:middle">Emergency</tspan><tspan
+           sodipodi:role="line"
+           x="674.55096"
+           y="676.95062"
+           id="tspan4766"
+           style="text-align:center;text-anchor:middle">stop</tspan></text>
+      <g
+         transform="translate(765.37302,-333.05448)"
+         id="buttons-5-17">
+        <rect
+           style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:0.99999982;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4191-9-4"
+           width="209"
+           height="80"
+           x="200.5"
+           y="962.86218" />
+        <circle
+           id="stop1"
+           style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           cx="227"
+           cy="1019.0765"
+           r="14.5" />
+        <circle
+           style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="stop2"
+           cx="279"
+           cy="1019.0765"
+           r="14.5" />
+        <circle
+           id="stop3"
+           style="fill:#9acd32;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           cx="331"
+           cy="1019.0765"
+           r="14.5" />
+        <circle
+           style="fill:#cd5c5c;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="stop4"
+           cx="383"
+           cy="1019.0765"
+           r="14.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+           x="227.12695"
+           y="977.05359"
+           id="text4227-6-82"><tspan
+             sodipodi:role="line"
+             x="227.12695"
+             y="977.05359"
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             id="tspan3537">Gate</tspan><tspan
+             sodipodi:role="line"
+             x="227.12695"
+             y="989.55359"
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             id="tspan4768">stop</tspan><tspan
+             sodipodi:role="line"
+             x="227.12695"
+             y="1002.0536"
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             id="tspan4661-5">BNH</tspan></text>
+        <text
+           id="text4231-6-5"
+           y="977.05359"
+           x="279.00977"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+           xml:space="preserve"><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="977.05359"
+             x="279.00977"
+             id="tspan4233-15-1"
+             sodipodi:role="line">Gate</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="989.55359"
+             x="279.00977"
+             sodipodi:role="line"
+             id="tspan4770">stop</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="1002.0536"
+             x="279.00977"
+             sodipodi:role="line"
+             id="tspan4663-7">BVH</tspan></text>
+        <text
+           id="text4231-5-4-1"
+           y="977.2489"
+           x="331.04883"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+           xml:space="preserve"><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="977.2489"
+             x="331.04883"
+             id="tspan4233-2-2-1"
+             sodipodi:role="line">Paddle</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="989.7489"
+             x="331.04883"
+             sodipodi:role="line"
+             id="tspan4772">stop</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="1002.2489"
+             x="331.04883"
+             sodipodi:role="line"
+             id="tspan4665-5">BNH</tspan></text>
+        <text
+           id="text4231-2-0-2"
+           y="977.2489"
+           x="382.94873"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+           xml:space="preserve"><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="977.2489"
+             x="382.94873"
+             sodipodi:role="line"
+             id="tspan4774">Culvert</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="989.7489"
+             x="382.94873"
+             sodipodi:role="line"
+             id="tspan4778">stop</tspan><tspan
+             style="font-size:10px;text-align:center;text-anchor:middle"
+             y="1002.2489"
+             x="382.94873"
+             sodipodi:role="line"
+             id="tspan4667-1">BVH</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="1112.8571"
+         y="515.71429"
+         id="text3483"
+         sodipodi:linespacing="125%"
+         transform="translate(0,202.36217)"><tspan
+           sodipodi:role="line"
+           id="tspan3485"
+           x="1112.8571"
+           y="515.71429" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="time"
+         y="748.13019"
+         x="1114.6847"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="748.13019"
+           x="1114.6847"
+           id="tspan3326-7"
+           sodipodi:role="line">Time:</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="1054.6062"
+         y="782.26904"
+         id="text3597-7-0"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3599-6-6"
+           x="1054.6062"
+           y="782.26904">Closed</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="833.36871"
+         y="782.26904"
+         id="text3597-7-0-8"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3599-6-6-2"
+           x="833.36871"
+           y="782.26904">Closed</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="841.45001"
+         y="1012.9137"
+         id="text3597-7-0-84"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3599-6-6-25"
+           x="841.45001"
+           y="1012.9137">Closed</tspan></text>
+    </g>
+  </g>
+</svg>
