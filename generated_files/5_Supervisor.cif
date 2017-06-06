@@ -1480,7 +1480,7 @@ group sup:
     requirement invariant cmd_stop disables .in_U_S.c_redgreen;
     requirement invariant cmd_stop disables .in_U_S.c_redred;
   end
-  group req_door_D_S:
+  group req_gate_D_S:
     alg bool s_closed = gate_D_S.S.closed;
     alg bool s_bclosed = gate_D_S.S.bclosed;
     alg bool s_frclosed = gate_D_S.S.fclosed;
@@ -1503,7 +1503,7 @@ group sup:
     requirement invariant .gate_D_S.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
     requirement invariant .gate_D_S.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
   end
-  group req_door_D_N:
+  group req_gate_D_N:
     alg bool s_closed = gate_D_N.S.closed;
     alg bool s_bclosed = gate_D_N.S.bclosed;
     alg bool s_frclosed = gate_D_N.S.fclosed;
@@ -1526,7 +1526,7 @@ group sup:
     requirement invariant .gate_D_N.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
     requirement invariant .gate_D_N.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
   end
-  group req_door_U_S:
+  group req_gate_U_S:
     alg bool s_closed = gate_U_S.S.closed;
     alg bool s_bclosed = gate_U_S.S.bclosed;
     alg bool s_frclosed = gate_U_S.S.fclosed;
@@ -1549,7 +1549,7 @@ group sup:
     requirement invariant .gate_U_S.c_low_on needs (s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening;
     requirement invariant .gate_U_S.c_low_off needs not((s_frclosed or s_bclosed) and closing or (s_fropen or s_bopen) and opening);
   end
-  group req_door_U_N:
+  group req_gate_U_N:
     alg bool s_closed = gate_U_N.S.closed;
     alg bool s_bclosed = gate_U_N.S.bclosed;
     alg bool s_frclosed = gate_U_N.S.fclosed;
