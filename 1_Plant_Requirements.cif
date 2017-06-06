@@ -333,7 +333,7 @@ in_U_N : incoming(cmd_U_in_r, cmd_U_in_g, cmd_U_in_rg, cmd_U_in_rr);
 in_U_S : incoming(cmd_U_in_r, cmd_U_in_g, cmd_U_in_rg, cmd_U_in_rr);
 
 
-group def door_requirements(controllable c_speed_sc_on, c_speed_sc_off, c_speed_fc_on, c_speed_fc_off;
+group def gate_requirements(controllable c_speed_sc_on, c_speed_sc_off, c_speed_fc_on, c_speed_fc_off;
                             controllable c_speed_so_on, c_speed_so_off, c_speed_fo_on, c_speed_fo_off;
                             controllable c_high_on, c_high_off;
                             controllable c_low_on,  c_low_off;
@@ -363,7 +363,7 @@ group def door_requirements(controllable c_speed_sc_on, c_speed_sc_off, c_speed_
                                       (s_fropen   or s_bopen)   and opening);
 end
 
-req_door_D_S :door_requirements(gate_D_S.c_sc_on,   gate_D_S.c_sc_off, gate_D_S.c_fc_on, gate_D_S.c_fc_off,
+req_gate_D_S :gate_requirements(gate_D_S.c_sc_on,   gate_D_S.c_sc_off, gate_D_S.c_fc_on, gate_D_S.c_fc_off,
                                 gate_D_S.c_so_on,   gate_D_S.c_so_off, gate_D_S.c_fo_on, gate_D_S.c_fo_off,
                                 gate_D_S.c_high_on, gate_D_S.c_high_off,
                                 gate_D_S.c_low_on,  gate_D_S.c_low_off,
@@ -371,7 +371,7 @@ req_door_D_S :door_requirements(gate_D_S.c_sc_on,   gate_D_S.c_sc_off, gate_D_S.
                                 gate_D_S.S.fopen,   gate_D_S.S.bopen,   gate_D_S.S.open,
                                 gate_D_S.Dir.closing, gate_D_S.Dir.opening);
 
-req_door_D_N :door_requirements(gate_D_N.c_sc_on,   gate_D_N.c_sc_off, gate_D_N.c_fc_on, gate_D_N.c_fc_off,
+req_gate_D_N :gate_requirements(gate_D_N.c_sc_on,   gate_D_N.c_sc_off, gate_D_N.c_fc_on, gate_D_N.c_fc_off,
                                 gate_D_N.c_so_on,   gate_D_N.c_so_off, gate_D_N.c_fo_on, gate_D_N.c_fo_off,
                                 gate_D_N.c_high_on, gate_D_N.c_high_off,
                                 gate_D_N.c_low_on,  gate_D_N.c_low_off,
@@ -379,7 +379,7 @@ req_door_D_N :door_requirements(gate_D_N.c_sc_on,   gate_D_N.c_sc_off, gate_D_N.
                                 gate_D_N.S.fopen,   gate_D_N.S.bopen,   gate_D_N.S.open,
                                 gate_D_N.Dir.closing, gate_D_N.Dir.opening);
 
-req_door_U_S :door_requirements(gate_U_S.c_sc_on,   gate_U_S.c_sc_off, gate_U_S.c_fc_on, gate_U_S.c_fc_off,
+req_gate_U_S :gate_requirements(gate_U_S.c_sc_on,   gate_U_S.c_sc_off, gate_U_S.c_fc_on, gate_U_S.c_fc_off,
                                 gate_U_S.c_so_on,   gate_U_S.c_so_off, gate_U_S.c_fo_on, gate_U_S.c_fo_off,
                                 gate_U_S.c_high_on, gate_U_S.c_high_off,
                                 gate_U_S.c_low_on,  gate_U_S.c_low_off,
@@ -387,7 +387,7 @@ req_door_U_S :door_requirements(gate_U_S.c_sc_on,   gate_U_S.c_sc_off, gate_U_S.
                                 gate_U_S.S.fopen,   gate_U_S.S.bopen,   gate_U_S.S.open,
                                 gate_U_S.Dir.closing, gate_U_S.Dir.opening);
 
-req_door_U_N :door_requirements(gate_U_N.c_sc_on,   gate_U_N.c_sc_off, gate_U_N.c_fc_on, gate_U_N.c_fc_off,
+req_gate_U_N :gate_requirements(gate_U_N.c_sc_on,   gate_U_N.c_sc_off, gate_U_N.c_fc_on, gate_U_N.c_fc_off,
                                 gate_U_N.c_so_on,   gate_U_N.c_so_off, gate_U_N.c_fo_on, gate_U_N.c_fo_off,
                                 gate_U_N.c_high_on, gate_U_N.c_high_off,
                                 gate_U_N.c_low_on,  gate_U_N.c_low_off,
@@ -406,22 +406,19 @@ requirement emergencystop.pushed disables
      gate_D_N.c_open,  gate_D_S.c_open,  gate_U_N.c_open,  gate_U_S.c_open,
      gate_D_N.c_close, gate_D_S.c_close, gate_U_N.c_close, gate_U_S.c_close} ;
 
-//Safety requirements
-//Veiligheidsfunctie nivelleermiddelen sluis:
-//Indien een nivelleermiddel op het andere hoofd geopend is mag een nivelleermiddel niet geopend worden.
-requirement culvert_N.S.flow or culvert_N.A.open or //Sensor or actuator indicates the circulation sewer is open
+//SF: culvert/paddle - culvert/paddle
+requirement culvert_N.S.flow or culvert_N.A.open or
             culvert_S.S.flow or culvert_S.A.open
             disables {pad_N.c_open, pad_S.c_open};
 
-requirement not pad_N.S1.closed or not pad_N.S2.closed or //Sensor or actuator indicates levelling blade is not closed
+requirement not pad_N.S1.closed or not pad_N.S2.closed or 
             not pad_N.S3.closed or     pad_N.A.opening or
             not pad_S.S1.closed or not pad_S.S2.closed or
             not pad_S.S3.closed or     pad_S.A.opening
             disables {culvert_N.c_enable, culvert_S.c_enable};
 
-//Veiligheidsfunctie geopende sluisdeur - nivelleermiddel:
-//Indien een deur op het andere hoofd geopend is mag een nivelleermiddel niet geopend worden.
-requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or //Sensor or actuator indicates door is not closed
+//SF: gate - culvert/paddle
+requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or 
             not gate_U_S.S.closed or gate_U_S.Dir.opening
             disables {pad_N.c_open, pad_S.c_open};
 
@@ -429,29 +426,26 @@ requirement not gate_D_N.S.closed or gate_D_N.Dir.opening or
             not gate_D_S.S.closed or gate_D_S.Dir.opening
             disables {culvert_N.c_enable, culvert_S.c_enable};
 
-//Veiligheidsfunctie gelijk water:
-//Indien het waterverschil over een deur groter is dan het toegestane maximum mag deze niet geopend worden.
+//SF: equal water - gate
 requirement s_equal_D.off //Sensor indicates no equal water
             disables {gate_D_N.c_open, gate_D_S.c_open};
 
 requirement s_equal_U.off
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
-//Veiligheidsfunctie geopend nivelleermiddel - sluisdeur
-//Indien een nivelleermiddel op het andere hoofd geopend is mag een deur niet geopend worden.
-requirement culvert_N.S.flow or culvert_N.A.open or //Sensor or actuator indicates the circulation sewer is open
+//SF: culvert/paddle - gate
+requirement culvert_N.S.flow or culvert_N.A.open or 
             culvert_S.S.flow or culvert_S.A.open
             disables {gate_D_N.c_open, gate_D_S.c_open};
 
-requirement not pad_N.S1.closed or not pad_N.S2.closed or //Sensor or actuator indicates levelling blade is not closed
+requirement not pad_N.S1.closed or not pad_N.S2.closed or 
             not pad_N.S3.closed or     pad_N.A.opening or
             not pad_S.S1.closed or not pad_S.S2.closed or
             not pad_S.S3.closed or     pad_S.A.opening
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
-//Veiligheidsfunctie vergrendeling openen sluisdeur
-//Indien een deur op het andere hoofd geopend is mag een deur niet geopend worden.
-requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or //Sensor or actuator indicates door is not closed
+//SF: gate - gate
+requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or 
             not gate_U_S.S.closed or gate_U_S.Dir.opening
             disables {gate_D_N.c_open, gate_D_S.c_open};
 
@@ -459,23 +453,17 @@ requirement not gate_D_N.S.closed or gate_D_N.Dir.opening or
             not gate_D_S.S.closed or gate_D_S.Dir.opening
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
-//Veiligheidsfunctie onjuist seinbeeld sluis:
-//Indien een uitvaarsein op hetzelfde hoofd het seinbeeld groen toont mag het invaarsein niet het seinbeeld groen tonen.
-//Note that the edges from off -> green, redgreen -> green have to be reded.
-//The edge from greensper -> green does not, as another requirement requires not a_in_BxH_x.greensper
-requirement out_D_N.S.green or out_D_N.A.green or  //Sensor or actuator indicates a leaving sign is green
-            out_D_S.S.green or out_D_S.A.green                             //While the entering sign N is in the off state
+//SF: leaving aspect - entering aspect
+requirement out_D_N.S.green or out_D_N.A.green or  
+            out_D_S.S.green or out_D_S.A.green                           
             disables {in_D_N.c_green, in_D_S.c_green};
 
-requirement out_U_N.S.green or out_U_N.A.green or  //Sensor or actuator indicates a leaving sign is green
-            out_U_S.S.green or out_U_S.A.green                             //While the entering sign N is in the off state
+requirement out_U_N.S.green or out_U_N.A.green or  
+            out_U_S.S.green or out_U_S.A.green                      
             disables {in_U_N.c_green, in_U_S.c_green};
 
-//Veiligheidsfunctie onjuiste seinbeelden sluis
-//Indien een invaarsein op hetzelfde hoofd het seinbeeld groen toont mag het uitvaarsein niet het seinbeeld groen tonen.
-//Note that the edges from off -> green has to be reded.
-//The edge from redgreen -> green does not, as another requirement requires not a_uit_BxH_x.redgreen
-requirement in_D_N.S.green or in_D_N.A.green or //Sensor or actuator indicates an entering sign is green
+//SF: entering aspect - leaving aspect
+requirement in_D_N.S.green or in_D_N.A.green or 
             in_D_S.S.green or in_D_S.A.green
             disables {out_D_N.c_green, out_D_S.c_green};
 
@@ -483,8 +471,7 @@ requirement in_U_N.S.green or in_U_N.A.green or
             in_U_S.S.green or in_U_S.A.green
             disables {out_U_N.c_green, out_U_S.c_green};
 
-//Veiligheidsfunctie sluisdeur - invaarsein:
-//Indien de deur niet geheel geopend is mag het invaarsein niet het seinbeeld groen tonen.
+//SF: gate - entering aspect
 requirement not gate_D_N.S.open or gate_D_N.Dir.closing or
             not gate_D_S.S.open or gate_D_S.Dir.closing
             disables {in_D_N.c_green, in_D_S.c_green};
@@ -493,23 +480,21 @@ requirement not gate_U_N.S.open or gate_U_N.Dir.closing or
             not gate_U_S.S.open or gate_U_S.Dir.closing
             disables {in_U_N.c_green, in_U_S.c_green};
 
-//Veiligheidsfunctie invaarsein - aandrijving sluisdeur sluiten:
-//Indien een invaarsein niet het seinbeeld rood of sper toont mag een deur niet aangedreven worden om te sluiten.
-requirement not (in_D_N.S.red or in_D_N.S.redred) or //Sensor or actuator indicates entering sign is not red or sper
-            not (in_D_N.A.red or in_D_N.A.redred)  or
+//SF: entering aspect - gate.
+requirement not (in_D_N.S.red or in_D_N.S.redred) or 
+            not (in_D_N.A.red or in_D_N.A.redred) or
             not (in_D_S.S.red or in_D_S.S.redred) or
             not (in_D_S.A.red or in_D_S.A.redred)
             disables {gate_D_N.c_close, gate_D_S.c_close};
 
 requirement not (in_U_N.S.red or in_U_N.S.redred) or
-            not (in_U_N.A.red or in_U_N.A.redred)  or
+            not (in_U_N.A.red or in_U_N.A.redred) or
             not (in_U_S.S.red or in_U_S.S.redred) or
             not (in_U_S.A.red or in_U_S.A.redred)
             disables {gate_U_N.c_close, gate_U_S.c_close};
 
-//Veiligheidsfunctie uitvaarsein - aandrijving sluisdeur sluiten:
-//Indien een uitvaarsein niet het seinbeeld rood toont mag een deur niet aangedreven worden om te sluiten.
-requirement not out_D_N.S.red or not out_D_N.A.red or //Sensor or actuator indicates leaving sign is not red
+//SF: leaving aspect - gate.
+requirement not out_D_N.S.red or not out_D_N.A.red or 
             not out_D_S.S.red or not out_D_S.A.red
             disables {gate_D_N.c_close, gate_D_S.c_close};
 
@@ -518,8 +503,7 @@ requirement not out_U_N.S.red or not out_U_N.A.red or
             disables {gate_U_N.c_close, gate_U_N.c_close};
 
 
-//Veiligheidsfunctie sluisdeur - uitvaarsein:
-//Indien de deur niet geheel geopend is mag het uitvaarsein niet het seinbeeld groen tonen.
+//SF: gate - leaving aspect
 requirement not gate_D_N.S.open or gate_D_N.Dir.closing or
             not gate_D_S.S.open or gate_D_S.Dir.closing
             disables {out_D_N.c_green, out_D_S.c_green};
