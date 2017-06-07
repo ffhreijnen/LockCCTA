@@ -90,7 +90,6 @@ group def paddle():
                               (S1.open   and S2.open   and S3.open   and A.opening);
 
     requirement cmd_stop_pad disables {c_open, c_close};
-
 end
 
 //Initialize two sets of paddles
@@ -220,10 +219,10 @@ plant s_equal_U:
     uncontrollable u_equal_on, u_equal_off;
     location off:
         initial; marked;
-        edge u_equal_on   goto on;
+        edge u_equal_on  goto on;
     location on:
         marked;
-        edge u_equal_off  goto off;
+        edge u_equal_off goto off;
 end
 
 group def outgoing(alg bool cmd_out_r, cmd_out_g):
@@ -332,25 +331,23 @@ in_D_S : incoming(cmd_D_in_r, cmd_D_in_g, cmd_D_in_rg, cmd_D_in_rr);
 in_U_N : incoming(cmd_U_in_r, cmd_U_in_g, cmd_U_in_rg, cmd_U_in_rr);
 in_U_S : incoming(cmd_U_in_r, cmd_U_in_g, cmd_U_in_rg, cmd_U_in_rr);
 
-
 group def gate_requirements(controllable c_speed_sc_on, c_speed_sc_off, c_speed_fc_on, c_speed_fc_off;
                             controllable c_speed_so_on, c_speed_so_off, c_speed_fo_on, c_speed_fo_off;
                             controllable c_high_on, c_high_off;
                             controllable c_low_on,  c_low_off;
                             alg bool s_closed, s_bclosed, s_frclosed, s_middle, s_fropen, s_bopen, s_open, closing, opening):
 
-
     requirement c_speed_fc_on   needs not(s_bclosed or s_closed) and closing;
-    requirement c_speed_fc_off  needs s_bclosed or s_closed;// or not closing;
+    requirement c_speed_fc_off  needs s_bclosed or s_closed;
 
     requirement c_speed_sc_on   needs s_bclosed and closing;
-    requirement c_speed_sc_off  needs not s_bclosed;// or not closing;
+    requirement c_speed_sc_off  needs not s_bclosed;
 
     requirement c_speed_fo_on   needs not (s_bopen or s_open) and opening;
-    requirement c_speed_fo_off  needs s_bopen or s_open;// or not opening;
+    requirement c_speed_fo_off  needs s_bopen or s_open;
 
     requirement c_speed_so_on   needs s_bopen and opening;
-    requirement c_speed_so_off  needs not s_bopen;// or not opening;
+    requirement c_speed_so_off  needs not s_bopen;
 
     requirement c_high_on  needs      (s_open   or s_bopen   or s_fropen   or s_middle) and closing or
                                       (s_closed or s_bclosed or s_frclosed or s_middle) and opening;
@@ -411,14 +408,14 @@ requirement culvert_N.S.flow or culvert_N.A.open or
             culvert_S.S.flow or culvert_S.A.open
             disables {pad_N.c_open, pad_S.c_open};
 
-requirement not pad_N.S1.closed or not pad_N.S2.closed or 
+requirement not pad_N.S1.closed or not pad_N.S2.closed or
             not pad_N.S3.closed or     pad_N.A.opening or
             not pad_S.S1.closed or not pad_S.S2.closed or
             not pad_S.S3.closed or     pad_S.A.opening
             disables {culvert_N.c_enable, culvert_S.c_enable};
 
 //SF: gate - culvert/paddle
-requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or 
+requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or
             not gate_U_S.S.closed or gate_U_S.Dir.opening
             disables {pad_N.c_open, pad_S.c_open};
 
@@ -434,18 +431,18 @@ requirement s_equal_U.off
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
 //SF: culvert/paddle - gate
-requirement culvert_N.S.flow or culvert_N.A.open or 
+requirement culvert_N.S.flow or culvert_N.A.open or
             culvert_S.S.flow or culvert_S.A.open
             disables {gate_D_N.c_open, gate_D_S.c_open};
 
-requirement not pad_N.S1.closed or not pad_N.S2.closed or 
+requirement not pad_N.S1.closed or not pad_N.S2.closed or
             not pad_N.S3.closed or     pad_N.A.opening or
             not pad_S.S1.closed or not pad_S.S2.closed or
             not pad_S.S3.closed or     pad_S.A.opening
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
 //SF: gate - gate
-requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or 
+requirement not gate_U_N.S.closed or gate_U_N.Dir.opening or
             not gate_U_S.S.closed or gate_U_S.Dir.opening
             disables {gate_D_N.c_open, gate_D_S.c_open};
 
@@ -454,16 +451,16 @@ requirement not gate_D_N.S.closed or gate_D_N.Dir.opening or
             disables {gate_U_N.c_open, gate_U_S.c_open};
 
 //SF: leaving aspect - entering aspect
-requirement out_D_N.S.green or out_D_N.A.green or  
-            out_D_S.S.green or out_D_S.A.green                           
+requirement out_D_N.S.green or out_D_N.A.green or
+            out_D_S.S.green or out_D_S.A.green
             disables {in_D_N.c_green, in_D_S.c_green};
 
-requirement out_U_N.S.green or out_U_N.A.green or  
-            out_U_S.S.green or out_U_S.A.green                      
+requirement out_U_N.S.green or out_U_N.A.green or
+            out_U_S.S.green or out_U_S.A.green
             disables {in_U_N.c_green, in_U_S.c_green};
 
 //SF: entering aspect - leaving aspect
-requirement in_D_N.S.green or in_D_N.A.green or 
+requirement in_D_N.S.green or in_D_N.A.green or
             in_D_S.S.green or in_D_S.A.green
             disables {out_D_N.c_green, out_D_S.c_green};
 
@@ -481,7 +478,7 @@ requirement not gate_U_N.S.open or gate_U_N.Dir.closing or
             disables {in_U_N.c_green, in_U_S.c_green};
 
 //SF: entering aspect - gate.
-requirement not (in_D_N.S.red or in_D_N.S.redred) or 
+requirement not (in_D_N.S.red or in_D_N.S.redred) or
             not (in_D_N.A.red or in_D_N.A.redred) or
             not (in_D_S.S.red or in_D_S.S.redred) or
             not (in_D_S.A.red or in_D_S.A.redred)
@@ -494,7 +491,7 @@ requirement not (in_U_N.S.red or in_U_N.S.redred) or
             disables {gate_U_N.c_close, gate_U_S.c_close};
 
 //SF: leaving aspect - gate.
-requirement not out_D_N.S.red or not out_D_N.A.red or 
+requirement not out_D_N.S.red or not out_D_N.A.red or
             not out_D_S.S.red or not out_D_S.A.red
             disables {gate_D_N.c_close, gate_D_S.c_close};
 
@@ -511,4 +508,3 @@ requirement not gate_D_N.S.open or gate_D_N.Dir.closing or
 requirement not gate_U_N.S.open or gate_U_N.Dir.closing or
             not gate_U_S.S.open or gate_U_S.Dir.closing
             disables {out_U_N.c_green, out_U_S.c_green};
-

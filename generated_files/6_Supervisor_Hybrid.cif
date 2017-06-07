@@ -2776,10 +2776,10 @@ automaton water:
     initial;
     edge when h > h_D goto middle;
 end
-group svgdeur:
+group svggate:
   svgout id "deurBNH" attr "fill" value if gate_D_N.S.closed: "black" elif gate_D_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
 end
-group svgdeur2:
+group svggate2:
   svgout id "deurBVH" attr "fill" value if gate_U_N.S.closed: "black" elif gate_U_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
 end
 group knop1:

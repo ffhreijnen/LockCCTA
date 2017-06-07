@@ -2,28 +2,21 @@ svgfile "4_Lock.svg";
 import  "2_Simulation.cif";
 
 //Used to represent actuator and sensor PLC status.
-//First input: svgID, second input: bool that represents on/off status.
 group def svout(alg string a; alg bool b):
     svgout id a attr "fill" value if b: "green" else "red" end;
 end
 
 //Used to represent the buttons + input.
-//First input: svgID, second input: bool that represents on/off status,
-//third input: push event, fourth input: release event.
 group def buttonvis(alg string a; alg bool on; event b, c):
     svgin  id a event if on: c else b end;
     svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end;
 end
 
 //Used to represent the signs + PLC.
-//First input: svgID of PLC, second input: bool that represents on/off status,
-//third input: svgID of lamp, fourth input: color of the lamp.
 group def signlight(alg string a; alg bool b; alg string c, color):
     svgout id a attr "fill" value if b: "green" else "red" end;
     svgout id c attr "fill" value if b: color else "grey" end;
 end
-
-
 
 svgout id "timer" + <string>3 + "_inner" attr "width" value scale(gate_D_N.S.degree,   0, 45, 0.01, 100);
 svgout id "timer" + <string>2 + "_inner" attr "width" value scale(gate_U_N.S.degree,   0, 45, 0.01, 100);
@@ -31,13 +24,13 @@ svgout id "timer" + <string>1 + "_inner" attr "width" value scale(pad_S.S3.ext, 
 
 //Used to represent the doors
 //A closed door is black, an open door is green, if the door is in between positions it is yellowgreen.
-group svgdeur:
+group svggate:
     svgout id "deurBNH" attr "fill" value if gate_D_N.S.closed: "black"
                                         elif gate_D_N.S.open  : "green"
                                         else "yellowgreen" end;
 end
 
-group svgdeur2:
+group svggate2:
     svgout id "deurBVH" attr "fill" value if gate_U_N.S.closed: "black"
                                         elif gate_U_N.S.open  : "green"
                                         else "yellowgreen" end;
@@ -70,11 +63,9 @@ knop27 : buttonvis("stop2",    stop2.o, stop2.u_push, stop2.u_release);
 knop28 : buttonvis("stop3",    stop3.o, stop3.u_push, stop3.u_release);
 knop29 : buttonvis("stop4",    stop4.o, stop4.u_push, stop4.u_release);
 
-//Nivelleer visualisation
 svout234 : svout("nivBNH", pad_N.S1.o);
 svout235 : svout("nivBVH", culvert_N.S.o);
 
-//PLC leaving sign aansturing
 uit1  : svout("a_uit_BNHN_r", out_D_N.A.r);
 uit2  : svout("a_uit_BNHN_g", out_D_N.A.g);
 uit3  : svout("a_uit_BNHZ_r", out_D_S.A.r);
@@ -84,7 +75,6 @@ uit6  : svout("a_uit_BVHN_g", out_U_N.A.g);
 uit7  : svout("a_uit_BVHZ_r", out_U_S.A.r);
 uit8  : svout("a_uit_BVHZ_g", out_U_S.A.g);
 
-//Leaving sign visualisation + PLC
 uit9  : signlight("s_uit_BNHN_r", out_D_N.S.r, "svg_uit_BNHN_r", "red");
 uit10 : signlight("s_uit_BNHN_g", out_D_N.S.g, "svg_uit_BNHN_g", "green");
 uit11 : signlight("s_uit_BNHZ_r", out_D_S.S.r, "svg_uit_BNHZ_r", "red");
@@ -94,7 +84,6 @@ uit14 : signlight("s_uit_BVHN_g", out_U_N.S.g, "svg_uit_BVHN_g", "green");
 uit15 : signlight("s_uit_BVHZ_r", out_U_S.S.r, "svg_uit_BVHZ_r", "red");
 uit16 : signlight("s_uit_BVHZ_g", out_U_S.S.g, "svg_uit_BVHZ_g", "green");
 
-//PLC entering sign aansturing
 in1  : svout("a_in_BNHN_r", in_D_N.S.r);
 in2  : svout("a_in_BNHN_g", in_D_N.S.g);
 in3  : svout("a_in_BNHN_s", in_D_N.S.s);
@@ -108,7 +97,6 @@ in10 : svout("a_in_BVHZ_r", in_U_S.S.r);
 in11 : svout("a_in_BVHZ_g", in_U_S.S.g);
 in12 : svout("a_in_BVHZ_s", in_U_S.S.s);
 
-//Entering sign visualisation + PLC
 in13 : signlight("s_in_BNHN_r", in_D_N.A.r, "svg_in_BNHN_r", "red");
 in14 : signlight("s_in_BNHN_g", in_D_N.A.g, "svg_in_BNHN_g", "green");
 in15 : signlight("s_in_BNHN_s", in_D_N.A.s, "svg_in_BNHN_s", "red");
@@ -122,7 +110,6 @@ in22 : signlight("s_in_BVHZ_r", in_U_S.A.r, "svg_in_BVHZ_r", "red");
 in23 : signlight("s_in_BVHZ_g", in_U_S.A.g, "svg_in_BVHZ_g", "green");
 in24 : signlight("s_in_BVHZ_s", in_U_S.A.s, "svg_in_BVHZ_s", "red");
 
-//PLC levelling blades sensors + actuators
 niv1 : svout("s_niv_1_BNHN_o", pad_N.S1.o);
 niv2 : svout("s_niv_1_BNHN_d", pad_N.S1.c);
 niv3 : svout("s_niv_2_BNHN_o", pad_N.S2.o);
@@ -135,22 +122,19 @@ niv9 : svout("s_niv_2_BNHZ_o", pad_S.S2.o);
 niv10: svout("s_niv_2_BNHZ_d", pad_S.S2.c);
 niv11: svout("s_niv_3_BNHZ_o", pad_S.S3.o);
 niv12: svout("s_niv_3_BNHZ_d", pad_S.S3.c);
-niv13: svout( "a_niv_BNHN_o",  pad_N.A.o);
-niv14: svout( "a_niv_BNHN_d",  pad_N.A.c);
-niv15: svout( "a_niv_BNHZ_o",  pad_S.A.o);
-niv16: svout( "a_niv_BNHZ_d",  pad_S.A.c);
+niv13: svout("a_niv_BNHN_o",   pad_N.A.o);
+niv14: svout("a_niv_BNHN_d",   pad_N.A.c);
+niv15: svout("a_niv_BNHZ_o",   pad_S.A.o);
+niv16: svout("a_niv_BNHZ_d",   pad_S.A.c);
 
-//PLC circulation sewer + sensors
 riool1:svout("rioolN",  culvert_N.A.c);
 riool2:svout("rioolZ",  culvert_S.A.c);
 weg1: svout("wegmeetN", culvert_N.S.o);
 weg2: svout("wegmeetZ", culvert_S.S.o);
 
-//PLC equal water sensor
 VOBOf: svout("gw_BNH", s_equal_D.o);
 VOBOk: svout("gw_BVH", s_equal_U.o);
 
-//PLC door sensors BNH N
 ds10 : svout("s_BNHN1", gate_D_N.S.c);
 ds20 : svout("s_BNHN2", gate_D_N.S.bc);
 ds30 : svout("s_BNHN3", gate_D_N.S.fc);
@@ -158,7 +142,6 @@ ds40 : svout("s_BNHN4", gate_D_N.S.fo);
 ds50 : svout("s_BNHN5", gate_D_N.S.bo);
 ds60 : svout("s_BNHN6", gate_D_N.S.o);
 
-//PLC door sensors BNH Z
 ds11 : svout("s_BNHZ1", gate_D_S.S.c);
 ds21 : svout("s_BNHZ2", gate_D_S.S.bc);
 ds31 : svout("s_BNHZ3", gate_D_S.S.fc);
@@ -166,7 +149,6 @@ ds41 : svout("s_BNHZ4", gate_D_S.S.fo);
 ds51 : svout("s_BNHZ5", gate_D_S.S.bo);
 ds61 : svout("s_BNHZ6", gate_D_S.S.o);
 
-//PLC door sensors BVH N
 ds12 : svout("s_BVHN1", gate_U_N.S.c);
 ds22 : svout("s_BVHN2", gate_U_N.S.bc);
 ds32 : svout("s_BVHN3", gate_U_N.S.fc);
@@ -174,7 +156,6 @@ ds42 : svout("s_BVHN4", gate_U_N.S.fo);
 ds52 : svout("s_BVHN5", gate_U_N.S.bo);
 ds62 : svout("s_BVHN6", gate_U_N.S.o);
 
-//PLC door sensors BVH Z
 ds13 : svout("s_BVHZ1", gate_U_S.S.c);
 ds23 : svout("s_BVHZ2", gate_U_S.S.bc);
 ds33 : svout("s_BVHZ3", gate_U_S.S.fc);
@@ -182,7 +163,6 @@ ds43 : svout("s_BVHZ4", gate_U_S.S.fo);
 ds53 : svout("s_BVHZ5", gate_U_S.S.bo);
 ds63 : svout("s_BVHZ6", gate_U_S.S.o);
 
-//PLC door actuators BNH N
 da10 : svout("BNHN_op", gate_D_N.Dir.o);
 da11 : svout("BNHN_sl", gate_D_N.Dir.c);
 da12 : svout("BNHN_on", gate_D_N.Spe.fo);
@@ -192,7 +172,6 @@ da15 : svout("BNHN_sk", gate_D_N.Spe.sc);
 da16 : svout("BNHN_hd", gate_D_N.Pre.h);
 da17 : svout("BNHN_ld", gate_D_N.Pre.l);
 
-//PLC door actuators BNH Z
 da20 : svout("BNHZ_op", gate_D_S.Dir.o);
 da21 : svout("BNHZ_sl", gate_D_S.Dir.c);
 da22 : svout("BNHZ_on", gate_D_S.Spe.fo);
@@ -202,7 +181,6 @@ da25 : svout("BNHZ_sk", gate_D_S.Spe.sc);
 da26 : svout("BNHZ_hd", gate_D_S.Pre.h);
 da27 : svout("BNHZ_ld", gate_D_S.Pre.l);
 
-//PLC door actuators BVH N
 da30 : svout("BVHN_op", gate_U_N.Dir.o);
 da31 : svout("BVHN_sl", gate_U_N.Dir.c);
 da32 : svout("BVHN_on", gate_U_N.Spe.fo);
@@ -212,7 +190,6 @@ da35 : svout("BVHN_sk", gate_U_N.Spe.sc);
 da36 : svout("BVHN_hd", gate_U_N.Pre.h);
 da37 : svout("BVHN_ld", gate_U_N.Pre.l);
 
-//PLC door actuators BVH Z
 da40 : svout("BVHZ_op", gate_U_S.Dir.o);
 da41 : svout("BVHZ_sl", gate_U_S.Dir.c);
 da42 : svout("BVHZ_on", gate_U_S.Spe.fo);

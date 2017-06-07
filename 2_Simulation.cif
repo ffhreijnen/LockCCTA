@@ -100,9 +100,9 @@ end
 culvert_N : culvert(); culvert_S : culvert();
 
 group def gate():
-    controllable c_high_on, c_high_off, c_low_on, c_low_off, c_open, c_close, c_stop,
-                 c_fc_off, c_fc_on, c_sc_on, c_sc_off,
-                 c_fo_off, c_fo_on, c_so_on, c_so_off;
+   controllable   c_high_on, c_high_off, c_low_on, c_low_off, c_open, c_close, c_stop,
+                  c_fc_off, c_fc_on, c_sc_on, c_sc_off,
+                  c_fo_off, c_fo_on, c_so_on, c_so_off;
    uncontrollable u_s1_on, u_s1_off, u_s2_on, u_s2_off, u_s3_on, u_s3_off,
                   u_s4_on, u_s4_off, u_s5_on, u_s5_off, u_s6_on, u_s6_off;
     automaton S:
@@ -212,8 +212,6 @@ end
 s_equal_D : equalwater_sensor(water.low,  true ); //Initially on/true
 s_equal_U : equalwater_sensor(water.high, false); //Initially off/false
 
-//Sensors for the leaving sign
-//r to represent red, g to represent g
 group def outgoing():
     controllable c_red, c_green;
     uncontrollable u_r_on, u_r_off, u_g_on, u_g_off;
@@ -326,8 +324,8 @@ automaton water:
     equation h' = if not  pad_N.S1.closed and culvert_N.S.flow                       :  0
                 elif not (pad_N.S1.closed or pad_N.S2.closed or pad_N.S3.closed
                        or pad_S.S1.closed or pad_S.S2.closed or pad_S.S3.closed)
-                      and h > h_D                                                         :  -15
-                elif (culvert_N.S.flow or culvert_S.S.flow) and h < h_U               :  +15
+                      and h > h_D                                                    :  -15
+                elif (culvert_N.S.flow or culvert_S.S.flow) and h < h_U              :  +15
                 else 0 end;
 
     location high:
