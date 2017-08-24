@@ -4,8 +4,11 @@ Compatible with CIF version r9682, downloaded from http://cif.se.wtb.tue.nl/
 
 Input files:
 [1_Plant_requirements.cif] Code for automata plant model, and state-based requirements
+
 [2_Simulation.cif]         Code for hybrid plant model, imports [3_Visualisation.cif] 
+
 [3_Visualisation.cif]      Code for link between hybrid plant model and SVG visualisation 
+
 [4_Lock.svg]               SVG visualisation of Lock III
 
 Output files:
