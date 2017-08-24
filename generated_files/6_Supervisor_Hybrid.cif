@@ -2777,821 +2777,821 @@ automaton water:
     edge when h > h_D goto middle;
 end
 group svggate:
-  svgout id "deurBNH" attr "fill" value if gate_D_N.S.closed: "black" elif gate_D_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
+  svgout id "gateD" attr "fill" value if gate_D_N.S.closed: "black" elif gate_D_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
 end
 group svggate2:
-  svgout id "deurBVH" attr "fill" value if gate_U_N.S.closed: "black" elif gate_U_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
+  svgout id "gateU" attr "fill" value if gate_U_N.S.closed: "black" elif gate_U_N.S.open: "green" else "yellowgreen" end file "../4_Lock.svg";
 end
 group knop1:
-  alg string a = "button1";
-  alg bool on = button1.o;
-  svgin id a event if on: button1.u_release else button1.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button1";
+  alg bool pushed = button1.o;
+  svgin id svgID event if pushed: button1.u_release else button1.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop2:
-  alg string a = "button2";
-  alg bool on = button2.o;
-  svgin id a event if on: button2.u_release else button2.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button2";
+  alg bool pushed = button2.o;
+  svgin id svgID event if pushed: button2.u_release else button2.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop3:
-  alg string a = "button3";
-  alg bool on = button3.o;
-  svgin id a event if on: button3.u_release else button3.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button3";
+  alg bool pushed = button3.o;
+  svgin id svgID event if pushed: button3.u_release else button3.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop4:
-  alg string a = "button4";
-  alg bool on = button4.o;
-  svgin id a event if on: button4.u_release else button4.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button4";
+  alg bool pushed = button4.o;
+  svgin id svgID event if pushed: button4.u_release else button4.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop5:
-  alg string a = "button5";
-  alg bool on = button5.o;
-  svgin id a event if on: button5.u_release else button5.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button5";
+  alg bool pushed = button5.o;
+  svgin id svgID event if pushed: button5.u_release else button5.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop6:
-  alg string a = "button6";
-  alg bool on = button6.o;
-  svgin id a event if on: button6.u_release else button6.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button6";
+  alg bool pushed = button6.o;
+  svgin id svgID event if pushed: button6.u_release else button6.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop7:
-  alg string a = "button7";
-  alg bool on = button7.o;
-  svgin id a event if on: button7.u_release else button7.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button7";
+  alg bool pushed = button7.o;
+  svgin id svgID event if pushed: button7.u_release else button7.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop8:
-  alg string a = "button8";
-  alg bool on = button8.o;
-  svgin id a event if on: button8.u_release else button8.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button8";
+  alg bool pushed = button8.o;
+  svgin id svgID event if pushed: button8.u_release else button8.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop9:
-  alg string a = "button9";
-  alg bool on = button9.o;
-  svgin id a event if on: button9.u_release else button9.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button9";
+  alg bool pushed = button9.o;
+  svgin id svgID event if pushed: button9.u_release else button9.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop10:
-  alg string a = "button10";
-  alg bool on = button10.o;
-  svgin id a event if on: button10.u_release else button10.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button10";
+  alg bool pushed = button10.o;
+  svgin id svgID event if pushed: button10.u_release else button10.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop11:
-  alg string a = "button11";
-  alg bool on = button11.o;
-  svgin id a event if on: button11.u_release else button11.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button11";
+  alg bool pushed = button11.o;
+  svgin id svgID event if pushed: button11.u_release else button11.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop12:
-  alg string a = "button12";
-  alg bool on = button12.o;
-  svgin id a event if on: button12.u_release else button12.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button12";
+  alg bool pushed = button12.o;
+  svgin id svgID event if pushed: button12.u_release else button12.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop13:
-  alg string a = "button13";
-  alg bool on = button13.o;
-  svgin id a event if on: button13.u_release else button13.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button13";
+  alg bool pushed = button13.o;
+  svgin id svgID event if pushed: button13.u_release else button13.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop14:
-  alg string a = "button14";
-  alg bool on = button14.o;
-  svgin id a event if on: button14.u_release else button14.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button14";
+  alg bool pushed = button14.o;
+  svgin id svgID event if pushed: button14.u_release else button14.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop15:
-  alg string a = "button15";
-  alg bool on = button15.o;
-  svgin id a event if on: button15.u_release else button15.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button15";
+  alg bool pushed = button15.o;
+  svgin id svgID event if pushed: button15.u_release else button15.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop16:
-  alg string a = "button16";
-  alg bool on = button16.o;
-  svgin id a event if on: button16.u_release else button16.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button16";
+  alg bool pushed = button16.o;
+  svgin id svgID event if pushed: button16.u_release else button16.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop17:
-  alg string a = "button17";
-  alg bool on = button17.o;
-  svgin id a event if on: button17.u_release else button17.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button17";
+  alg bool pushed = button17.o;
+  svgin id svgID event if pushed: button17.u_release else button17.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop18:
-  alg string a = "button18";
-  alg bool on = button18.o;
-  svgin id a event if on: button18.u_release else button18.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button18";
+  alg bool pushed = button18.o;
+  svgin id svgID event if pushed: button18.u_release else button18.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop19:
-  alg string a = "button19";
-  alg bool on = button19.o;
-  svgin id a event if on: button19.u_release else button19.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button19";
+  alg bool pushed = button19.o;
+  svgin id svgID event if pushed: button19.u_release else button19.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop20:
-  alg string a = "button20";
-  alg bool on = button20.o;
-  svgin id a event if on: button20.u_release else button20.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "button20";
+  alg bool pushed = button20.o;
+  svgin id svgID event if pushed: button20.u_release else button20.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop25:
-  alg string a = "noodstop";
-  alg bool on = emergencystop.o;
-  svgin id a event if on: emergencystop.u_release else emergencystop.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "emergency";
+  alg bool pushed = emergencystop.o;
+  svgin id svgID event if pushed: emergencystop.u_release else emergencystop.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop26:
-  alg string a = "stop1";
-  alg bool on = stop1.o;
-  svgin id a event if on: stop1.u_release else stop1.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "stop1";
+  alg bool pushed = stop1.o;
+  svgin id svgID event if pushed: stop1.u_release else stop1.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop27:
-  alg string a = "stop2";
-  alg bool on = stop2.o;
-  svgin id a event if on: stop2.u_release else stop2.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "stop2";
+  alg bool pushed = stop2.o;
+  svgin id svgID event if pushed: stop2.u_release else stop2.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop28:
-  alg string a = "stop3";
-  alg bool on = stop3.o;
-  svgin id a event if on: stop3.u_release else stop3.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "stop3";
+  alg bool pushed = stop3.o;
+  svgin id svgID event if pushed: stop3.u_release else stop3.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
 group knop29:
-  alg string a = "stop4";
-  alg bool on = stop4.o;
-  svgin id a event if on: stop4.u_release else stop4.u_push end file "../4_Lock.svg";
-  svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end file "../4_Lock.svg";
+  alg string svgID = "stop4";
+  alg bool pushed = stop4.o;
+  svgin id svgID event if pushed: stop4.u_release else stop4.u_push end file "../4_Lock.svg";
+  svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end file "../4_Lock.svg";
 end
-group svout234:
-  alg string a = "nivBNH";
-  alg bool b = pad_N.S1.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group paddlesD:
+  alg string svgID = "paddleD";
+  alg bool enabled = pad_N.S1.o;
+  svgout id svgID attr "fill" value if enabled: "white" else "black" end file "../4_Lock.svg";
 end
-group svout235:
-  alg string a = "nivBVH";
-  alg bool b = culvert_N.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group CulvertU:
+  alg string svgID = "paddleU";
+  alg bool enabled = culvert_N.S.o;
+  svgout id svgID attr "fill" value if enabled: "white" else "black" end file "../4_Lock.svg";
 end
-group uit1:
-  alg string a = "a_uit_BNHN_r";
-  alg bool b = out_D_N.A.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing1:
+  alg string svgID = "a_outgoing_DN_r";
+  alg bool enabled = out_D_N.A.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit2:
-  alg string a = "a_uit_BNHN_g";
-  alg bool b = out_D_N.A.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing2:
+  alg string svgID = "a_outgoing_DN_g";
+  alg bool enabled = out_D_N.A.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit3:
-  alg string a = "a_uit_BNHZ_r";
-  alg bool b = out_D_S.A.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing3:
+  alg string svgID = "a_outgoing_DS_r";
+  alg bool enabled = out_D_S.A.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit4:
-  alg string a = "a_uit_BNHZ_g";
-  alg bool b = out_D_S.A.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing4:
+  alg string svgID = "a_outgoing_DS_g";
+  alg bool enabled = out_D_S.A.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit5:
-  alg string a = "a_uit_BVHN_r";
-  alg bool b = out_U_N.A.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing5:
+  alg string svgID = "a_outgoing_UN_r";
+  alg bool enabled = out_U_N.A.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit6:
-  alg string a = "a_uit_BVHN_g";
-  alg bool b = out_U_N.A.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing6:
+  alg string svgID = "a_outgoing_UN_g";
+  alg bool enabled = out_U_N.A.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit7:
-  alg string a = "a_uit_BVHZ_r";
-  alg bool b = out_U_S.A.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing7:
+  alg string svgID = "a_outgoing_US_r";
+  alg bool enabled = out_U_S.A.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit8:
-  alg string a = "a_uit_BVHZ_g";
-  alg bool b = out_U_S.A.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group outgoing8:
+  alg string svgID = "a_outgoing_US_g";
+  alg bool enabled = out_U_S.A.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group uit9:
-  alg string a = "s_uit_BNHN_r";
-  alg bool b = out_D_N.S.r;
-  alg string c = "svg_uit_BNHN_r";
+group outgoing9:
+  alg string svgIDPLC = "s_outgoing_DN_r";
+  alg bool enabled = out_D_N.S.r;
+  alg string svgIDlamp = "svg_outgoing_DN_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit10:
-  alg string a = "s_uit_BNHN_g";
-  alg bool b = out_D_N.S.g;
-  alg string c = "svg_uit_BNHN_g";
+group outgoing10:
+  alg string svgIDPLC = "s_outgoing_DN_g";
+  alg bool enabled = out_D_N.S.g;
+  alg string svgIDlamp = "svg_outgoing_DN_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit11:
-  alg string a = "s_uit_BNHZ_r";
-  alg bool b = out_D_S.S.r;
-  alg string c = "svg_uit_BNHZ_r";
+group outgoing11:
+  alg string svgIDPLC = "s_outgoing_DS_r";
+  alg bool enabled = out_D_S.S.r;
+  alg string svgIDlamp = "svg_outgoing_DS_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit12:
-  alg string a = "s_uit_BNHZ_g";
-  alg bool b = out_D_S.S.g;
-  alg string c = "svg_uit_BNHZ_g";
+group outgoing12:
+  alg string svgIDPLC = "s_outgoing_DS_g";
+  alg bool enabled = out_D_S.S.g;
+  alg string svgIDlamp = "svg_outgoing_DS_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit13:
-  alg string a = "s_uit_BVHN_r";
-  alg bool b = out_U_N.S.r;
-  alg string c = "svg_uit_BVHN_r";
+group outgoing13:
+  alg string svgIDPLC = "s_outgoing_UN_r";
+  alg bool enabled = out_U_N.S.r;
+  alg string svgIDlamp = "svg_outgoing_UN_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit14:
-  alg string a = "s_uit_BVHN_g";
-  alg bool b = out_U_N.S.g;
-  alg string c = "svg_uit_BVHN_g";
+group outgoing14:
+  alg string svgIDPLC = "s_outgoing_UN_g";
+  alg bool enabled = out_U_N.S.g;
+  alg string svgIDlamp = "svg_outgoing_UN_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit15:
-  alg string a = "s_uit_BVHZ_r";
-  alg bool b = out_U_S.S.r;
-  alg string c = "svg_uit_BVHZ_r";
+group outgoing15:
+  alg string svgIDPLC = "s_outgoing_US_r";
+  alg bool enabled = out_U_S.S.r;
+  alg string svgIDlamp = "svg_outgoing_US_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group uit16:
-  alg string a = "s_uit_BVHZ_g";
-  alg bool b = out_U_S.S.g;
-  alg string c = "svg_uit_BVHZ_g";
+group outgoing16:
+  alg string svgIDPLC = "s_outgoing_US_g";
+  alg bool enabled = out_U_S.S.g;
+  alg string svgIDlamp = "svg_outgoing_US_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in1:
-  alg string a = "a_in_BNHN_r";
-  alg bool b = in_D_N.S.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming1:
+  alg string svgID = "a_incoming_DN_r";
+  alg bool enabled = in_D_N.S.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in2:
-  alg string a = "a_in_BNHN_g";
-  alg bool b = in_D_N.S.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming2:
+  alg string svgID = "a_incoming_DN_g";
+  alg bool enabled = in_D_N.S.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in3:
-  alg string a = "a_in_BNHN_s";
-  alg bool b = in_D_N.S.s;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming3:
+  alg string svgID = "a_incoming_DN_s";
+  alg bool enabled = in_D_N.S.s;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in4:
-  alg string a = "a_in_BNHZ_r";
-  alg bool b = in_D_S.S.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming4:
+  alg string svgID = "a_incoming_DS_r";
+  alg bool enabled = in_D_S.S.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in5:
-  alg string a = "a_in_BNHZ_g";
-  alg bool b = in_D_S.S.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming5:
+  alg string svgID = "a_incoming_DS_g";
+  alg bool enabled = in_D_S.S.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in6:
-  alg string a = "a_in_BNHZ_s";
-  alg bool b = in_D_S.S.s;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming6:
+  alg string svgID = "a_incoming_DS_s";
+  alg bool enabled = in_D_S.S.s;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in7:
-  alg string a = "a_in_BVHN_r";
-  alg bool b = in_U_N.S.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming7:
+  alg string svgID = "a_incoming_UN_r";
+  alg bool enabled = in_U_N.S.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in8:
-  alg string a = "a_in_BVHN_g";
-  alg bool b = in_U_N.S.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming8:
+  alg string svgID = "a_incoming_UN_g";
+  alg bool enabled = in_U_N.S.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in9:
-  alg string a = "a_in_BVHN_s";
-  alg bool b = in_U_N.S.s;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming9:
+  alg string svgID = "a_incoming_UN_s";
+  alg bool enabled = in_U_N.S.s;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in10:
-  alg string a = "a_in_BVHZ_r";
-  alg bool b = in_U_S.S.r;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming10:
+  alg string svgID = "a_incoming_US_r";
+  alg bool enabled = in_U_S.S.r;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in11:
-  alg string a = "a_in_BVHZ_g";
-  alg bool b = in_U_S.S.g;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming11:
+  alg string svgID = "a_incoming_US_g";
+  alg bool enabled = in_U_S.S.g;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in12:
-  alg string a = "a_in_BVHZ_s";
-  alg bool b = in_U_S.S.s;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
+group incoming12:
+  alg string svgID = "a_incoming_US_s";
+  alg bool enabled = in_U_S.S.s;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
 end
-group in13:
-  alg string a = "s_in_BNHN_r";
-  alg bool b = in_D_N.A.r;
-  alg string c = "svg_in_BNHN_r";
+group incoming13:
+  alg string svgIDPLC = "s_incoming_DN_r";
+  alg bool enabled = in_D_N.A.r;
+  alg string svgIDlamp = "svg_incoming_DN_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in14:
-  alg string a = "s_in_BNHN_g";
-  alg bool b = in_D_N.A.g;
-  alg string c = "svg_in_BNHN_g";
+group incoming14:
+  alg string svgIDPLC = "s_incoming_DN_g";
+  alg bool enabled = in_D_N.A.g;
+  alg string svgIDlamp = "svg_incoming_DN_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in15:
-  alg string a = "s_in_BNHN_s";
-  alg bool b = in_D_N.A.s;
-  alg string c = "svg_in_BNHN_s";
+group incoming15:
+  alg string svgIDPLC = "s_incoming_DN_s";
+  alg bool enabled = in_D_N.A.s;
+  alg string svgIDlamp = "svg_incoming_DN_s";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in16:
-  alg string a = "s_in_BNHZ_r";
-  alg bool b = in_D_S.A.r;
-  alg string c = "svg_in_BNHZ_r";
+group incoming16:
+  alg string svgIDPLC = "s_incoming_DS_r";
+  alg bool enabled = in_D_S.A.r;
+  alg string svgIDlamp = "svg_incoming_DS_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in17:
-  alg string a = "s_in_BNHZ_g";
-  alg bool b = in_D_S.A.g;
-  alg string c = "svg_in_BNHZ_g";
+group incoming17:
+  alg string svgIDPLC = "s_incoming_DS_g";
+  alg bool enabled = in_D_S.A.g;
+  alg string svgIDlamp = "svg_incoming_DS_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in18:
-  alg string a = "s_in_BNHZ_s";
-  alg bool b = in_D_S.A.s;
-  alg string c = "svg_in_BNHZ_s";
+group incoming18:
+  alg string svgIDPLC = "s_incoming_DS_s";
+  alg bool enabled = in_D_S.A.s;
+  alg string svgIDlamp = "svg_incoming_DS_s";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in19:
-  alg string a = "s_in_BVHN_r";
-  alg bool b = in_U_N.A.r;
-  alg string c = "svg_in_BVHN_r";
+group incoming19:
+  alg string svgIDPLC = "s_incoming_UN_r";
+  alg bool enabled = in_U_N.A.r;
+  alg string svgIDlamp = "svg_incoming_UN_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in20:
-  alg string a = "s_in_BVHN_g";
-  alg bool b = in_U_N.A.g;
-  alg string c = "svg_in_BVHN_g";
+group incoming20:
+  alg string svgIDPLC = "s_incoming_UN_g";
+  alg bool enabled = in_U_N.A.g;
+  alg string svgIDlamp = "svg_incoming_UN_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in21:
-  alg string a = "s_in_BVHN_s";
-  alg bool b = in_U_N.A.s;
-  alg string c = "svg_in_BVHN_s";
+group incoming21:
+  alg string svgIDPLC = "s_incoming_UN_s";
+  alg bool enabled = in_U_N.A.s;
+  alg string svgIDlamp = "svg_incoming_UN_s";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in22:
-  alg string a = "s_in_BVHZ_r";
-  alg bool b = in_U_S.A.r;
-  alg string c = "svg_in_BVHZ_r";
+group incoming22:
+  alg string svgIDPLC = "s_incoming_US_r";
+  alg bool enabled = in_U_S.A.r;
+  alg string svgIDlamp = "svg_incoming_US_r";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in23:
-  alg string a = "s_in_BVHZ_g";
-  alg bool b = in_U_S.A.g;
-  alg string c = "svg_in_BVHZ_g";
+group incoming23:
+  alg string svgIDPLC = "s_incoming_US_g";
+  alg bool enabled = in_U_S.A.g;
+  alg string svgIDlamp = "svg_incoming_US_g";
   alg string color = "green";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
 end
-group in24:
-  alg string a = "s_in_BVHZ_s";
-  alg bool b = in_U_S.A.s;
-  alg string c = "svg_in_BVHZ_s";
+group incoming24:
+  alg string svgIDPLC = "s_incoming_US_s";
+  alg bool enabled = in_U_S.A.s;
+  alg string svgIDlamp = "svg_incoming_US_s";
   alg string color = "red";
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-  svgout id c attr "fill" value if b: color else "grey" end file "../4_Lock.svg";
-end
-group niv1:
-  alg string a = "s_niv_1_BNHN_o";
-  alg bool b = pad_N.S1.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv2:
-  alg string a = "s_niv_1_BNHN_d";
-  alg bool b = pad_N.S1.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv3:
-  alg string a = "s_niv_2_BNHN_o";
-  alg bool b = pad_N.S2.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv4:
-  alg string a = "s_niv_2_BNHN_d";
-  alg bool b = pad_N.S2.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv5:
-  alg string a = "s_niv_3_BNHN_o";
-  alg bool b = pad_N.S3.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv6:
-  alg string a = "s_niv_3_BNHN_d";
-  alg bool b = pad_N.S3.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv7:
-  alg string a = "s_niv_1_BNHZ_o";
-  alg bool b = pad_S.S1.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv8:
-  alg string a = "s_niv_1_BNHZ_d";
-  alg bool b = pad_S.S1.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv9:
-  alg string a = "s_niv_2_BNHZ_o";
-  alg bool b = pad_S.S2.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv10:
-  alg string a = "s_niv_2_BNHZ_d";
-  alg bool b = pad_S.S2.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv11:
-  alg string a = "s_niv_3_BNHZ_o";
-  alg bool b = pad_S.S3.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv12:
-  alg string a = "s_niv_3_BNHZ_d";
-  alg bool b = pad_S.S3.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv13:
-  alg string a = "a_niv_BNHN_o";
-  alg bool b = pad_N.A.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv14:
-  alg string a = "a_niv_BNHN_d";
-  alg bool b = pad_N.A.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv15:
-  alg string a = "a_niv_BNHZ_o";
-  alg bool b = pad_S.A.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group niv16:
-  alg string a = "a_niv_BNHZ_d";
-  alg bool b = pad_S.A.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group riool1:
-  alg string a = "rioolN";
-  alg bool b = culvert_N.A.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group riool2:
-  alg string a = "rioolZ";
-  alg bool b = culvert_S.A.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group weg1:
-  alg string a = "wegmeetN";
-  alg bool b = culvert_N.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group weg2:
-  alg string a = "wegmeetZ";
-  alg bool b = culvert_S.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group VOBOf:
-  alg string a = "gw_BNH";
-  alg bool b = s_equal_D.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group VOBOk:
-  alg string a = "gw_BVH";
-  alg bool b = s_equal_U.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds10:
-  alg string a = "s_BNHN1";
-  alg bool b = gate_D_N.S.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds20:
-  alg string a = "s_BNHN2";
-  alg bool b = gate_D_N.S.bc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds30:
-  alg string a = "s_BNHN3";
-  alg bool b = gate_D_N.S.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds40:
-  alg string a = "s_BNHN4";
-  alg bool b = gate_D_N.S.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds50:
-  alg string a = "s_BNHN5";
-  alg bool b = gate_D_N.S.bo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds60:
-  alg string a = "s_BNHN6";
-  alg bool b = gate_D_N.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds11:
-  alg string a = "s_BNHZ1";
-  alg bool b = gate_D_S.S.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds21:
-  alg string a = "s_BNHZ2";
-  alg bool b = gate_D_S.S.bc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds31:
-  alg string a = "s_BNHZ3";
-  alg bool b = gate_D_S.S.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds41:
-  alg string a = "s_BNHZ4";
-  alg bool b = gate_D_S.S.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds51:
-  alg string a = "s_BNHZ5";
-  alg bool b = gate_D_S.S.bo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds61:
-  alg string a = "s_BNHZ6";
-  alg bool b = gate_D_S.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds12:
-  alg string a = "s_BVHN1";
-  alg bool b = gate_U_N.S.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds22:
-  alg string a = "s_BVHN2";
-  alg bool b = gate_U_N.S.bc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds32:
-  alg string a = "s_BVHN3";
-  alg bool b = gate_U_N.S.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds42:
-  alg string a = "s_BVHN4";
-  alg bool b = gate_U_N.S.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds52:
-  alg string a = "s_BVHN5";
-  alg bool b = gate_U_N.S.bo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds62:
-  alg string a = "s_BVHN6";
-  alg bool b = gate_U_N.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds13:
-  alg string a = "s_BVHZ1";
-  alg bool b = gate_U_S.S.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds23:
-  alg string a = "s_BVHZ2";
-  alg bool b = gate_U_S.S.bc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds33:
-  alg string a = "s_BVHZ3";
-  alg bool b = gate_U_S.S.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds43:
-  alg string a = "s_BVHZ4";
-  alg bool b = gate_U_S.S.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds53:
-  alg string a = "s_BVHZ5";
-  alg bool b = gate_U_S.S.bo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group ds63:
-  alg string a = "s_BVHZ6";
-  alg bool b = gate_U_S.S.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da10:
-  alg string a = "BNHN_op";
-  alg bool b = gate_D_N.Dir.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da11:
-  alg string a = "BNHN_sl";
-  alg bool b = gate_D_N.Dir.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da12:
-  alg string a = "BNHN_on";
-  alg bool b = gate_D_N.Spe.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da13:
-  alg string a = "BNHN_ok";
-  alg bool b = gate_D_N.Spe.so;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da14:
-  alg string a = "BNHN_sn";
-  alg bool b = gate_D_N.Spe.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da15:
-  alg string a = "BNHN_sk";
-  alg bool b = gate_D_N.Spe.sc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da16:
-  alg string a = "BNHN_hd";
-  alg bool b = gate_D_N.Pre.h;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da17:
-  alg string a = "BNHN_ld";
-  alg bool b = gate_D_N.Pre.l;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da20:
-  alg string a = "BNHZ_op";
-  alg bool b = gate_D_S.Dir.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da21:
-  alg string a = "BNHZ_sl";
-  alg bool b = gate_D_S.Dir.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da22:
-  alg string a = "BNHZ_on";
-  alg bool b = gate_D_S.Spe.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da23:
-  alg string a = "BNHZ_ok";
-  alg bool b = gate_D_S.Spe.so;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da24:
-  alg string a = "BNHZ_sn";
-  alg bool b = gate_D_S.Spe.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da25:
-  alg string a = "BNHZ_sk";
-  alg bool b = gate_D_S.Spe.sc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da26:
-  alg string a = "BNHZ_hd";
-  alg bool b = gate_D_S.Pre.h;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da27:
-  alg string a = "BNHZ_ld";
-  alg bool b = gate_D_S.Pre.l;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da30:
-  alg string a = "BVHN_op";
-  alg bool b = gate_U_N.Dir.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da31:
-  alg string a = "BVHN_sl";
-  alg bool b = gate_U_N.Dir.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da32:
-  alg string a = "BVHN_on";
-  alg bool b = gate_U_N.Spe.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da33:
-  alg string a = "BVHN_ok";
-  alg bool b = gate_U_N.Spe.so;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da34:
-  alg string a = "BVHN_sn";
-  alg bool b = gate_U_N.Spe.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da35:
-  alg string a = "BVHN_sk";
-  alg bool b = gate_U_N.Spe.sc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da36:
-  alg string a = "BVHN_hd";
-  alg bool b = gate_U_N.Pre.h;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da37:
-  alg string a = "BVHN_ld";
-  alg bool b = gate_U_N.Pre.l;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da40:
-  alg string a = "BVHZ_op";
-  alg bool b = gate_U_S.Dir.o;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da41:
-  alg string a = "BVHZ_sl";
-  alg bool b = gate_U_S.Dir.c;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da42:
-  alg string a = "BVHZ_on";
-  alg bool b = gate_U_S.Spe.fo;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da43:
-  alg string a = "BVHZ_ok";
-  alg bool b = gate_U_S.Spe.so;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da44:
-  alg string a = "BVHZ_sn";
-  alg bool b = gate_U_S.Spe.fc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da45:
-  alg string a = "BVHZ_sk";
-  alg bool b = gate_U_S.Spe.sc;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da46:
-  alg string a = "BVHZ_hd";
-  alg bool b = gate_U_S.Pre.h;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-group da47:
-  alg string a = "BVHZ_ld";
-  alg bool b = gate_U_S.Pre.l;
-  svgout id a attr "fill" value if b: "green" else "red" end file "../4_Lock.svg";
-end
-svgout id "timer" + <string>3 + "_inner" attr "width" value scale(gate_D_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
-svgout id "timer" + <string>2 + "_inner" attr "width" value scale(gate_U_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
-svgout id "timer" + <string>1 + "_inner" attr "width" value scale(pad_S.S3.ext, 0, 10, 0.01, 100) file "../4_Lock.svg";
+  svgout id svgIDPLC attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+  svgout id svgIDlamp attr "fill" value if enabled: color else "grey" end file "../4_Lock.svg";
+end
+group paddle1:
+  alg string svgID = "s_paddle_1_N_o";
+  alg bool enabled = pad_N.S1.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle2:
+  alg string svgID = "s_paddle_1_N_d";
+  alg bool enabled = pad_N.S1.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle3:
+  alg string svgID = "s_paddle_2_N_o";
+  alg bool enabled = pad_N.S2.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle4:
+  alg string svgID = "s_paddle_2_N_d";
+  alg bool enabled = pad_N.S2.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle5:
+  alg string svgID = "s_paddle_3_N_o";
+  alg bool enabled = pad_N.S3.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle6:
+  alg string svgID = "s_paddle_3_N_d";
+  alg bool enabled = pad_N.S3.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle7:
+  alg string svgID = "s_paddle_1_S_o";
+  alg bool enabled = pad_S.S1.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle8:
+  alg string svgID = "s_paddle_1_S_d";
+  alg bool enabled = pad_S.S1.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle9:
+  alg string svgID = "s_paddle_2_S_o";
+  alg bool enabled = pad_S.S2.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle10:
+  alg string svgID = "s_paddle_2_S_d";
+  alg bool enabled = pad_S.S2.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle11:
+  alg string svgID = "s_paddle_3_S_o";
+  alg bool enabled = pad_S.S3.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle12:
+  alg string svgID = "s_paddle_3_S_d";
+  alg bool enabled = pad_S.S3.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle13:
+  alg string svgID = "a_paddle_N_o";
+  alg bool enabled = pad_N.A.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle14:
+  alg string svgID = "a_paddle_N_d";
+  alg bool enabled = pad_N.A.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle15:
+  alg string svgID = "a_paddle_S_o";
+  alg bool enabled = pad_S.A.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group paddle16:
+  alg string svgID = "a_paddle_S_d";
+  alg bool enabled = pad_S.A.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group culvert1:
+  alg string svgID = "a_culvert_N";
+  alg bool enabled = culvert_N.A.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group culvert2:
+  alg string svgID = "a_culvert_S";
+  alg bool enabled = culvert_S.A.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group culvert3:
+  alg string svgID = "s_culvert_N";
+  alg bool enabled = culvert_N.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group culvert4:
+  alg string svgID = "s_culvert_S";
+  alg bool enabled = culvert_S.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group EqualWaterD:
+  alg string svgID = "s_equal_D";
+  alg bool enabled = s_equal_D.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group EqualWaterU:
+  alg string svgID = "s_equal_U";
+  alg bool enabled = s_equal_U.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor1:
+  alg string svgID = "s_gate_DN_1";
+  alg bool enabled = gate_D_N.S.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor2:
+  alg string svgID = "s_gate_DN_2";
+  alg bool enabled = gate_D_N.S.bc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor3:
+  alg string svgID = "s_gate_DN_3";
+  alg bool enabled = gate_D_N.S.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor4:
+  alg string svgID = "s_gate_DN_4";
+  alg bool enabled = gate_D_N.S.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor5:
+  alg string svgID = "s_gate_DN_5";
+  alg bool enabled = gate_D_N.S.bo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor6:
+  alg string svgID = "s_gate_DN_6";
+  alg bool enabled = gate_D_N.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor7:
+  alg string svgID = "s_gate_DS_1";
+  alg bool enabled = gate_D_S.S.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor8:
+  alg string svgID = "s_gate_DS_2";
+  alg bool enabled = gate_D_S.S.bc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor9:
+  alg string svgID = "s_gate_DS_3";
+  alg bool enabled = gate_D_S.S.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor10:
+  alg string svgID = "s_gate_DS_4";
+  alg bool enabled = gate_D_S.S.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor11:
+  alg string svgID = "s_gate_DS_5";
+  alg bool enabled = gate_D_S.S.bo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor12:
+  alg string svgID = "s_gate_DS_6";
+  alg bool enabled = gate_D_S.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor13:
+  alg string svgID = "s_gate_UN_1";
+  alg bool enabled = gate_U_N.S.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor14:
+  alg string svgID = "s_gate_UN_2";
+  alg bool enabled = gate_U_N.S.bc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor15:
+  alg string svgID = "s_gate_UN_3";
+  alg bool enabled = gate_U_N.S.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor16:
+  alg string svgID = "s_gate_UN_4";
+  alg bool enabled = gate_U_N.S.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor17:
+  alg string svgID = "s_gate_UN_5";
+  alg bool enabled = gate_U_N.S.bo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor18:
+  alg string svgID = "s_gate_UN_6";
+  alg bool enabled = gate_U_N.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor19:
+  alg string svgID = "s_gate_US_1";
+  alg bool enabled = gate_U_S.S.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor20:
+  alg string svgID = "s_gate_US_2";
+  alg bool enabled = gate_U_S.S.bc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor21:
+  alg string svgID = "s_gate_US_3";
+  alg bool enabled = gate_U_S.S.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor22:
+  alg string svgID = "s_gate_US_4";
+  alg bool enabled = gate_U_S.S.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor23:
+  alg string svgID = "s_gate_US_5";
+  alg bool enabled = gate_U_S.S.bo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_sensor24:
+  alg string svgID = "s_gate_US_6";
+  alg bool enabled = gate_U_S.S.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator1:
+  alg string svgID = "a_gate_DN_open";
+  alg bool enabled = gate_D_N.Dir.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator2:
+  alg string svgID = "a_gate_DN_close";
+  alg bool enabled = gate_D_N.Dir.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator3:
+  alg string svgID = "a_gate_DN_fast_open";
+  alg bool enabled = gate_D_N.Spe.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator4:
+  alg string svgID = "a_gate_DN_slow_open";
+  alg bool enabled = gate_D_N.Spe.so;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator5:
+  alg string svgID = "a_gate_DN_fast_close";
+  alg bool enabled = gate_D_N.Spe.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator6:
+  alg string svgID = "a_gate_DN_slow_close";
+  alg bool enabled = gate_D_N.Spe.sc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator7:
+  alg string svgID = "a_gate_DN_high_pres";
+  alg bool enabled = gate_D_N.Pre.h;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator8:
+  alg string svgID = "a_gate_DN_low_pres";
+  alg bool enabled = gate_D_N.Pre.l;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator9:
+  alg string svgID = "a_gate_DS_open";
+  alg bool enabled = gate_D_S.Dir.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator10:
+  alg string svgID = "a_gate_DS_close";
+  alg bool enabled = gate_D_S.Dir.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator11:
+  alg string svgID = "a_gate_DS_fast_open";
+  alg bool enabled = gate_D_S.Spe.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator12:
+  alg string svgID = "a_gate_DS_slow_open";
+  alg bool enabled = gate_D_S.Spe.so;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator13:
+  alg string svgID = "a_gate_DS_fast_close";
+  alg bool enabled = gate_D_S.Spe.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator14:
+  alg string svgID = "a_gate_DS_slow_close";
+  alg bool enabled = gate_D_S.Spe.sc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator15:
+  alg string svgID = "a_gate_DS_high_pres";
+  alg bool enabled = gate_D_S.Pre.h;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator16:
+  alg string svgID = "a_gate_DS_low_pres";
+  alg bool enabled = gate_D_S.Pre.l;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator17:
+  alg string svgID = "a_gate_UN_open";
+  alg bool enabled = gate_U_N.Dir.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator18:
+  alg string svgID = "a_gate_UN_close";
+  alg bool enabled = gate_U_N.Dir.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator19:
+  alg string svgID = "a_gate_UN_fast_open";
+  alg bool enabled = gate_U_N.Spe.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator20:
+  alg string svgID = "a_gate_UN_slow_open";
+  alg bool enabled = gate_U_N.Spe.so;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator21:
+  alg string svgID = "a_gate_UN_fast_close";
+  alg bool enabled = gate_U_N.Spe.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator22:
+  alg string svgID = "a_gate_UN_slow_close";
+  alg bool enabled = gate_U_N.Spe.sc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator23:
+  alg string svgID = "a_gate_UN_high_pres";
+  alg bool enabled = gate_U_N.Pre.h;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator24:
+  alg string svgID = "a_gate_UN_low_pres";
+  alg bool enabled = gate_U_N.Pre.l;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator25:
+  alg string svgID = "a_gate_US_open";
+  alg bool enabled = gate_U_S.Dir.o;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator26:
+  alg string svgID = "a_gate_US_close";
+  alg bool enabled = gate_U_S.Dir.c;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator27:
+  alg string svgID = "a_gate_US_fast_open";
+  alg bool enabled = gate_U_S.Spe.fo;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator28:
+  alg string svgID = "a_gate_US_slow_open";
+  alg bool enabled = gate_U_S.Spe.so;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator29:
+  alg string svgID = "a_gate_US_fast_close";
+  alg bool enabled = gate_U_S.Spe.fc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator30:
+  alg string svgID = "a_gate_US_slow_close";
+  alg bool enabled = gate_U_S.Spe.sc;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator31:
+  alg string svgID = "a_gate_US_high_pres";
+  alg bool enabled = gate_U_S.Pre.h;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+group gate_actuator32:
+  alg string svgID = "a_gate_US_low_pres";
+  alg bool enabled = gate_U_S.Pre.l;
+  svgout id svgID attr "fill" value if enabled: "green" else "red" end file "../4_Lock.svg";
+end
+svgout id "prog_gateD" attr "width" value scale(gate_D_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
+svgout id "prog_gateU" attr "width" value scale(gate_U_N.S.degree, 0, 45, 0.01, 100) file "../4_Lock.svg";
+svgout id "prog_paddle" attr "width" value scale(pad_S.S3.ext, 0, 10, 0.01, 100) file "../4_Lock.svg";
