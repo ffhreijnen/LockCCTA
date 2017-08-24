@@ -54,15 +54,9 @@ group def paddle():
         location opening:
             edge c_close goto closing;
             edge c_stop  goto rest;
-            edge S1.u_closed_off, S1.u_open_on;
-            edge S2.u_closed_off, S2.u_open_on;
-            edge S3.u_closed_off, S3.u_open_on;
         location closing:
             edge c_open  goto opening;
             edge c_stop  goto rest;
-            edge S1.u_closed_on, S1.u_open_off;
-            edge S2.u_closed_on, S2.u_open_off;
-            edge S3.u_closed_on, S3.u_open_off;
     end
     plant def S():
         uncontrollable u_closed_on, u_closed_off, u_open_on, u_open_off;
@@ -102,10 +96,8 @@ group def culvert():
         location closed:
             initial; marked;
             edge c_enable  goto open;
-            edge u_off;
         location open:
             edge c_disable goto closed;
-            edge u_on;
     end
     plant S:
         location noflow:
@@ -160,11 +152,9 @@ group def gate(alg bool cmd_gate_o, cmd_gate_c, cmd_stop_gate):
         location opening:
             edge c_close  goto closing;
             edge c_stop   goto off;
-            edge u_s1_on, u_s2_on, u_s3_on, u_s4_off, u_s5_off, u_s6_off;
         location closing:
             edge c_open    goto opening;
             edge c_stop    goto off;
-            edge u_s6_on, u_s5_on, u_s4_on, u_s3_off, u_s2_off, u_s1_off;
     end
     plant Spe:
         location off:
@@ -247,10 +237,8 @@ group def outgoing(alg bool cmd_out_r, cmd_out_g):
         location red:
             initial; marked;
             edge c_green goto green;
-            edge u_r_on, u_g_off;
         location green:
             edge c_red   goto red;
-            edge u_g_on, u_r_off;
     end
     requirement c_red   needs cmd_out_r or cmd_stop;
     requirement c_green needs cmd_out_g;
@@ -305,18 +293,14 @@ group def incoming(alg bool cmd_in_red, cmd_in_green, cmd_in_rg, cmd_in_redred):
         initial; marked;
             edge c_redgreen goto redgreen;
             edge c_redred   goto redred;
-            edge u_r_on, u_g_off, u_s_off;
         location green:
             edge c_red      goto red;
             edge c_redgreen goto redgreen;
-            edge u_r_off, u_g_on, u_s_off;
         location redred:
             edge c_red   goto red;
-            edge u_r_on, u_g_off, u_s_on;
         location redgreen:
             edge c_green goto green;
             edge c_red   goto red;
-            edge u_r_on, u_g_on, u_s_off;
     end
     requirement c_red      needs cmd_in_red or cmd_stop;
     requirement c_green    needs cmd_in_green;
