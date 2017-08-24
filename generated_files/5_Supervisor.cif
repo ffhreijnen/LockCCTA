@@ -596,15 +596,9 @@ group sup:
       location opening:
         edge .pad_N.c_close goto closing;
         edge .pad_N.c_stop goto rest;
-        edge .pad_N.S1.u_closed_off, .pad_N.S1.u_open_on;
-        edge .pad_N.S2.u_closed_off, .pad_N.S2.u_open_on;
-        edge .pad_N.S3.u_closed_off, .pad_N.S3.u_open_on;
       location closing:
         edge .pad_N.c_open goto opening;
         edge .pad_N.c_stop goto rest;
-        edge .pad_N.S1.u_closed_on, .pad_N.S1.u_open_off;
-        edge .pad_N.S2.u_closed_on, .pad_N.S2.u_open_off;
-        edge .pad_N.S3.u_closed_on, .pad_N.S3.u_open_off;
     end
     plant automaton S1:
       location closed:
@@ -657,15 +651,9 @@ group sup:
       location opening:
         edge .pad_S.c_close goto closing;
         edge .pad_S.c_stop goto rest;
-        edge .pad_S.S1.u_closed_off, .pad_S.S1.u_open_on;
-        edge .pad_S.S2.u_closed_off, .pad_S.S2.u_open_on;
-        edge .pad_S.S3.u_closed_off, .pad_S.S3.u_open_on;
       location closing:
         edge .pad_S.c_open goto opening;
         edge .pad_S.c_stop goto rest;
-        edge .pad_S.S1.u_closed_on, .pad_S.S1.u_open_off;
-        edge .pad_S.S2.u_closed_on, .pad_S.S2.u_open_off;
-        edge .pad_S.S3.u_closed_on, .pad_S.S3.u_open_off;
     end
     plant automaton S1:
       location closed:
@@ -714,10 +702,8 @@ group sup:
         initial;
         marked;
         edge .culvert_N.c_enable goto open;
-        edge .culvert_N.u_off;
       location open:
         edge .culvert_N.c_disable goto closed;
-        edge .culvert_N.u_on;
     end
     plant automaton S:
       location noflow:
@@ -737,10 +723,8 @@ group sup:
         initial;
         marked;
         edge .culvert_S.c_enable goto open;
-        edge .culvert_S.u_off;
       location open:
         edge .culvert_S.c_disable goto closed;
-        edge .culvert_S.u_on;
     end
     plant automaton S:
       location noflow:
@@ -790,11 +774,9 @@ group sup:
       location opening:
         edge .gate_D_N.c_close goto closing;
         edge .gate_D_N.c_stop goto off;
-        edge .gate_D_N.u_s1_on, .gate_D_N.u_s2_on, .gate_D_N.u_s3_on, .gate_D_N.u_s4_off, .gate_D_N.u_s5_off, .gate_D_N.u_s6_off;
       location closing:
         edge .gate_D_N.c_open goto opening;
         edge .gate_D_N.c_stop goto off;
-        edge .gate_D_N.u_s6_on, .gate_D_N.u_s5_on, .gate_D_N.u_s4_on, .gate_D_N.u_s3_off, .gate_D_N.u_s2_off, .gate_D_N.u_s1_off;
     end
     plant automaton Spe:
       location off:
@@ -866,11 +848,9 @@ group sup:
       location opening:
         edge .gate_D_S.c_close goto closing;
         edge .gate_D_S.c_stop goto off;
-        edge .gate_D_S.u_s1_on, .gate_D_S.u_s2_on, .gate_D_S.u_s3_on, .gate_D_S.u_s4_off, .gate_D_S.u_s5_off, .gate_D_S.u_s6_off;
       location closing:
         edge .gate_D_S.c_open goto opening;
         edge .gate_D_S.c_stop goto off;
-        edge .gate_D_S.u_s6_on, .gate_D_S.u_s5_on, .gate_D_S.u_s4_on, .gate_D_S.u_s3_off, .gate_D_S.u_s2_off, .gate_D_S.u_s1_off;
     end
     plant automaton Spe:
       location off:
@@ -942,11 +922,9 @@ group sup:
       location opening:
         edge .gate_U_N.c_close goto closing;
         edge .gate_U_N.c_stop goto off;
-        edge .gate_U_N.u_s1_on, .gate_U_N.u_s2_on, .gate_U_N.u_s3_on, .gate_U_N.u_s4_off, .gate_U_N.u_s5_off, .gate_U_N.u_s6_off;
       location closing:
         edge .gate_U_N.c_open goto opening;
         edge .gate_U_N.c_stop goto off;
-        edge .gate_U_N.u_s6_on, .gate_U_N.u_s5_on, .gate_U_N.u_s4_on, .gate_U_N.u_s3_off, .gate_U_N.u_s2_off, .gate_U_N.u_s1_off;
     end
     plant automaton Spe:
       location off:
@@ -1018,11 +996,9 @@ group sup:
       location opening:
         edge .gate_U_S.c_close goto closing;
         edge .gate_U_S.c_stop goto off;
-        edge .gate_U_S.u_s1_on, .gate_U_S.u_s2_on, .gate_U_S.u_s3_on, .gate_U_S.u_s4_off, .gate_U_S.u_s5_off, .gate_U_S.u_s6_off;
       location closing:
         edge .gate_U_S.c_open goto opening;
         edge .gate_U_S.c_stop goto off;
-        edge .gate_U_S.u_s6_on, .gate_U_S.u_s5_on, .gate_U_S.u_s4_on, .gate_U_S.u_s3_off, .gate_U_S.u_s2_off, .gate_U_S.u_s1_off;
     end
     plant automaton Spe:
       location off:
@@ -1100,10 +1076,8 @@ group sup:
         initial;
         marked;
         edge .out_D_N.c_green goto green;
-        edge .out_D_N.u_r_on, .out_D_N.u_g_off;
       location green:
         edge .out_D_N.c_red goto red;
-        edge .out_D_N.u_g_on, .out_D_N.u_r_off;
     end
     requirement invariant .out_D_N.c_red needs cmd_out_r or cmd_stop;
     requirement invariant .out_D_N.c_green needs cmd_out_g;
@@ -1133,10 +1107,8 @@ group sup:
         initial;
         marked;
         edge .out_D_S.c_green goto green;
-        edge .out_D_S.u_r_on, .out_D_S.u_g_off;
       location green:
         edge .out_D_S.c_red goto red;
-        edge .out_D_S.u_g_on, .out_D_S.u_r_off;
     end
     requirement invariant .out_D_S.c_red needs cmd_out_r or cmd_stop;
     requirement invariant .out_D_S.c_green needs cmd_out_g;
@@ -1166,10 +1138,8 @@ group sup:
         initial;
         marked;
         edge .out_U_N.c_green goto green;
-        edge .out_U_N.u_r_on, .out_U_N.u_g_off;
       location green:
         edge .out_U_N.c_red goto red;
-        edge .out_U_N.u_g_on, .out_U_N.u_r_off;
     end
     requirement invariant .out_U_N.c_red needs cmd_out_r or cmd_stop;
     requirement invariant .out_U_N.c_green needs cmd_out_g;
@@ -1199,10 +1169,8 @@ group sup:
         initial;
         marked;
         edge .out_U_S.c_green goto green;
-        edge .out_U_S.u_r_on, .out_U_S.u_g_off;
       location green:
         edge .out_U_S.c_red goto red;
-        edge .out_U_S.u_g_on, .out_U_S.u_r_off;
     end
     requirement invariant .out_U_S.c_red needs cmd_out_r or cmd_stop;
     requirement invariant .out_U_S.c_green needs cmd_out_g;
@@ -1255,18 +1223,14 @@ group sup:
         marked;
         edge .in_D_N.c_redgreen goto redgreen;
         edge .in_D_N.c_redred goto redred;
-        edge .in_D_N.u_r_on, .in_D_N.u_g_off, .in_D_N.u_s_off;
       location green:
         edge .in_D_N.c_red goto red;
         edge .in_D_N.c_redgreen goto redgreen;
-        edge .in_D_N.u_r_off, .in_D_N.u_g_on, .in_D_N.u_s_off;
       location redred:
         edge .in_D_N.c_red goto red;
-        edge .in_D_N.u_r_on, .in_D_N.u_g_off, .in_D_N.u_s_on;
       location redgreen:
         edge .in_D_N.c_green goto green;
         edge .in_D_N.c_red goto red;
-        edge .in_D_N.u_r_on, .in_D_N.u_g_on, .in_D_N.u_s_off;
     end
     requirement invariant .in_D_N.c_red needs cmd_in_red or cmd_stop;
     requirement invariant .in_D_N.c_green needs cmd_in_green;
@@ -1323,18 +1287,14 @@ group sup:
         marked;
         edge .in_D_S.c_redgreen goto redgreen;
         edge .in_D_S.c_redred goto redred;
-        edge .in_D_S.u_r_on, .in_D_S.u_g_off, .in_D_S.u_s_off;
       location green:
         edge .in_D_S.c_red goto red;
         edge .in_D_S.c_redgreen goto redgreen;
-        edge .in_D_S.u_r_off, .in_D_S.u_g_on, .in_D_S.u_s_off;
       location redred:
         edge .in_D_S.c_red goto red;
-        edge .in_D_S.u_r_on, .in_D_S.u_g_off, .in_D_S.u_s_on;
       location redgreen:
         edge .in_D_S.c_green goto green;
         edge .in_D_S.c_red goto red;
-        edge .in_D_S.u_r_on, .in_D_S.u_g_on, .in_D_S.u_s_off;
     end
     requirement invariant .in_D_S.c_red needs cmd_in_red or cmd_stop;
     requirement invariant .in_D_S.c_green needs cmd_in_green;
@@ -1391,18 +1351,14 @@ group sup:
         marked;
         edge .in_U_N.c_redgreen goto redgreen;
         edge .in_U_N.c_redred goto redred;
-        edge .in_U_N.u_r_on, .in_U_N.u_g_off, .in_U_N.u_s_off;
       location green:
         edge .in_U_N.c_red goto red;
         edge .in_U_N.c_redgreen goto redgreen;
-        edge .in_U_N.u_r_off, .in_U_N.u_g_on, .in_U_N.u_s_off;
       location redred:
         edge .in_U_N.c_red goto red;
-        edge .in_U_N.u_r_on, .in_U_N.u_g_off, .in_U_N.u_s_on;
       location redgreen:
         edge .in_U_N.c_green goto green;
         edge .in_U_N.c_red goto red;
-        edge .in_U_N.u_r_on, .in_U_N.u_g_on, .in_U_N.u_s_off;
     end
     requirement invariant .in_U_N.c_red needs cmd_in_red or cmd_stop;
     requirement invariant .in_U_N.c_green needs cmd_in_green;
@@ -1459,18 +1415,14 @@ group sup:
         marked;
         edge .in_U_S.c_redgreen goto redgreen;
         edge .in_U_S.c_redred goto redred;
-        edge .in_U_S.u_r_on, .in_U_S.u_g_off, .in_U_S.u_s_off;
       location green:
         edge .in_U_S.c_red goto red;
         edge .in_U_S.c_redgreen goto redgreen;
-        edge .in_U_S.u_r_off, .in_U_S.u_g_on, .in_U_S.u_s_off;
       location redred:
         edge .in_U_S.c_red goto red;
-        edge .in_U_S.u_r_on, .in_U_S.u_g_off, .in_U_S.u_s_on;
       location redgreen:
         edge .in_U_S.c_green goto green;
         edge .in_U_S.c_red goto red;
-        edge .in_U_S.u_r_on, .in_U_S.u_g_on, .in_U_S.u_s_off;
     end
     requirement invariant .in_U_S.c_red needs cmd_in_red or cmd_stop;
     requirement invariant .in_U_S.c_green needs cmd_in_green;
