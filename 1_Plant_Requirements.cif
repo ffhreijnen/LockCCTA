@@ -397,11 +397,11 @@ req_gate_U_N :gate_requirements(gate_U_N.c_sc_on,   gate_U_N.c_sc_off, gate_U_N.
 requirement emergencystop.pushed disables
     {in_D_N.c_green,    in_D_S.c_green,    in_U_N.c_green,    in_U_S.c_green,
      in_D_N.c_redgreen, in_D_S.c_redgreen, in_U_N.c_redgreen, in_U_S.c_redgreen,
-     out_D_N.c_green,   out_D_S.c_green,   out_U_N.c_green,   out_U_S.c_green, //Leaving sign green lamps
-     pad_N.c_open,     pad_S.c_open,     pad_N.c_close,    pad_S.c_close, //Nivelleerschuif actuators
+     out_D_N.c_green,   out_D_S.c_green,   out_U_N.c_green,   out_U_S.c_green,
+     pad_N.c_open,      pad_S.c_open,      pad_N.c_close,     pad_S.c_close,
      culvert_N.c_enable, culvert_S.c_enable,
-     gate_D_N.c_open,  gate_D_S.c_open,  gate_U_N.c_open,  gate_U_S.c_open,
-     gate_D_N.c_close, gate_D_S.c_close, gate_U_N.c_close, gate_U_S.c_close} ;
+     gate_D_N.c_open,    gate_D_S.c_open,  gate_U_N.c_open,  gate_U_S.c_open,
+     gate_D_N.c_close,   gate_D_S.c_close, gate_U_N.c_close, gate_U_S.c_close} ;
 
 //SF: culvert/paddle - culvert/paddle
 requirement culvert_N.S.flow or culvert_N.A.open or

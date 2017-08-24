@@ -2,7 +2,7 @@ from "lib:cif3" import *;
 
 // Output files
 string sup_path    = "generated_files/5_Supervisor.cif";           //Location of supervisor
-string mrg_path    = "generated_files/6_Supervisor_Hybrid.cif";    //Location of simulation & supervisor merged
+string mrg_path    = "generated_files/6_Supervisor_Hybrid.cif";    //Location of supervisor & simulation/hybrid merged
 // Input files
 string in_path_db  = "1_Plant_Requirements.cif";                   //Location of plant & requirement models
 string sim_path    = "2_Simulation.cif";                           //Location of simulation/hybrid model
@@ -10,7 +10,7 @@ string sim_path    = "2_Simulation.cif";                           //Location of
 // Create directory for generated files.
 mkdir("generated_files", force=true);
 
-// Synthesise dsupervisor
+// Synthesise supervisor.
 outln("File \"%s\": synthesizing...", sup_path);
 cif3datasynth(in_path_db,
     "--option-dialog=1",
@@ -22,12 +22,12 @@ cif3datasynth(in_path_db,
     "--bdd-table=400000");
 outln("File \"%s\": synthesized.", sup_path);
 
-// Merge supervisor with hybrid plants simulation model.
+// Merge supervisor with hybrid plant simulation model.
 outln("File \"%s\": generating...", mrg_path);
 cif3merge(sup_path, sim_path, "-o", mrg_path);
 outln("File \"%s\": generated.", mrg_path);
 
-// Simulate the supervisor/hybrid plants simulation model
+// Simulate the supervisor/hybrid plants simulation model.
 outln("Simulating \"%s\"...", mrg_path);
 outln();
 cif3sim(mrg_path,

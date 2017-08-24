@@ -22,11 +22,11 @@ button1 : button(); button2 : button(); button3 : button(); button4 : button(); 
 button7 : button(); button8 : button(); button9 : button(); button10: button(); button11: button(); button12: button();
 button13: button(); button14: button(); button15: button(); button16: button(); button17: button(); button18: button();
 button19: button(); button20: button();
-emergencystop: button(); stop1:    button(); stop2:    button(); stop3:    button(); stop4:    button();
+stop1:    button(); stop2:    button(); stop3:    button(); stop4:    button();
+emergencystop: button();
 
-
-//c to represent close sensor, o to represent open sensor
-//Continuous variable ext used for time behaviour, 0 is open, 10 is closed
+//c to represent close sensor, o to represent open
+//Continuous variable extension used for time behaviour, 0 is open, 10 is closed
 group def paddle():
     controllable c_close, c_open, c_stop;
     automaton A:
@@ -313,9 +313,9 @@ in_D_N : incoming(); in_D_S : incoming();
 in_U_N : incoming(); in_U_S : incoming();
 
 //Hybrid automaton for the water height.
-//Derivative of height is zero when paddle and culvert are open
-//Derivative of height is negative when at least one paddle is open
-//Derivative of height is positive when at least one culvert is open
+//Derivative of height is zero when schuif and riool are opened
+//Derivative of height is negative when at least one nivelleerschuif is opened
+//Derivative of height is positive when at least one rioolschuif is opened
 //Derivative of height is zero in other cases
 automaton water:
     cont h = 60;

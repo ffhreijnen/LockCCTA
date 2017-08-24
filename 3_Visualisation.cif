@@ -2,199 +2,208 @@ svgfile "4_Lock.svg";
 import  "2_Simulation.cif";
 
 //Used to represent actuator and sensor PLC status.
-group def svout(alg string a; alg bool b):
-    svgout id a attr "fill" value if b: "green" else "red" end;
+group def PLCcontact(alg string svgID; alg bool enabled):
+    svgout id svgID attr "fill" value if enabled: "green" else "red" end;
 end
 
-//Used to represent the buttons + input.
-group def buttonvis(alg string a; alg bool on; event b, c):
-    svgin  id a event if on: c else b end;
-    svgout id a attr "fill" value if on: "yellowgreen" else "indianred" end;
+//Used to represent the buttons + input to supervisor.
+group def buttonvis(alg string svgID; alg bool pushed; event push_event, release_event):
+    svgin  id svgID event if pushed: release_event else push_event end;
+    svgout id svgID attr "fill" value if pushed: "yellowgreen" else "indianred" end;
 end
 
-//Used to represent the signs + PLC.
-group def signlight(alg string a; alg bool b; alg string c, color):
-    svgout id a attr "fill" value if b: "green" else "red" end;
-    svgout id c attr "fill" value if b: color else "grey" end;
+//Used to represent the signs lamps and sensor PLC status.
+group def signlamp(alg string svgIDPLC; alg bool enabled; alg string svgIDlamp, color):
+    svgout id svgIDPLC  attr "fill" value if enabled: "green" else "red" end;
+    svgout id svgIDlamp attr "fill" value if enabled:  color  else "grey" end;
 end
 
-svgout id "timer" + <string>3 + "_inner" attr "width" value scale(gate_D_N.S.degree,   0, 45, 0.01, 100);
-svgout id "timer" + <string>2 + "_inner" attr "width" value scale(gate_U_N.S.degree,   0, 45, 0.01, 100);
-svgout id "timer" + <string>1 + "_inner" attr "width" value scale(pad_S.S3.ext, 0, 10, 0.01, 100);
+//Represent the progression bars for the gates and paddle
+svgout id "prog_gateD"  attr "width" value scale(gate_D_N.S.degree, 0, 45, 0.01, 100);
+svgout id "prog_gateU"  attr "width" value scale(gate_U_N.S.degree, 0, 45, 0.01, 100);
+svgout id "prog_paddle" attr "width" value scale(pad_S.S3.ext, 0, 10, 0.01, 100);
 
-//Used to represent the doors
-//A closed door is black, an open door is green, if the door is in between positions it is yellowgreen.
+//Used to represent the gates
+//A closed gate is black, an open gate is green, if the gate is in between positions it is yellow-green.
 group svggate:
-    svgout id "deurBNH" attr "fill" value if gate_D_N.S.closed: "black"
-                                        elif gate_D_N.S.open  : "green"
+    svgout id "gateD" attr "fill" value if gate_D_N.S.closed : "black"
+                                        elif gate_D_N.S.open : "green"
                                         else "yellowgreen" end;
 end
 
 group svggate2:
-    svgout id "deurBVH" attr "fill" value if gate_U_N.S.closed: "black"
-                                        elif gate_U_N.S.open  : "green"
+    svgout id "gateU" attr "fill" value if gate_U_N.S.closed : "black"
+                                        elif gate_U_N.S.open : "green"
                                         else "yellowgreen" end;
 end
 
+group def paddles(alg string svgID; alg bool enabled):
+    svgout id svgID attr "fill" value if enabled: "white" else "black" end;
+end
+
 //Button visualisation
-knop1  : buttonvis("button1",  button1.o,  button1.u_push,  button1.u_release);
-knop2  : buttonvis("button2",  button2.o,  button2.u_push,  button2.u_release);
-knop3  : buttonvis("button3",  button3.o,  button3.u_push,  button3.u_release);
-knop4  : buttonvis("button4",  button4.o,  button4.u_push,  button4.u_release);
-knop5  : buttonvis("button5",  button5.o,  button5.u_push,  button5.u_release);
-knop6  : buttonvis("button6",  button6.o,  button6.u_push,  button6.u_release);
-knop7  : buttonvis("button7",  button7.o,  button7.u_push,  button7.u_release);
-knop8  : buttonvis("button8",  button8.o,  button8.u_push,  button8.u_release);
-knop9  : buttonvis("button9",  button9.o,  button9.u_push,  button9.u_release);
-knop10 : buttonvis("button10", button10.o, button10.u_push, button10.u_release);
-knop11 : buttonvis("button11", button11.o, button11.u_push, button11.u_release);
-knop12 : buttonvis("button12", button12.o, button12.u_push, button12.u_release);
-knop13 : buttonvis("button13", button13.o, button13.u_push, button13.u_release);
-knop14 : buttonvis("button14", button14.o, button14.u_push, button14.u_release);
-knop15 : buttonvis("button15", button15.o, button15.u_push, button15.u_release);
-knop16 : buttonvis("button16", button16.o, button16.u_push, button16.u_release);
-knop17 : buttonvis("button17", button17.o, button17.u_push, button17.u_release);
-knop18 : buttonvis("button18", button18.o, button18.u_push, button18.u_release);
-knop19 : buttonvis("button19", button19.o, button19.u_push, button19.u_release);
-knop20 : buttonvis("button20", button20.o, button20.u_push, button20.u_release);
-knop25 : buttonvis("noodstop", emergencystop.o, emergencystop.u_push, emergencystop.u_release);
-knop26 : buttonvis("stop1",    stop1.o, stop1.u_push, stop1.u_release);
-knop27 : buttonvis("stop2",    stop2.o, stop2.u_push, stop2.u_release);
-knop28 : buttonvis("stop3",    stop3.o, stop3.u_push, stop3.u_release);
-knop29 : buttonvis("stop4",    stop4.o, stop4.u_push, stop4.u_release);
+knop1  : buttonvis("button1",   button1.o,  button1.u_push,  button1.u_release);
+knop2  : buttonvis("button2",   button2.o,  button2.u_push,  button2.u_release);
+knop3  : buttonvis("button3",   button3.o,  button3.u_push,  button3.u_release);
+knop4  : buttonvis("button4",   button4.o,  button4.u_push,  button4.u_release);
+knop5  : buttonvis("button5",   button5.o,  button5.u_push,  button5.u_release);
+knop6  : buttonvis("button6",   button6.o,  button6.u_push,  button6.u_release);
+knop7  : buttonvis("button7",   button7.o,  button7.u_push,  button7.u_release);
+knop8  : buttonvis("button8",   button8.o,  button8.u_push,  button8.u_release);
+knop9  : buttonvis("button9",   button9.o,  button9.u_push,  button9.u_release);
+knop10 : buttonvis("button10",  button10.o, button10.u_push, button10.u_release);
+knop11 : buttonvis("button11",  button11.o, button11.u_push, button11.u_release);
+knop12 : buttonvis("button12",  button12.o, button12.u_push, button12.u_release);
+knop13 : buttonvis("button13",  button13.o, button13.u_push, button13.u_release);
+knop14 : buttonvis("button14",  button14.o, button14.u_push, button14.u_release);
+knop15 : buttonvis("button15",  button15.o, button15.u_push, button15.u_release);
+knop16 : buttonvis("button16",  button16.o, button16.u_push, button16.u_release);
+knop17 : buttonvis("button17",  button17.o, button17.u_push, button17.u_release);
+knop18 : buttonvis("button18",  button18.o, button18.u_push, button18.u_release);
+knop19 : buttonvis("button19",  button19.o, button19.u_push, button19.u_release);
+knop20 : buttonvis("button20",  button20.o, button20.u_push, button20.u_release);
+knop25 : buttonvis("emergency", emergencystop.o, emergencystop.u_push, emergencystop.u_release);
+knop26 : buttonvis("stop1",     stop1.o, stop1.u_push, stop1.u_release);
+knop27 : buttonvis("stop2",     stop2.o, stop2.u_push, stop2.u_release);
+knop28 : buttonvis("stop3",     stop3.o, stop3.u_push, stop3.u_release);
+knop29 : buttonvis("stop4",     stop4.o, stop4.u_push, stop4.u_release);
 
-svout234 : svout("nivBNH", pad_N.S1.o);
-svout235 : svout("nivBVH", culvert_N.S.o);
+//Paddle and culvert in Lock visualisation
+paddlesD : paddles("paddleD", pad_N.S1.o);
+CulvertU : paddles("paddleU", culvert_N.S.o);
 
-uit1  : svout("a_uit_BNHN_r", out_D_N.A.r);
-uit2  : svout("a_uit_BNHN_g", out_D_N.A.g);
-uit3  : svout("a_uit_BNHZ_r", out_D_S.A.r);
-uit4  : svout("a_uit_BNHZ_g", out_D_S.A.g);
-uit5  : svout("a_uit_BVHN_r", out_U_N.A.r);
-uit6  : svout("a_uit_BVHN_g", out_U_N.A.g);
-uit7  : svout("a_uit_BVHZ_r", out_U_S.A.r);
-uit8  : svout("a_uit_BVHZ_g", out_U_S.A.g);
+//Outgoing sign actuator PLC contacts
+outgoing1  : PLCcontact("a_outgoing_DN_r", out_D_N.A.r);
+outgoing2  : PLCcontact("a_outgoing_DN_g", out_D_N.A.g);
+outgoing3  : PLCcontact("a_outgoing_DS_r", out_D_S.A.r);
+outgoing4  : PLCcontact("a_outgoing_DS_g", out_D_S.A.g);
+outgoing5  : PLCcontact("a_outgoing_UN_r", out_U_N.A.r);
+outgoing6  : PLCcontact("a_outgoing_UN_g", out_U_N.A.g);
+outgoing7  : PLCcontact("a_outgoing_US_r", out_U_S.A.r);
+outgoing8  : PLCcontact("a_outgoing_US_g", out_U_S.A.g);
 
-uit9  : signlight("s_uit_BNHN_r", out_D_N.S.r, "svg_uit_BNHN_r", "red");
-uit10 : signlight("s_uit_BNHN_g", out_D_N.S.g, "svg_uit_BNHN_g", "green");
-uit11 : signlight("s_uit_BNHZ_r", out_D_S.S.r, "svg_uit_BNHZ_r", "red");
-uit12 : signlight("s_uit_BNHZ_g", out_D_S.S.g, "svg_uit_BNHZ_g", "green");
-uit13 : signlight("s_uit_BVHN_r", out_U_N.S.r, "svg_uit_BVHN_r", "red");
-uit14 : signlight("s_uit_BVHN_g", out_U_N.S.g, "svg_uit_BVHN_g", "green");
-uit15 : signlight("s_uit_BVHZ_r", out_U_S.S.r, "svg_uit_BVHZ_r", "red");
-uit16 : signlight("s_uit_BVHZ_g", out_U_S.S.g, "svg_uit_BVHZ_g", "green");
+//Outgoing sign Lock visualisation and sensor PLC contacts
+outgoing9  : signlamp("s_outgoing_DN_r", out_D_N.S.r, "svg_outgoing_DN_r", "red");
+outgoing10 : signlamp("s_outgoing_DN_g", out_D_N.S.g, "svg_outgoing_DN_g", "green");
+outgoing11 : signlamp("s_outgoing_DS_r", out_D_S.S.r, "svg_outgoing_DS_r", "red");
+outgoing12 : signlamp("s_outgoing_DS_g", out_D_S.S.g, "svg_outgoing_DS_g", "green");
+outgoing13 : signlamp("s_outgoing_UN_r", out_U_N.S.r, "svg_outgoing_UN_r", "red");
+outgoing14 : signlamp("s_outgoing_UN_g", out_U_N.S.g, "svg_outgoing_UN_g", "green");
+outgoing15 : signlamp("s_outgoing_US_r", out_U_S.S.r, "svg_outgoing_US_r", "red");
+outgoing16 : signlamp("s_outgoing_US_g", out_U_S.S.g, "svg_outgoing_US_g", "green");
 
-in1  : svout("a_in_BNHN_r", in_D_N.S.r);
-in2  : svout("a_in_BNHN_g", in_D_N.S.g);
-in3  : svout("a_in_BNHN_s", in_D_N.S.s);
-in4  : svout("a_in_BNHZ_r", in_D_S.S.r);
-in5  : svout("a_in_BNHZ_g", in_D_S.S.g);
-in6  : svout("a_in_BNHZ_s", in_D_S.S.s);
-in7  : svout("a_in_BVHN_r", in_U_N.S.r);
-in8  : svout("a_in_BVHN_g", in_U_N.S.g);
-in9  : svout("a_in_BVHN_s", in_U_N.S.s);
-in10 : svout("a_in_BVHZ_r", in_U_S.S.r);
-in11 : svout("a_in_BVHZ_g", in_U_S.S.g);
-in12 : svout("a_in_BVHZ_s", in_U_S.S.s);
+//Incoming sign actuator PLC contacts
+incoming1  : PLCcontact("a_incoming_DN_r", in_D_N.S.r);
+incoming2  : PLCcontact("a_incoming_DN_g", in_D_N.S.g);
+incoming3  : PLCcontact("a_incoming_DN_s", in_D_N.S.s);
+incoming4  : PLCcontact("a_incoming_DS_r", in_D_S.S.r);
+incoming5  : PLCcontact("a_incoming_DS_g", in_D_S.S.g);
+incoming6  : PLCcontact("a_incoming_DS_s", in_D_S.S.s);
+incoming7  : PLCcontact("a_incoming_UN_r", in_U_N.S.r);
+incoming8  : PLCcontact("a_incoming_UN_g", in_U_N.S.g);
+incoming9  : PLCcontact("a_incoming_UN_s", in_U_N.S.s);
+incoming10 : PLCcontact("a_incoming_US_r", in_U_S.S.r);
+incoming11 : PLCcontact("a_incoming_US_g", in_U_S.S.g);
+incoming12 : PLCcontact("a_incoming_US_s", in_U_S.S.s);
 
-in13 : signlight("s_in_BNHN_r", in_D_N.A.r, "svg_in_BNHN_r", "red");
-in14 : signlight("s_in_BNHN_g", in_D_N.A.g, "svg_in_BNHN_g", "green");
-in15 : signlight("s_in_BNHN_s", in_D_N.A.s, "svg_in_BNHN_s", "red");
-in16 : signlight("s_in_BNHZ_r", in_D_S.A.r, "svg_in_BNHZ_r", "red");
-in17 : signlight("s_in_BNHZ_g", in_D_S.A.g, "svg_in_BNHZ_g", "green");
-in18 : signlight("s_in_BNHZ_s", in_D_S.A.s, "svg_in_BNHZ_s", "red");
-in19 : signlight("s_in_BVHN_r", in_U_N.A.r, "svg_in_BVHN_r", "red");
-in20 : signlight("s_in_BVHN_g", in_U_N.A.g, "svg_in_BVHN_g", "green");
-in21 : signlight("s_in_BVHN_s", in_U_N.A.s, "svg_in_BVHN_s", "red");
-in22 : signlight("s_in_BVHZ_r", in_U_S.A.r, "svg_in_BVHZ_r", "red");
-in23 : signlight("s_in_BVHZ_g", in_U_S.A.g, "svg_in_BVHZ_g", "green");
-in24 : signlight("s_in_BVHZ_s", in_U_S.A.s, "svg_in_BVHZ_s", "red");
+//Incoming sign Lock visualisation and sensor PLC contacts
+incoming13 : signlamp("s_incoming_DN_r", in_D_N.A.r, "svg_incoming_DN_r", "red");
+incoming14 : signlamp("s_incoming_DN_g", in_D_N.A.g, "svg_incoming_DN_g", "green");
+incoming15 : signlamp("s_incoming_DN_s", in_D_N.A.s, "svg_incoming_DN_s", "red");
+incoming16 : signlamp("s_incoming_DS_r", in_D_S.A.r, "svg_incoming_DS_r", "red");
+incoming17 : signlamp("s_incoming_DS_g", in_D_S.A.g, "svg_incoming_DS_g", "green");
+incoming18 : signlamp("s_incoming_DS_s", in_D_S.A.s, "svg_incoming_DS_s", "red");
+incoming19 : signlamp("s_incoming_UN_r", in_U_N.A.r, "svg_incoming_UN_r", "red");
+incoming20 : signlamp("s_incoming_UN_g", in_U_N.A.g, "svg_incoming_UN_g", "green");
+incoming21 : signlamp("s_incoming_UN_s", in_U_N.A.s, "svg_incoming_UN_s", "red");
+incoming22 : signlamp("s_incoming_US_r", in_U_S.A.r, "svg_incoming_US_r", "red");
+incoming23 : signlamp("s_incoming_US_g", in_U_S.A.g, "svg_incoming_US_g", "green");
+incoming24 : signlamp("s_incoming_US_s", in_U_S.A.s, "svg_incoming_US_s", "red");
 
-niv1 : svout("s_niv_1_BNHN_o", pad_N.S1.o);
-niv2 : svout("s_niv_1_BNHN_d", pad_N.S1.c);
-niv3 : svout("s_niv_2_BNHN_o", pad_N.S2.o);
-niv4 : svout("s_niv_2_BNHN_d", pad_N.S2.c);
-niv5 : svout("s_niv_3_BNHN_o", pad_N.S3.o);
-niv6 : svout("s_niv_3_BNHN_d", pad_N.S3.c);
-niv7 : svout("s_niv_1_BNHZ_o", pad_S.S1.o);
-niv8 : svout("s_niv_1_BNHZ_d", pad_S.S1.c);
-niv9 : svout("s_niv_2_BNHZ_o", pad_S.S2.o);
-niv10: svout("s_niv_2_BNHZ_d", pad_S.S2.c);
-niv11: svout("s_niv_3_BNHZ_o", pad_S.S3.o);
-niv12: svout("s_niv_3_BNHZ_d", pad_S.S3.c);
-niv13: svout("a_niv_BNHN_o",   pad_N.A.o);
-niv14: svout("a_niv_BNHN_d",   pad_N.A.c);
-niv15: svout("a_niv_BNHZ_o",   pad_S.A.o);
-niv16: svout("a_niv_BNHZ_d",   pad_S.A.c);
+//Paddle PLC contacts
+paddle1  : PLCcontact("s_paddle_1_N_o", pad_N.S1.o);
+paddle2  : PLCcontact("s_paddle_1_N_d", pad_N.S1.c);
+paddle3  : PLCcontact("s_paddle_2_N_o", pad_N.S2.o);
+paddle4  : PLCcontact("s_paddle_2_N_d", pad_N.S2.c);
+paddle5  : PLCcontact("s_paddle_3_N_o", pad_N.S3.o);
+paddle6  : PLCcontact("s_paddle_3_N_d", pad_N.S3.c);
+paddle7  : PLCcontact("s_paddle_1_S_o", pad_S.S1.o);
+paddle8  : PLCcontact("s_paddle_1_S_d", pad_S.S1.c);
+paddle9  : PLCcontact("s_paddle_2_S_o", pad_S.S2.o);
+paddle10 : PLCcontact("s_paddle_2_S_d", pad_S.S2.c);
+paddle11 : PLCcontact("s_paddle_3_S_o", pad_S.S3.o);
+paddle12 : PLCcontact("s_paddle_3_S_d", pad_S.S3.c);
+paddle13 : PLCcontact("a_paddle_N_o",   pad_N.A.o);
+paddle14 : PLCcontact("a_paddle_N_d",   pad_N.A.c);
+paddle15 : PLCcontact("a_paddle_S_o",   pad_S.A.o);
+paddle16 : PLCcontact("a_paddle_S_d",   pad_S.A.c);
 
-riool1:svout("rioolN",  culvert_N.A.c);
-riool2:svout("rioolZ",  culvert_S.A.c);
-weg1: svout("wegmeetN", culvert_N.S.o);
-weg2: svout("wegmeetZ", culvert_S.S.o);
+//Culvert PLC contacts
+culvert1 : PLCcontact("a_culvert_N", culvert_N.A.c);
+culvert2 : PLCcontact("a_culvert_S", culvert_S.A.c);
+culvert3 : PLCcontact("s_culvert_N", culvert_N.S.o);
+culvert4 : PLCcontact("s_culvert_S", culvert_S.S.o);
 
-VOBOf: svout("gw_BNH", s_equal_D.o);
-VOBOk: svout("gw_BVH", s_equal_U.o);
+//Equal water PLC contacts
+EqualWaterD : PLCcontact("s_equal_D", s_equal_D.o);
+EqualWaterU : PLCcontact("s_equal_U", s_equal_U.o);
 
-ds10 : svout("s_BNHN1", gate_D_N.S.c);
-ds20 : svout("s_BNHN2", gate_D_N.S.bc);
-ds30 : svout("s_BNHN3", gate_D_N.S.fc);
-ds40 : svout("s_BNHN4", gate_D_N.S.fo);
-ds50 : svout("s_BNHN5", gate_D_N.S.bo);
-ds60 : svout("s_BNHN6", gate_D_N.S.o);
+//Gate sensor PLC contacts
+gate_sensor1  : PLCcontact("s_gate_DN_1", gate_D_N.S.c);
+gate_sensor2  : PLCcontact("s_gate_DN_2", gate_D_N.S.bc);
+gate_sensor3  : PLCcontact("s_gate_DN_3", gate_D_N.S.fc);
+gate_sensor4  : PLCcontact("s_gate_DN_4", gate_D_N.S.fo);
+gate_sensor5  : PLCcontact("s_gate_DN_5", gate_D_N.S.bo);
+gate_sensor6  : PLCcontact("s_gate_DN_6", gate_D_N.S.o);
+gate_sensor7  : PLCcontact("s_gate_DS_1", gate_D_S.S.c);
+gate_sensor8  : PLCcontact("s_gate_DS_2", gate_D_S.S.bc);
+gate_sensor9  : PLCcontact("s_gate_DS_3", gate_D_S.S.fc);
+gate_sensor10 : PLCcontact("s_gate_DS_4", gate_D_S.S.fo);
+gate_sensor11 : PLCcontact("s_gate_DS_5", gate_D_S.S.bo);
+gate_sensor12 : PLCcontact("s_gate_DS_6", gate_D_S.S.o);
+gate_sensor13 : PLCcontact("s_gate_UN_1", gate_U_N.S.c);
+gate_sensor14 : PLCcontact("s_gate_UN_2", gate_U_N.S.bc);
+gate_sensor15 : PLCcontact("s_gate_UN_3", gate_U_N.S.fc);
+gate_sensor16 : PLCcontact("s_gate_UN_4", gate_U_N.S.fo);
+gate_sensor17 : PLCcontact("s_gate_UN_5", gate_U_N.S.bo);
+gate_sensor18 : PLCcontact("s_gate_UN_6", gate_U_N.S.o);
+gate_sensor19 : PLCcontact("s_gate_US_1", gate_U_S.S.c);
+gate_sensor20 : PLCcontact("s_gate_US_2", gate_U_S.S.bc);
+gate_sensor21 : PLCcontact("s_gate_US_3", gate_U_S.S.fc);
+gate_sensor22 : PLCcontact("s_gate_US_4", gate_U_S.S.fo);
+gate_sensor23 : PLCcontact("s_gate_US_5", gate_U_S.S.bo);
+gate_sensor24 : PLCcontact("s_gate_US_6", gate_U_S.S.o);
 
-ds11 : svout("s_BNHZ1", gate_D_S.S.c);
-ds21 : svout("s_BNHZ2", gate_D_S.S.bc);
-ds31 : svout("s_BNHZ3", gate_D_S.S.fc);
-ds41 : svout("s_BNHZ4", gate_D_S.S.fo);
-ds51 : svout("s_BNHZ5", gate_D_S.S.bo);
-ds61 : svout("s_BNHZ6", gate_D_S.S.o);
-
-ds12 : svout("s_BVHN1", gate_U_N.S.c);
-ds22 : svout("s_BVHN2", gate_U_N.S.bc);
-ds32 : svout("s_BVHN3", gate_U_N.S.fc);
-ds42 : svout("s_BVHN4", gate_U_N.S.fo);
-ds52 : svout("s_BVHN5", gate_U_N.S.bo);
-ds62 : svout("s_BVHN6", gate_U_N.S.o);
-
-ds13 : svout("s_BVHZ1", gate_U_S.S.c);
-ds23 : svout("s_BVHZ2", gate_U_S.S.bc);
-ds33 : svout("s_BVHZ3", gate_U_S.S.fc);
-ds43 : svout("s_BVHZ4", gate_U_S.S.fo);
-ds53 : svout("s_BVHZ5", gate_U_S.S.bo);
-ds63 : svout("s_BVHZ6", gate_U_S.S.o);
-
-da10 : svout("BNHN_op", gate_D_N.Dir.o);
-da11 : svout("BNHN_sl", gate_D_N.Dir.c);
-da12 : svout("BNHN_on", gate_D_N.Spe.fo);
-da13 : svout("BNHN_ok", gate_D_N.Spe.so);
-da14 : svout("BNHN_sn", gate_D_N.Spe.fc);
-da15 : svout("BNHN_sk", gate_D_N.Spe.sc);
-da16 : svout("BNHN_hd", gate_D_N.Pre.h);
-da17 : svout("BNHN_ld", gate_D_N.Pre.l);
-
-da20 : svout("BNHZ_op", gate_D_S.Dir.o);
-da21 : svout("BNHZ_sl", gate_D_S.Dir.c);
-da22 : svout("BNHZ_on", gate_D_S.Spe.fo);
-da23 : svout("BNHZ_ok", gate_D_S.Spe.so);
-da24 : svout("BNHZ_sn", gate_D_S.Spe.fc);
-da25 : svout("BNHZ_sk", gate_D_S.Spe.sc);
-da26 : svout("BNHZ_hd", gate_D_S.Pre.h);
-da27 : svout("BNHZ_ld", gate_D_S.Pre.l);
-
-da30 : svout("BVHN_op", gate_U_N.Dir.o);
-da31 : svout("BVHN_sl", gate_U_N.Dir.c);
-da32 : svout("BVHN_on", gate_U_N.Spe.fo);
-da33 : svout("BVHN_ok", gate_U_N.Spe.so);
-da34 : svout("BVHN_sn", gate_U_N.Spe.fc);
-da35 : svout("BVHN_sk", gate_U_N.Spe.sc);
-da36 : svout("BVHN_hd", gate_U_N.Pre.h);
-da37 : svout("BVHN_ld", gate_U_N.Pre.l);
-
-da40 : svout("BVHZ_op", gate_U_S.Dir.o);
-da41 : svout("BVHZ_sl", gate_U_S.Dir.c);
-da42 : svout("BVHZ_on", gate_U_S.Spe.fo);
-da43 : svout("BVHZ_ok", gate_U_S.Spe.so);
-da44 : svout("BVHZ_sn", gate_U_S.Spe.fc);
-da45 : svout("BVHZ_sk", gate_U_S.Spe.sc);
-da46 : svout("BVHZ_hd", gate_U_S.Pre.h);
-da47 : svout("BVHZ_ld", gate_U_S.Pre.l);
+//Gate actuator PLC contacts
+gate_actuator1 : PLCcontact("a_gate_DN_open",       gate_D_N.Dir.o);
+gate_actuator2 : PLCcontact("a_gate_DN_close",      gate_D_N.Dir.c);
+gate_actuator3 : PLCcontact("a_gate_DN_fast_open",  gate_D_N.Spe.fo);
+gate_actuator4 : PLCcontact("a_gate_DN_slow_open",  gate_D_N.Spe.so);
+gate_actuator5 : PLCcontact("a_gate_DN_fast_close", gate_D_N.Spe.fc);
+gate_actuator6 : PLCcontact("a_gate_DN_slow_close", gate_D_N.Spe.sc);
+gate_actuator7 : PLCcontact("a_gate_DN_high_pres",  gate_D_N.Pre.h);
+gate_actuator8 : PLCcontact("a_gate_DN_low_pres",   gate_D_N.Pre.l);
+gate_actuator9  : PLCcontact("a_gate_DS_open",       gate_D_S.Dir.o);
+gate_actuator10 : PLCcontact("a_gate_DS_close",      gate_D_S.Dir.c);
+gate_actuator11 : PLCcontact("a_gate_DS_fast_open",  gate_D_S.Spe.fo);
+gate_actuator12 : PLCcontact("a_gate_DS_slow_open",  gate_D_S.Spe.so);
+gate_actuator13 : PLCcontact("a_gate_DS_fast_close", gate_D_S.Spe.fc);
+gate_actuator14 : PLCcontact("a_gate_DS_slow_close", gate_D_S.Spe.sc);
+gate_actuator15 : PLCcontact("a_gate_DS_high_pres",  gate_D_S.Pre.h);
+gate_actuator16 : PLCcontact("a_gate_DS_low_pres",   gate_D_S.Pre.l);
+gate_actuator17 : PLCcontact("a_gate_UN_open",       gate_U_N.Dir.o);
+gate_actuator18 : PLCcontact("a_gate_UN_close",      gate_U_N.Dir.c);
+gate_actuator19 : PLCcontact("a_gate_UN_fast_open",  gate_U_N.Spe.fo);
+gate_actuator20 : PLCcontact("a_gate_UN_slow_open",  gate_U_N.Spe.so);
+gate_actuator21 : PLCcontact("a_gate_UN_fast_close", gate_U_N.Spe.fc);
+gate_actuator22 : PLCcontact("a_gate_UN_slow_close", gate_U_N.Spe.sc);
+gate_actuator23 : PLCcontact("a_gate_UN_high_pres",  gate_U_N.Pre.h);
+gate_actuator24 : PLCcontact("a_gate_UN_low_pres",   gate_U_N.Pre.l);
+gate_actuator25 : PLCcontact("a_gate_US_open",       gate_U_S.Dir.o);
+gate_actuator26 : PLCcontact("a_gate_US_close",      gate_U_S.Dir.c);
+gate_actuator27 : PLCcontact("a_gate_US_fast_open",  gate_U_S.Spe.fo);
+gate_actuator28 : PLCcontact("a_gate_US_slow_open",  gate_U_S.Spe.so);
+gate_actuator29 : PLCcontact("a_gate_US_fast_close", gate_U_S.Spe.fc);
+gate_actuator30 : PLCcontact("a_gate_US_slow_close", gate_U_S.Spe.sc);
+gate_actuator31 : PLCcontact("a_gate_US_high_pres",  gate_U_S.Pre.h);
+gate_actuator32 : PLCcontact("a_gate_US_low_pres",   gate_U_S.Pre.l);

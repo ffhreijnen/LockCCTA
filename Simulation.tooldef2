@@ -1,15 +1,18 @@
 from "lib:cif3" import *;
 
-string sup_path    = "generated_files/5_Supervisor.cif";           //Location of supervisor
-string mrg_path    = "generated_files/6_Supervisor_Hybrid.cif";    //Location of simulation & supervisor merged
-string sim_path    = "2_Simulation.cif";                           //Location of simulation/hybrid model
+// Output files
+string mrg_path = "generated_files/6_Supervisor_Hybrid.cif";    //Location of supervisor & simulation/hybrid merged
 
-// Merge supervisor with disabled events and hybrid plants simulation model.
+// Input files
+string sup_path = "generated_files/5_Supervisor.cif";           //Location of supervisor
+string sim_path = "2_Simulation.cif";                           //Location of simulation/hybrid model
+
+// Merge supervisor with hybrid plant simulation model.
 outln("File \"%s\": generating...", mrg_path);
 cif3merge(sup_path, sim_path, "-o", mrg_path);
 outln("File \"%s\": generated.", mrg_path);
 
-// Simulate the supervisor/hybrid plants simulation model
+// Simulate the supervisor/hybrid plants simulation model.
 outln("Simulating \"%s\"...", mrg_path);
 outln();
 cif3sim(mrg_path,
