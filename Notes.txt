@@ -1,0 +1,2 @@
+The number of requirements in the revised version of the model is 198 instead of 234. This is due to merging of requirements.
+The number is derived from the amount of requirements in the supervisor.cif file.
