@@ -16,7 +16,7 @@ button19: button(); button20: button();
 emergencystop: button(); stop1:    button(); stop2:    button(); stop3:    button(); stop4:    button();
 
 //Specify the button combinations
-alg bool cmd_stop         = emergencystop.pushed or stop1.pushed or stop2.pushed or stop4.pushed or stop4.pushed;
+alg bool cmd_stop         = emergencystop.pushed or stop1.pushed or stop2.pushed or stop3.pushed or stop4.pushed;
 alg bool cmd_stop_culvert = emergencystop.pushed or stop3.pushed;
 alg bool cmd_stop_pad     = emergencystop.pushed or stop4.pushed;
 alg bool cmd_stop_D_gate  = emergencystop.pushed or stop1.pushed;
