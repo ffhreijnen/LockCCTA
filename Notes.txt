@@ -1,5 +1,9 @@
 The number of requirements in the revised version of the model is 198 instead of 234. This is due to merging of requirements.
 The number is derived from the number of requirements in the 5_supervisor.cif file.
 
-The plant model includes some dynamic constraints which are not discusess in the paper, e.g., line 57-59 in 1_Plant_Requirements.cif.
+The plant model includes some dynamic constraints which are not discussed in the paper, e.g., line 57-59 in 1_Plant_Requirements.cif.
 These dynamic constraints are included such that the plant model does not allow more behavior than the physical system.
+
+The original model contained two modeling errors. To obtain the results discussed in the paper, the following changes have to be done in the 1_Plant_Requirements.cif file:
+    * Line 19: stop3 --> stop4
+    * Line 500: gate_U_S.c_close -> gate_U_N.c_close
