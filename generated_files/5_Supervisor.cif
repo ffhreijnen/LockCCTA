@@ -361,7 +361,7 @@ group in_U_S:
   uncontrollable u_s_off;
 end
 group sup:
-  alg bool cmd_stop = emergencystop.pushed or stop1.pushed or stop2.pushed or stop4.pushed or stop4.pushed;
+  alg bool cmd_stop = emergencystop.pushed or stop1.pushed or stop2.pushed or stop3.pushed or stop4.pushed;
   alg bool cmd_stop_culvert = emergencystop.pushed or stop3.pushed;
   alg bool cmd_stop_pad = emergencystop.pushed or stop4.pushed;
   alg bool cmd_stop_D_gate = emergencystop.pushed or stop1.pushed;
@@ -1737,7 +1737,7 @@ group sup:
   requirement invariant not out_D_N.S.red or not out_D_N.A.red or not out_D_S.S.red or not out_D_S.A.red disables .gate_D_N.c_close;
   requirement invariant not out_D_N.S.red or not out_D_N.A.red or not out_D_S.S.red or not out_D_S.A.red disables .gate_D_S.c_close;
   requirement invariant not out_U_N.S.red or not out_U_N.A.red or not out_U_S.S.red or not out_U_S.A.red disables .gate_U_N.c_close;
-  requirement invariant not out_U_N.S.red or not out_U_N.A.red or not out_U_S.S.red or not out_U_S.A.red disables .gate_U_N.c_close;
+  requirement invariant not out_U_N.S.red or not out_U_N.A.red or not out_U_S.S.red or not out_U_S.A.red disables .gate_U_S.c_close;
   requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .out_D_N.c_green;
   requirement invariant not gate_D_N.S.open or gate_D_N.Dir.closing or not gate_D_S.S.open or gate_D_S.Dir.closing disables .out_D_S.c_green;
   requirement invariant not gate_U_N.S.open or gate_U_N.Dir.closing or not gate_U_S.S.open or gate_U_S.Dir.closing disables .out_U_N.c_green;

@@ -497,7 +497,7 @@ requirement not out_D_N.S.red or not out_D_N.A.red or
 
 requirement not out_U_N.S.red or not out_U_N.A.red or
             not out_U_S.S.red or not out_U_S.A.red
-            disables {gate_U_N.c_close, gate_U_N.c_close};
+            disables {gate_U_N.c_close, gate_U_S.c_close};
 
 
 //SF: gate - leaving aspect
